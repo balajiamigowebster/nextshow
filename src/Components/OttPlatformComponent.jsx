@@ -1,0 +1,92 @@
+export const STREAMING_PLATFORMS = [
+  {
+    id: "aha",
+    name: "Aha",
+    logo: "/ott/aha.jpeg",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "erosnow",
+    name: "erosnow",
+    logo: "/Streaming_logo/erosnow.webp",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "hungama",
+    name: "Hungama",
+    logo: "/ott/hungamaplay.jpeg",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "jiohotstar",
+    name: "jiohotstar",
+    logo: "/ott/jiohotstar.avif",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "jojotv",
+    name: "JojoTV",
+    logo: "/Streaming_logo/JojoTV.webp",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "lionsgateplay",
+    name: "LionsgatePlay",
+    logo: "/Streaming_logo/LionsgatePlay.webp",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "mx",
+    name: "mx",
+    logo: "/ott/mxplayer.jpeg",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "netflix",
+    name: "netflix",
+    logo: "/ott/netflix.avif",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "playflix",
+    name: "playflix",
+    logo: "/Streaming_logo/playflix.webp",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "prime",
+    name: "prime",
+    logo: "/ott/prime.avif",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "sony",
+    name: "sony",
+    logo: "/ott/sonyliv.jpeg",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "sunnxt",
+    name: "sunNxt",
+    logo: "/ott/sunnxt.jpeg",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "timesplay",
+    name: "Timesplay",
+    logo: "/Streaming_logo/Timesplay.webp",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "ultra",
+    name: "Ultra",
+    logo: "/Streaming_logo/Ultra.webp",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+  {
+    id: "z5",
+    name: "Z5",
+    logo: "/ott/zee5.avif",
+    className: "w-12 h-12 rounded-lg border object-contain",
+  },
+];
