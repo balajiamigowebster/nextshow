@@ -25,7 +25,6 @@ import ReusableConfirmDialog from "./ReusableConfirmDialog";
 import { useSnackbar } from "../../context/SnackbarContext";
 import { useAuth } from "../../context/AuthContext";
 import SearchBar from "../Search/SearchBar";
-import MobileSearchSheet from "../Search/MobileSearchSheet";
 import { useSearch } from "../../context/SearchContext";
 
 const navLinks = [
@@ -670,9 +669,6 @@ const Navbar = () => {
             </button>
           </div>
         </nav>
-
-        {/* MOBILE BOTTOM SLIDE-UP SEARCH PANEL */}
-        <MobileSearchSheet />
 
         {/* MOBILE DROPDOWN */}
         <AnimatePresence>

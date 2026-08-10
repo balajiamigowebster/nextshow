@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Home/Home";
 import Navbar from "./Components/Navbar";
+import MobileSearchSheet from "./Search/MobileSearchSheet";
 import Footer from "./Components/Footer";
 import NewMovies from "./NewMovies/NewMovies";
 import StreamingNow from "./StreamingNow/StreamingNow";
@@ -155,6 +156,7 @@ const App = () => {
     <div className="flex flex-col">
       <ScrollToTop />
       {!hideLayout && <Navbar />}
+      {!hideLayout && <MobileSearchSheet />}
       {/* ✅ குளோபல் Auth மாடல் - UI ரெண்டரிங் */}
       <AnimatePresence>
         {isAuthOpen && (

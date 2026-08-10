@@ -167,11 +167,7 @@ const MobileBottomNavigation = () => {
             <MobileNavItem
               key={item.path}
               {...item}
-              active={
-                item.type === "profile"
-                  ? location.pathname.startsWith("/profile")
-                  : isActive(item.path)
-              }
+              active={activeIndex === i}
               isAuthenticated={isAuthenticated}
               openAuth={openAuth}
               authChecked={authChecked}
