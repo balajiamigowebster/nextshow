@@ -9,7 +9,7 @@ const isLocalhost =
   window.location.hostname.startsWith("10.");
 
 if (!isLocalhost) {
-  devBaseURL = "https://amigowebster.in/nextshow_backend_v2/api";
+  devBaseURL = "/api";
 } else if (devBaseURL && devBaseURL.includes("localhost")) {
   devBaseURL = devBaseURL.replace("localhost", window.location.hostname);
 }
