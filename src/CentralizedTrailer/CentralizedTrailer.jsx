@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -31,7 +31,37 @@ const TimelineContent = ({
   setYearPopupOpen,
   selectedMonth,
   setSelectedMonth,
+  direction = "forward",
 }) => {
+  const timelineMonths = useMemo(() => {
+    const CURRENT = new Date();
+    const currentMonth = CURRENT.getMonth();
+    const currentYear = CURRENT.getFullYear();
+    const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    const list = [];
+    
+    if (direction === "backward") {
+      for (let i = 5; i >= 0; i--) {
+        const d = new Date(currentYear, currentMonth - i, 1);
+        list.push({
+          name: MONTH_NAMES[d.getMonth()],
+          monthNumber: d.getMonth() + 1,
+          year: d.getFullYear(),
+        });
+      }
+    } else {
+      for (let i = 0; i < 6; i++) {
+        const d = new Date(currentYear, currentMonth + i, 1);
+        list.push({
+          name: MONTH_NAMES[d.getMonth()],
+          monthNumber: d.getMonth() + 1,
+          year: d.getFullYear(),
+        });
+      }
+    }
+    return list;
+  }, [direction]);
+
   return (
     <div
       className="
@@ -169,12 +199,14 @@ const TimelineContent = ({
           no-scrollbar
         "
       >
-        {MONTHS.map((month, index) => {
-          const monthNumber = index + 1;
+        {timelineMonths.map((item) => {
           return (
             <button
-              key={month}
-              onClick={() => setSelectedMonth(monthNumber)}
+              key={`${item.year}-${item.monthNumber}`}
+              onClick={() => {
+                setSelectedMonth(item.monthNumber);
+                setSelectedYear(item.year);
+              }}
               className={`
               w-full
               h-10
@@ -189,7 +221,7 @@ const TimelineContent = ({
               transition-all
 
               ${
-                selectedMonth === monthNumber
+                selectedMonth === item.monthNumber && selectedYear === item.year
                   ? `
                     bg-zinc-800
                     text-white
@@ -204,7 +236,7 @@ const TimelineContent = ({
               }
             `}
             >
-              {month}
+              {item.name}
             </button>
           );
         })}
@@ -331,6 +363,7 @@ const CentralizedTrailer = () => {
             setSelectedMonth={setSelectedMonth}
             yearPopupOpen={yearPopupOpen}
             setYearPopupOpen={setYearPopupOpen}
+            direction="forward"
           />
         </div>
 

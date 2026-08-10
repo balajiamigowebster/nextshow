@@ -31,6 +31,7 @@ const TimelineContent = ({
   datePopupOpen,
   setDatePopupOpen,
   availableDates,
+  direction = "forward",
 }) => {
   const CURRENT = new Date();
   const CURRENT_YEAR = CURRENT.getFullYear();
@@ -38,6 +39,34 @@ const TimelineContent = ({
     { length: CURRENT_YEAR - 2020 + 1 },
     (_, i) => CURRENT_YEAR - i,
   );
+
+  const timelineMonths = useMemo(() => {
+    const currentMonth = CURRENT.getMonth();
+    const currentYear = CURRENT.getFullYear();
+    const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    const list = [];
+    
+    if (direction === "backward") {
+      for (let i = 5; i >= 0; i--) {
+        const d = new Date(currentYear, currentMonth - i, 1);
+        list.push({
+          name: MONTH_NAMES[d.getMonth()],
+          monthNumber: d.getMonth() + 1,
+          year: d.getFullYear(),
+        });
+      }
+    } else {
+      for (let i = 0; i < 6; i++) {
+        const d = new Date(currentYear, currentMonth + i, 1);
+        list.push({
+          name: MONTH_NAMES[d.getMonth()],
+          monthNumber: d.getMonth() + 1,
+          year: d.getFullYear(),
+        });
+      }
+    }
+    return list;
+  }, [direction]);
 
   const totalDays = useMemo(() => {
     if (!selectedYear || !selectedMonth) return 0;
@@ -270,17 +299,16 @@ const TimelineContent = ({
         {/* MONTHS */}
 
         <div className="h-[240px] md:h-[280px] overflow-y-auto no-scrollbar">
-          {MONTHS.map((month, index) => (
+          {timelineMonths.map((item) => (
             <button
-              key={month}
+              key={`${item.year}-${item.monthNumber}`}
               onClick={() => {
-                const monthNumber = index + 1;
-
-                setSelectedMonth(monthNumber);
+                setSelectedMonth(item.monthNumber);
+                setSelectedYear(item.year);
 
                 const maxDays = new Date(
-                  selectedYear,
-                  monthNumber,
+                  item.year,
+                  item.monthNumber,
                   0,
                 ).getDate();
 
@@ -289,12 +317,12 @@ const TimelineContent = ({
                 }
               }}
               className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
-                selectedMonth !== null && selectedMonth === index + 1
+                selectedMonth === item.monthNumber && selectedYear === item.year
                   ? "bg-zinc-800 text-white border-r-2 border-r-zinc-500"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
             >
-              {month}
+              {item.name}
             </button>
           ))}
         </div>
@@ -355,6 +383,7 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
             datePopupOpen={datePopupOpen}
             setDatePopupOpen={setDatePopupOpen}
             availableDates={availableDates}
+            direction="backward"
           />
         </div>
 
