@@ -138,7 +138,7 @@ const Home = () => {
 
       <MoviesSection
         activeItems={activeHomeMovies}
-        newMovies={homeMoviesData.theatrical}
+        newMovies={homeMoviesData?.theatrical}
       />
       <MovieStreamingSection
         activeItems={activeItems}
