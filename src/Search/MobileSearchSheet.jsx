@@ -106,7 +106,7 @@ const MobileSearchSheet = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsMobileSearchOpen(false)}
-            className="lg:hidden fixed inset-0 bg-black/70 backdrop-blur-md z-[99998]"
+            className="lg:hidden fixed inset-0 bg-black/70 backdrop-blur-md z-[9990]"
           />
 
           {/* Bottom Sheet sliding up */}
@@ -115,7 +115,7 @@ const MobileSearchSheet = () => {
             animate={{ y: 0 }}
             exit={{ y: "100%" }}
             transition={{ type: "spring", damping: 26, stiffness: 220 }}
-            className="lg:hidden fixed bottom-0 left-0 right-0 h-[85vh] bg-[#121214] border-t border-white/10 rounded-t-[30px] z-[99999] flex flex-col overflow-hidden"
+            className="lg:hidden fixed bottom-0 left-0 right-0 h-[85vh] bg-[#121214] border-t border-white/10 rounded-t-[30px] z-[9991] flex flex-col overflow-hidden"
           >
             {/* Grab handle for sheet indicator */}
             <div className="w-12 h-1 bg-white/15 rounded-full mx-auto my-3 shrink-0" />
@@ -157,7 +157,7 @@ const MobileSearchSheet = () => {
             </div>
 
             {/* Search Content */}
-            <div className="flex-1 overflow-y-auto px-6 py-4 custom-scrollbar pb-24">
+            <div className="flex-1 overflow-y-auto px-6 py-4 custom-scrollbar pb-36">
               {searchQuery.trim().length < 2 ? (
                 // Initial prompt matching screenshot exactly
                 <div className="flex flex-col items-center justify-center h-[50vh] text-center">
