@@ -230,9 +230,13 @@ const TimelineContent = ({
                 setYearPopupOpen(false);
                 setDatePopupOpen(!datePopupOpen);
               }}
-              className="w-full h-full flex items-center justify-center px-1"
+              className={`w-full h-full flex items-center justify-center px-1 transition-all ${
+                selectedDate ? "bg-orange-500/10 border-l border-white/10" : ""
+              }`}
             >
-              <span className="text-[9px] md:text-[11px] font-black tracking-widest text-white">
+              <span className={`text-[9px] md:text-[11px] font-black tracking-widest ${
+                selectedDate ? "text-orange-400" : "text-white"
+              }`}>
                 {selectedDate || "DATE"}
               </span>
             </button>
@@ -313,7 +317,7 @@ const TimelineContent = ({
               }}
               className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
                 selectedMonth !== null && selectedMonth === index + 1
-                  ? "bg-zinc-800 text-white border-r-2 border-r-zinc-500"
+                  ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
             >
@@ -359,7 +363,24 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
       streamType: "NEW_RELEASE",
     });
 
-  const movies = selectedMovies?.data ?? newReleaseStreaming;
+  const movies = useMemo(() => {
+    if (selectedDate) {
+      return selectedMovies?.data ?? [];
+    }
+    if (selectedMonth) {
+      const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+      return newReleaseStreaming.filter((movie) => {
+        if (!movie.releaseDate) return false;
+        const parts = movie.releaseDate.trim().split(/\s+/);
+        if (parts.length < 3) return false;
+        const mName = parts[1].toUpperCase();
+        const yStr = parts[2];
+        const mNum = MONTH_NAMES.indexOf(mName) + 1;
+        return (!selectedYear || yStr === String(selectedYear)) && mNum === selectedMonth;
+      });
+    }
+    return newReleaseStreaming;
+  }, [selectedDate, selectedMonth, selectedYear, selectedMovies, newReleaseStreaming]);
 
   return (
     <section>
