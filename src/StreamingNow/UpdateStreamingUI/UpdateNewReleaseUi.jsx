@@ -25,8 +25,13 @@ const TimelineContent = ({
   setSelectedYear,
   selectedMonth,
   setSelectedMonth,
+  selectedDate,
+  setSelectedDate,
   yearPopupOpen,
   setYearPopupOpen,
+  datePopupOpen,
+  setDatePopupOpen,
+  availableDates,
   direction = "forward",
 }) => {
   const CURRENT = new Date();
@@ -64,30 +69,22 @@ const TimelineContent = ({
     return list;
   }, [direction]);
 
-  // const totalDays = useMemo(() => {
-  //   if (!selectedYear || !selectedMonth) return 0;
+  const totalDays = useMemo(() => {
+    if (!selectedYear || !selectedMonth) return 0;
+    return new Date(selectedYear, selectedMonth, 0).getDate();
+  }, [selectedYear, selectedMonth]);
 
-  //   return new Date(selectedYear, selectedMonth, 0).getDate();
-  // }, [selectedYear, selectedMonth]);
+  const DAYS = Array.from({ length: totalDays }, (_, i) => i + 1);
 
-  // const DAYS = Array.from({ length: totalDays }, (_, i) => i + 1);
-
-  // const isFiltered =
-  //   selectedYear !== null || selectedMonth !== null || selectedDate !== null;
-  const isFiltered = selectedYear !== null || selectedMonth !== null;
-
-  // const handleReset = () => {
-  //   setSelectedYear(null);
-  //   setSelectedMonth(null);
-  //   setSelectedDate(null);
-  //   setYearPopupOpen(false);
-  //   setDatePopupOpen(false);
-  // };
+  const isFiltered =
+    selectedYear !== null || selectedMonth !== null || selectedDate !== null;
 
   const handleReset = () => {
     setSelectedYear(null);
     setSelectedMonth(null);
+    setSelectedDate(null);
     setYearPopupOpen(false);
+    setDatePopupOpen(false);
   };
 
   return (
@@ -308,20 +305,20 @@ const TimelineContent = ({
         {/* MONTHS */}
 
         <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar">
-          {MONTHS.map((month, index) => (
+          {monthsList.map((item) => (
             <button
-              key={month}
+              key={item.name}
               onClick={() => {
-                const monthNumber = index + 1;
+                const monthNumber = item.monthNumber;
                 setSelectedMonth(monthNumber);
               }}
               className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
-                selectedMonth !== null && selectedMonth === index + 1
+                selectedMonth !== null && selectedMonth === item.monthNumber
                   ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
             >
-              {month}
+              {item.name}
             </button>
           ))}
         </div>
@@ -337,7 +334,7 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
   const CURRENT_DAY = CURRENT.getDate();
 
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
-  const [selectedMonth, setSelectedMonth] = useState(null);
+  const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth() + 1);
   const [selectedDate, setSelectedDate] = useState(null);
 
   const [yearPopupOpen, setYearPopupOpen] = useState(false);
@@ -408,8 +405,13 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
             setSelectedYear={setSelectedYear}
             selectedMonth={selectedMonth}
             setSelectedMonth={setSelectedMonth}
+            selectedDate={selectedDate}
+            setSelectedDate={setSelectedDate}
             yearPopupOpen={yearPopupOpen}
             setYearPopupOpen={setYearPopupOpen}
+            datePopupOpen={datePopupOpen}
+            setDatePopupOpen={setDatePopupOpen}
+            availableDates={availableDates}
             direction="backward"
           />
         </div>

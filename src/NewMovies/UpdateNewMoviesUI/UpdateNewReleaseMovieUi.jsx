@@ -40,32 +40,30 @@ const TimelineContent = ({
     (_, i) => CURRENT_YEAR - i,
   );
 
-  const timelineMonths = useMemo(() => {
-    const currentMonth = CURRENT.getMonth();
-    const currentYear = CURRENT.getFullYear();
+  const monthsList = useMemo(() => {
     const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    const list = [];
+    const currentMonthIdx = CURRENT.getMonth();
     
-    if (direction === "backward") {
-      for (let i = 5; i >= 0; i--) {
-        const d = new Date(currentYear, currentMonth - i, 1);
+    if (direction === "forward") {
+      const list = [];
+      for (let i = 0; i < 12; i++) {
+        const idx = (currentMonthIdx + i) % 12;
         list.push({
-          name: MONTH_NAMES[d.getMonth()],
-          monthNumber: d.getMonth() + 1,
-          year: d.getFullYear(),
+          name: MONTH_NAMES[idx],
+          monthNumber: idx + 1,
         });
       }
+      return list;
     } else {
-      for (let i = 0; i < 6; i++) {
-        const d = new Date(currentYear, currentMonth + i, 1);
+      const list = [];
+      for (let i = 0; i < 12; i++) {
         list.push({
-          name: MONTH_NAMES[d.getMonth()],
-          monthNumber: d.getMonth() + 1,
-          year: d.getFullYear(),
+          name: MONTH_NAMES[i],
+          monthNumber: i + 1,
         });
       }
+      return list;
     }
-    return list;
   }, [direction]);
 
   const totalDays = useMemo(() => {
@@ -302,11 +300,11 @@ const TimelineContent = ({
         {/* MONTHS */}
 
         <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar">
-          {MONTHS.map((month, index) => (
+          {monthsList.map((item) => (
             <button
-              key={month}
+              key={item.name}
               onClick={() => {
-                const monthNumber = index + 1;
+                const monthNumber = item.monthNumber;
 
                 setSelectedMonth(monthNumber);
 
@@ -321,12 +319,12 @@ const TimelineContent = ({
                 }
               }}
               className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
-                selectedMonth !== null && selectedMonth === index + 1
+                selectedMonth !== null && selectedMonth === item.monthNumber
                   ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
             >
-              {month}
+              {item.name}
             </button>
           ))}
         </div>
@@ -342,7 +340,7 @@ const TimelineContent = ({
 // ─────────────────────────────────────────
 const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
-  const [selectedMonth, setSelectedMonth] = useState(null);
+  const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth() + 1);
   const [selectedDate, setSelectedDate] = useState(null);
 
   const [yearPopupOpen, setYearPopupOpen] = useState(false);

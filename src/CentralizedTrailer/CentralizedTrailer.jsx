@@ -221,10 +221,11 @@ const TimelineContent = ({
               ${
                 selectedMonth === monthNumber
                   ? `
-                    bg-zinc-800
-                    text-white
+                    bg-orange-500/10
+                    text-orange-400
                     border-r-2
-                    border-r-zinc-500
+                    border-r-orange-500
+                    font-black
                   `
                   : `
                     text-zinc-500
