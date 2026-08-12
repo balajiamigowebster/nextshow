@@ -199,7 +199,14 @@ export default function VideoDetailScreen({
     }
     return undefined;
   }, [isBgMuted, currentIndex, isWatchingFull]);
-
+  // ✅ Force iframe to display after 1.5s in case onLoad is delayed or missed
+  useEffect(() => {
+    setIsIframeLoaded(false);
+    const timer = setTimeout(() => {
+      setIsIframeLoaded(true);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
   // ✅ Full video player
   const getFullVideoUrl = (url) => {
     const videoId = extractVideoId(url);
