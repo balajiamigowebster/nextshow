@@ -113,6 +113,7 @@ export default function VideoDetailScreen({
   const bgIframeRef = useRef(null); // Background loop iframe ref
   const fullIframeRef = useRef(null); // Full screen player iframe ref
   const [direction, setDirection] = useState(0); // 2. Direction track panna state
+  const [isIframeLoaded, setIsIframeLoaded] = useState(false);
 
   const navigate = useNavigate();
 
@@ -187,16 +188,17 @@ export default function VideoDetailScreen({
 
   // console.log("Current Video", upcomingTrailers);
 
-  // ✅ Sync background volume state to the background iframe
-  // useEffect(() => {
-  //   if (!isWatchingFull) {
-  //     const timer = setTimeout(() => {
-  //       sendBgCommand(isBgMuted ? "mute" : "unMute");
-  //     }, 1000);
-  //     return () => clearTimeout(timer);
-  //   }
-  //   return undefined;
-  // }, [isBgMuted, currentIndex, isWatchingFull]);
+  // ✅ Sync background play and volume state to the background iframe
+  useEffect(() => {
+    if (!isWatchingFull) {
+      const timer = setTimeout(() => {
+        sendBgCommand("playVideo");
+        sendBgCommand(isBgMuted ? "mute" : "unMute");
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+    return undefined;
+  }, [isBgMuted, currentIndex, isWatchingFull]);
 
   // ✅ Full video player
   const getFullVideoUrl = (url) => {
@@ -241,22 +243,24 @@ export default function VideoDetailScreen({
   };
 
   // 3. Slide variants logic
-  const variants = {
-    enter: (direction) => ({
-      x: direction > 0 ? 100 : -100,
+  const slideVariants = {
+    enter: (dir) => ({
+      x: dir > 0 ? 120 : -120,
+      opacity: 0,
     }),
     center: {
       x: 0,
       opacity: 1,
     },
-    exit: (direction) => ({
-      x: direction < 0 ? 100 : -100,
+    exit: (dir) => ({
+      x: dir < 0 ? 120 : -120,
       opacity: 0,
     }),
   };
 
   const paginate = (dir) => {
     setDirection(dir);
+    setIsIframeLoaded(false);
 
     setCurrentIndex((prev) => {
       if (dir === 1 && prev < upcomingTrailers.length - 1) {
@@ -293,6 +297,8 @@ export default function VideoDetailScreen({
 
   const handleBgIframeLoad = () => {
     setTimeout(() => {
+      setIsIframeLoaded(true);
+      sendBgCommand("playVideo");
       sendBgCommand(isBgMuted ? "mute" : "unMute");
     }, 800); // delay added
   };
@@ -336,9 +342,9 @@ export default function VideoDetailScreen({
           {/* ✅ YouTube Background Video */}
           {upcomingTrailers.length > 0 ? (
             <>
-              {/* Backdrop image for mobile / fallback */}
+              {/* Backdrop image fallback */}
               <div 
-                className="absolute inset-0 md:hidden bg-cover bg-center opacity-40"
+                className="absolute inset-0 bg-cover bg-center opacity-40 transition-opacity duration-500"
                 style={{ backgroundImage: `url(${getImageUrl(currentVideo?.backdropPath || currentVideo?.posterPath)})` }}
               />
 
@@ -348,7 +354,7 @@ export default function VideoDetailScreen({
                     ref={bgIframeRef}
                     key={`bg-${currentVideo?.trailerUrl}`}
                     src={getEmbedUrl(currentVideo?.trailerUrl)}
-                    className="w-full h-[150%] -translate-y-[15%] object-cover scale-[1.4] pointer-events-none opacity-80"
+                    className={`w-full h-[150%] -translate-y-[15%] object-cover scale-[1.4] pointer-events-none transition-opacity duration-700 ${isIframeLoaded ? "opacity-80" : "opacity-0"}`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     onLoad={handleBgIframeLoad}
@@ -406,10 +412,12 @@ export default function VideoDetailScreen({
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.div
                     key={currentIndex}
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -20, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     className="space-y-2 md:space-y-3 flex flex-col items-end md:items-start"
                   >
                     {/* Title / Logo Style */}
