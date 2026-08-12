@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en" class=" "><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&amp;family=Lexend:wght@100..900&amp;family=Michroma&amp;family=Monoton&amp;family=New+Rocker&amp;family=Nosifer&amp;family=Oxanium:wght@200..800&amp;family=Quantico:ital,wght@0,400;0,700;1,400;1,700&amp;family=Revalia&amp;family=Rubik+Doodle+Shadow&amp;family=Saira:wdth,wght@62.4,413&amp;family=Science+Gothic:wght@100..900&amp;family=Sora:wght@100..800&amp;family=Tourney:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <title>Next show</title>
+    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/8d2a370b/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api"></script><script type="module" crossorigin="" src="/assets/index-D5xdc35X.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-DBsW_dtk.css">
+  <style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style id="googleidentityservice_button_styles" nonce="undefined">.qJTHM{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:Roboto-Regular,arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{overflow-wrap:break-word;word-break:break-word}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-u2z5K{height:36px;width:36px}.Bz112c-uaxL4e{border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf{border:none;margin:0;padding:0}.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u{-webkit-transition:height .2s linear;transition:height .2s linear}.P1ekSe-ZMv3u>div:first-child{background-color:#1a73e8!important;-webkit-transition:width .3s linear;transition:width .3s linear}.P1ekSe-ZMv3u>div:nth-child(2){background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.7)),to(rgba(255,255,255,.7))),-webkit-gradient(linear,left top,right top,from(#1a73e8),to(#1a73e8))!important;background-image:-webkit-linear-gradient(left,rgba(255,255,255,.7),rgba(255,255,255,.7)),-webkit-linear-gradient(left,#1a73e8,#1a73e8)!important;background-image:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(90deg,#1a73e8,#1a73e8)!important}.P1ekSe-ZMv3u>div:nth-child(3){background-image:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.7)),to(rgba(255,255,255,.7))),-webkit-gradient(linear,left top,right top,from(#1a73e8),to(#1a73e8))!important;background-image:-webkit-linear-gradient(left,rgba(255,255,255,.7),rgba(255,255,255,.7)),-webkit-linear-gradient(left,#1a73e8,#1a73e8)!important;background-image:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(90deg,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{border-radius:4px;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:Google Sans,arial,sans-serif;font-size:.875rem;height:40px;letter-spacing:.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}@media screen and (preferes-contrast:more){.nsm7Bb-HzV7m-LgbsSe{color:#000}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:.875rem;height:32px;letter-spacing:.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:.6875rem;height:20px;letter-spacing:.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc{border:1px solid #8e918f;background-color:#131314;color:#e3e3e3}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}@media screen and (prefers-contrast:more){.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{color:#fff}}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-top-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;-webkit-box-align:center;align-items:center;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;-webkit-box-flex:1;flex-grow:1;font-family:Google Sans,arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;-webkit-box-flex:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:focus,.nsm7Bb-HzV7m-LgbsSe:hover{box-shadow:none;border-color:rgb(210,227,252);outline:none}.nsm7Bb-HzV7m-LgbsSe:focus-within{outline:2px solid #00639b;border-color:transparent}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.08)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.08)}.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.i5vt6e-to915-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.12)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:Roboto;font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;-webkit-box-align:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.i5vt6e-to915-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#c4c7c5;fill:#c4c7c5}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}@media screen and (prefers-contrast:more){.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff,.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#000;fill:#000}}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style></head>
+  <body style="overflow: auto;">
+    <div id="root"><div class="flex flex-col"><header class="fixed top-0 left-0 w-full backdrop-blur-md bg-black/30 z-[9999]"><nav class="flex justify-between items-center px-6 md:px-10 h-[80px]"><a class="flex items-center shrink-0 gap-2" href="/" data-discover="true"><img alt="NextShow Logo" class="w-20 h-20 object-contain drop-shadow-lg" src="/logo3.png"></a><div class="hidden lg:flex flex-1 max-w-[500px] mx-5"><div><div class="relative flex-1 max-w-[700px] mx-5"><form class="relative w-full group flex items-center"><div class="
+            relative
+            w-full
+            flex
+            items-center
+            bg-[#0f0f0f]/60
+            border
+            border-white/10
+            rounded-full
+            p-1.5
+            transition-all
+            duration-300
+            focus-within:bg-black/70
+            focus-within:border-orange-500/50
+            focus-within:ring-4
+            focus-within:ring-orange-500/10
+            shadow-2xl
+          "><div class="pl-4 pr-2 text-white/40 focus-within:text-orange-500 transition-colors"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg></div><input placeholder="Search movies, genres, cast..." class="
+              flex-1
+              bg-transparent
+              border-none
+              text-white
+              text-sm
+              py-2
+              px-2
+              focus:outline-none
+              placeholder:text-white/30
+            " type="text" value=""><button type="submit" class="
+              bg-orange-500
+              hover:bg-orange-600
+              cursor-pointer
+              text-white
+              px-6
+              py-2.5
+              rounded-full
+              text-xs
+              font-extrabold
+              uppercase
+              tracking-wider
+              transition-all
+              active:scale-95
+              shadow-lg
+              shadow-orange-500/20
+            ">SEARCH</button></div></form></div></div></div><div class="flex items-center gap-6"><div class="relative hidden lg:block"><button disabled="" class="flex items-center gap-1 text-white/70  transition-all text-sm cursor-not-allowed opacity-50 "><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><span>Tamil</span><div style="transform: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="text-white/40 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div></button></div><div class="hidden lg:flex items-center relative"><button class="flex flex-col gap-[6px] p-3 cursor-pointer group"><div class="w-8 h-[3px] bg-white rounded-full group-hover:bg-orange-500 transition-colors" style="transform: none;"></div><div class="w-8 h-[2px] bg-white rounded-full group-hover:bg-orange-500 transition-colors" style="transform: none; opacity: 1;"></div><div class="w-5 h-[3px] bg-white rounded-full group-hover:bg-orange-500 transition-colors self-end" style="transform: none; width: 20px;"></div></button></div><div class="hidden md:hidden lg:block profile-dropdown"><button class="
+              flex items-center gap-2
+              px-3 sm:px-4
+              h-[42px]
+              rounded-2xl
+              border border-orange-500/20
+              bg-gradient-to-br from-orange-500/20 to-orange-600/5
+              hover:from-orange-500/30 hover:to-orange-600/10
+              transition-all duration-300
+              group
+              shrink-0
+    "><div class="
+        w-7 h-7
+        rounded-full
+        bg-orange-500
+        flex items-center justify-center
+        shadow-[0_0_18px_rgba(249,115,22,0.45)]
+      "><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-white" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"></path></svg></div><div class="hidden sm:flex flex-col items-start leading-none"><span class="text-[14px]  text-white group-hover:text-orange-300 transition-all">Login</span></div></button></div></div><div class="flex items-center gap-5 lg:hidden"><div class="relative"><button disabled="" class="
+        flex items-center gap-1
+
+        text-zinc-300
+        hover:text-white
+
+        transition-all duration-300
+              cursor-not-allowed
+              opacity-50
+        text-[15px]
+        font-medium
+      "><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" class="text-[22px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><span>Tamil</span><div style="transform: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="text-zinc-500 text-[20px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div></button></div><button class=" hidden
+       flex-col gap-[6px]
+      p-2
+      cursor-pointer
+      group
+    "><div class="w-8 h-[3px] bg-white rounded-full group-hover:bg-orange-500 transition-colors" style="transform: none;"></div><div class="w-8 h-[2px] bg-white rounded-full group-hover:bg-orange-500 transition-colors" style="transform: none; opacity: 1;"></div><div class="w-5 h-[3px] bg-white rounded-full group-hover:bg-orange-500 transition-colors self-end" style="transform: none; width: 20px;"></div></button></div></nav></header><div class="mt-28 min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]"><div class=""><div class="pt-8 pb-14"><div class="ml-5 mb-4 flex items-center justify-between shrink-0"><div class="flex items-center gap-3"><div class="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500"></div><div class="flex flex-col"><span class="
+          text-[9px]
+          md:text-[11px]
+          uppercase
+          tracking-[0.35em]
+          text-zinc-500
+          font-semibold
+        ">New Movies</span><h2 class="
+          text-[15px]
+          md:text-[20px]
+          font-black
+          uppercase
+          tracking-widest
+          bg-gradient-to-r
+          from-zinc-600
+          via-zinc-300
+          to-zinc-600
+          bg-clip-text
+          text-transparent
+        ">New Release</h2></div></div></div><section><div class="mt-0 md:mt-2 flex"><div class="md:block shrink-0"><div class="relative overflow-visible mt-2"><div class="absolute bottom-full left-0 right-0 mb-[3px] z-50" style="opacity: 1; transform: translateY(4.92993px) scale(0.802803);"><button class="w-full py-[2px] rounded bg-gradient-to-b from-zinc-800 to-black 
+                hover:from-zinc-700 hover:to-zinc-900 text-zinc-300 hover:text-white 
+                text-[7px] md:text-[8px] font-black uppercase tracking-widest 
+                shadow-md shadow-black/40 border border-zinc-800 
+                transition-all active:scale-95 cursor-pointer whitespace-nowrap">Reset</button></div><div class="
+          w-[55px]
+          md:w-[90px]
+          shrink-0
+          rounded-tr-2xl
+          rounded-br-2xl
+          border
+          border-zinc-800
+          bg-zinc-900
+          overflow-visible
+        "><div class="h-8 md:h-10 flex border-b border-zinc-800"><div class="relative flex-1 border-r border-zinc-800"><button class="w-full h-full flex items-center justify-center px-1"><span class="
+                  text-[9px]
+                  md:text-[11px]
+                  font-black
+                  tracking-widest
+                  bg-gradient-to-b
+                  from-zinc-100
+                  via-zinc-400
+                  to-zinc-700
+                  bg-clip-text
+                  text-transparent
+                ">2026</span></button></div><div class="relative w-[38px] md:w-[42px]"><button class="w-full h-full flex items-center justify-center px-1 transition-all "><span class="text-[9px] md:text-[11px] font-black tracking-widest text-white">DATE</span></button></div></div><div class="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar"><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">JAN</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">FEB</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">MAR</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">APR</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">MAY</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">JUN</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">JUL</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black">AUG</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">SEP</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">OCT</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">NOV</button><button class="w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all text-zinc-500 hover:bg-zinc-800/40 hover:text-white">DEC</button></div></div></div></div><div class="flex-1 mt-2 min-w-0 w-full rounded-2xl"><div class="px-1 relative"><div class="space-y-8"><div class="relative group mb-8 last:mb-0"><div class="relative overflow-hidden px-1 py-1"><div class="swiper swiper-initialized swiper-horizontal swiper-watch-progress nr-swiper !overflow-visible"><div class="swiper-wrapper"><div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="width: 305px; margin-right: 10px;"><a class="relative flex flex-col rounded-xl overflow-hidden
+        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        transition-all duration-500 ease-out
+        hover:border-zinc-500
+        hover:ring-2 hover:ring-zinc-500/20
+        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]" href="/movie/gdn-3180" data-discover="true"><div class="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden"><img alt="G.D.N." class="w-full h-full object-cover object-top transition-transform duration-500" loading="lazy" src="https://img.youtube.com/vi/cm94wIExsHc/hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div><div class="
+    absolute
+    top-0
+    left-0
+    right-0
+    
+
+    flex
+    items-center
+    justify-between
+
+    px-3
+    py-1.5
+
+    bg-gradient-to-r
+    from-zinc-700
+    via-zinc-800
+    to-zinc-900
+
+    border-b
+    border-zinc-600/30
+
+    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+  "><span class="
+        new-release-badge
+        relative
+        overflow-hidden
+
+        shrink-0
+
+        inline-flex
+        items-center
+        justify-center
+
+        px-2
+        py-[3px]
+
+        rounded-md
+
+        text-[7px]
+        md:text-[8px]
+
+        uppercase
+        tracking-[0.12em]
+            font-semibold
+        text-zinc-100
+      "><span class="shine"></span>NEW RELEASE</span></div><div class="
+              absolute
+              bottom-0
+              left-0
+              w-full
+              flex
+              items-center
+              gap-1
+              md:gap-2
+              px-3
+              py-1.5
+              bg-gradient-to-r
+              from-zinc-700
+              to-zinc-900
+              border-t
+              border-zinc-600/30
+            "><span class="
+                text-zinc-200
+                text-[9px]
+                font-bold
+                uppercase
+                tracking-[.08em]
+      ">Aug 07 2026</span><span class="
+    theatre-badge
+    relative
+    overflow-hidden
+    shrink-0
+    inline-flex
+    items-center
+    gap-[2px]
+    md:gap-1
+    px-1.5
+    md:px-2
+    py-[3px]
+    rounded-md
+    text-[7px]
+    md:text-[9px]
+    uppercase
+    tracking-[0.08em]
+    md:tracking-[0.12em]
+    text-zinc-300
+    leading-none
+  "><span class="shine"></span><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film md:w-[9px] md:h-[9px]" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg>In Theatre</span></div></div><div class="flex flex-col bg-zinc-900 border-t border-zinc-800
+        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"><div class="flex items-center justify-between gap-2 mb-1"><div class="flex-1 min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="" style="--distance: 0px;"><h3 class="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
+          font-bold leading-tight whitespace-nowrap">G.D.N.</h3></div></div></div></div><div class="mb-2 overflow-hidden"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Biography</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Drama</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Historical</span></div></div></div><div class="border-t border-zinc-800 mb-1.5"></div><div class="flex flex-col gap-1 w-full"><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Dir</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="inline-flex items-center bg-zinc-800 text-zinc-400
+          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">Krishnakumar Ramakumar</span></div></div></div></div><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Cast</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--marquee-distance: -457px; --marquee-duration: 16s;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">R. Madhavan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Priyamani</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sathyaraj</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Jayaram</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Dushara Vijayan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Yogi Babu</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Thambi Ramaiah</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Vinay Rai</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Richard Bhakti Klein</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Carl Andrew Harte</span></div></div></div></div></div><style jsx="true">
+          /* ── Marquee keyframes (nr- prefix) ── */
+          @keyframes nrDirectorMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            40% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            70% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-director-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nrDirectorMarquee 8s ease-in-out infinite;
+          }
+
+          @keyframes nrCastMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-cast-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nrCastMarquee 35s ease-in-out infinite;
+          }
+
+          @keyframes nrGenreMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-genre-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nrGenreMarquee 15s ease-in-out infinite;
+          }
+
+          @keyframes nrTitleMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-title-marquee {
+            display: inline-block;
+            width: max-content;
+            animation: nrTitleMarquee 10s ease-in-out infinite;
+          }
+
+          .new-release-badge {
+            border: 1px solid rgba(161, 161, 170, 0.35);
+            font-family: "Science Gothic", sans-serif;
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 200;
+            letter-spacing: 0.12em;
+          }
+
+          .new-release-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.13) 0%,
+              transparent 100%
+            );
+            border-radius: 6px 6px 0 0;
+            pointer-events: none;
+          }
+
+          .new-release-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.38) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+            animation: goldShine 12s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+          }
+          @keyframes goldShine {
+            0% {
+              transform: translateX(-160%) skewX(-18deg);
+            }
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+
+          /* ── Golden rating score ── */
+          .nr-rating-score {
+            background: linear-gradient(
+              180deg,
+              #fff7c2 0%,
+              #ffd95a 25%,
+              #facc15 55%,
+              #d97706 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+          }
+          .theatre-badge {
+            border: 1px solid rgba(161, 161, 170, 0.25);
+
+            background: linear-gradient(
+              180deg,
+              rgba(39, 39, 42, 0.9) 0%,
+              rgba(24, 24, 27, 0.95) 100%
+            );
+
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.08),
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+          }
+
+          .theatre-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            border-radius: 6px 6px 0 0;
+          }
+
+          .theatre-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.35) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+
+            animation: theatreShine 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+            pointer-events: none;
+          }
+
+          @keyframes theatreShine {
+            0% {
+              transform: translateX(-180%) skewX(-18deg);
+            }
+
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+        </style></div></a></div><div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-next" style="width: 305px; margin-right: 10px;"><a class="relative flex flex-col rounded-xl overflow-hidden
+        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        transition-all duration-500 ease-out
+        hover:border-zinc-500
+        hover:ring-2 hover:ring-zinc-500/20
+        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]" href="/movie/dc-6399" data-discover="true"><div class="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden"><img alt="DC" class="w-full h-full object-cover object-top transition-transform duration-500" loading="lazy" src="https://img.youtube.com/vi/2kntxizQIFI/hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div><div class="
+    absolute
+    top-0
+    left-0
+    right-0
+    
+
+    flex
+    items-center
+    justify-between
+
+    px-3
+    py-1.5
+
+    bg-gradient-to-r
+    from-zinc-700
+    via-zinc-800
+    to-zinc-900
+
+    border-b
+    border-zinc-600/30
+
+    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+  "><span class="
+        new-release-badge
+        relative
+        overflow-hidden
+
+        shrink-0
+
+        inline-flex
+        items-center
+        justify-center
+
+        px-2
+        py-[3px]
+
+        rounded-md
+
+        text-[7px]
+        md:text-[8px]
+
+        uppercase
+        tracking-[0.12em]
+            font-semibold
+        text-zinc-100
+      "><span class="shine"></span>NEW RELEASE</span></div><div class="
+              absolute
+              bottom-0
+              left-0
+              w-full
+              flex
+              items-center
+              gap-1
+              md:gap-2
+              px-3
+              py-1.5
+              bg-gradient-to-r
+              from-zinc-700
+              to-zinc-900
+              border-t
+              border-zinc-600/30
+            "><span class="
+                text-zinc-200
+                text-[9px]
+                font-bold
+                uppercase
+                tracking-[.08em]
+      ">Aug 07 2026</span><span class="
+    theatre-badge
+    relative
+    overflow-hidden
+    shrink-0
+    inline-flex
+    items-center
+    gap-[2px]
+    md:gap-1
+    px-1.5
+    md:px-2
+    py-[3px]
+    rounded-md
+    text-[7px]
+    md:text-[9px]
+    uppercase
+    tracking-[0.08em]
+    md:tracking-[0.12em]
+    text-zinc-300
+    leading-none
+  "><span class="shine"></span><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film md:w-[9px] md:h-[9px]" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg>In Theatre</span></div></div><div class="flex flex-col bg-zinc-900 border-t border-zinc-800
+        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"><div class="flex items-center justify-between gap-2 mb-1"><div class="flex-1 min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="" style="--distance: 0px;"><h3 class="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
+          font-bold leading-tight whitespace-nowrap">DC</h3></div></div></div></div><div class="mb-2 overflow-hidden"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Action</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Romance</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Thriller</span></div></div></div><div class="border-t border-zinc-800 mb-1.5"></div><div class="flex flex-col gap-1 w-full"><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Dir</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="inline-flex items-center bg-zinc-800 text-zinc-400
+          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">Arun Matheswaran</span></div></div></div></div><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Cast</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--marquee-distance: -37px; --marquee-duration: 16s;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Lokesh Kanagaraj</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Wamiqa Gabbi</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sanjana Krishnamoorthy</span></div></div></div></div></div><style jsx="true">
+          /* ── Marquee keyframes (nr- prefix) ── */
+          @keyframes nrDirectorMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            40% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            70% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-director-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nrDirectorMarquee 8s ease-in-out infinite;
+          }
+
+          @keyframes nrCastMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-cast-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nrCastMarquee 35s ease-in-out infinite;
+          }
+
+          @keyframes nrGenreMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-genre-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nrGenreMarquee 15s ease-in-out infinite;
+          }
+
+          @keyframes nrTitleMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nr-title-marquee {
+            display: inline-block;
+            width: max-content;
+            animation: nrTitleMarquee 10s ease-in-out infinite;
+          }
+
+          .new-release-badge {
+            border: 1px solid rgba(161, 161, 170, 0.35);
+            font-family: "Science Gothic", sans-serif;
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 200;
+            letter-spacing: 0.12em;
+          }
+
+          .new-release-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.13) 0%,
+              transparent 100%
+            );
+            border-radius: 6px 6px 0 0;
+            pointer-events: none;
+          }
+
+          .new-release-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.38) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+            animation: goldShine 12s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+          }
+          @keyframes goldShine {
+            0% {
+              transform: translateX(-160%) skewX(-18deg);
+            }
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+
+          /* ── Golden rating score ── */
+          .nr-rating-score {
+            background: linear-gradient(
+              180deg,
+              #fff7c2 0%,
+              #ffd95a 25%,
+              #facc15 55%,
+              #d97706 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+          }
+          .theatre-badge {
+            border: 1px solid rgba(161, 161, 170, 0.25);
+
+            background: linear-gradient(
+              180deg,
+              rgba(39, 39, 42, 0.9) 0%,
+              rgba(24, 24, 27, 0.95) 100%
+            );
+
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.08),
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+          }
+
+          .theatre-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            border-radius: 6px 6px 0 0;
+          }
+
+          .theatre-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.35) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+
+            animation: theatreShine 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+            pointer-events: none;
+          }
+
+          @keyframes theatreShine {
+            0% {
+              transform: translateX(-180%) skewX(-18deg);
+            }
+
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+        </style></div></a></div></div></div></div></div></div><style jsx="true">
+        .nr-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .nr-scrollbar::-webkit-scrollbar-track {
+          background: #1a1a1a;
+          border-radius: 10px;
+        }
+        .nr-scrollbar::-webkit-scrollbar-thumb {
+          background: #333;
+          border-radius: 10px;
+        }
+        .nr-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #ff7d3b;
+        }
+      </style></div></div></div></section></div><div><div class="ml-5 mb-4 flex items-center gap-3"><div class="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500"></div><div class="flex flex-col"><span class="
+        text-[9px]
+        md:text-[11px]
+        uppercase
+        tracking-[0.35em]
+        text-zinc-500
+        font-semibold
+      ">New Movies</span><h2 class="
+        text-[15px]
+        md:text-[20px]
+        font-black
+        uppercase
+        tracking-widest
+        bg-gradient-to-r
+        from-zinc-600
+        via-zinc-300
+        to-zinc-600
+        bg-clip-text
+        text-transparent
+      ">Upcoming</h2></div></div><section><div class="mt-0 md:mt-2 flex"><div class="md:block shrink-0"><div class="relative overflow-visible mt-2"><div class="absolute bottom-full left-0 right-0 mb-[3px] z-50" style="opacity: 1; transform: translateY(4.92993px) scale(0.802803);"><button class="w-full py-[2px] rounded bg-gradient-to-b from-zinc-800 to-black 
+                hover:from-zinc-700 hover:to-zinc-900 text-zinc-300 hover:text-white 
+                text-[7px] md:text-[8px] font-black uppercase tracking-widest 
+                shadow-md shadow-black/40 border border-zinc-800 
+                transition-all active:scale-95 cursor-pointer whitespace-nowrap">Reset</button></div><div class="
+          w-[55px]
+          md:w-[90px]
+          shrink-0
+          rounded-tr-2xl
+          rounded-br-2xl
+          border
+          border-zinc-800
+          bg-zinc-900
+          overflow-visible
+        "><div class="h-8 md:h-10 flex border-b border-zinc-800"><div class="relative flex-1 border-r border-zinc-800"><button class="w-full h-full flex items-center justify-center px-1"><span class="
+                  text-[9px]
+                  md:text-[11px]
+                  font-black
+                  tracking-widest
+                  bg-gradient-to-b
+                  from-zinc-100
+                  via-zinc-400
+                  to-zinc-700
+                  bg-clip-text
+                  text-transparent
+                ">2026</span></button></div><div class="relative w-[38px] md:w-[42px]"><button class="w-full h-full flex items-center justify-center px-1 transition-all "><span class="text-[9px] md:text-[11px] font-black tracking-widest text-white">DATE</span></button></div></div><div class="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar"><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black
+              ">AUG</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">SEP</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">OCT</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">NOV</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">DEC</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">JAN</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">FEB</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">MAR</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">APR</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">MAY</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">JUN</button><button class="
+                w-full
+                h-10
+                border-b
+                border-zinc-800
+                text-center
+                text-[8px]
+                md:text-[11px]
+                tracking-[0.2em]
+                font-bold
+                transition-all
+                text-zinc-500 hover:bg-zinc-800/40 hover:text-white
+              ">JUL</button></div></div></div></div><div class="flex-1 mt-2 min-w-0 w-full rounded-2xl"><div class="px-1 relative"><div class="space-y-8"><div class="relative group mb-8 last:mb-0"><div class="relative overflow-hidden px-1 py-1"><div class="absolute -right-6 top-0 bottom-0 w-10 md:w-14 z-[8]
+            rounded-tr-2xl pointer-events-none
+            bg-gradient-to-l from-zinc-900 via-zinc-950 to-transparent"></div><button class="absolute right-1 top-1/2 -translate-y-1/2 z-10
+              bg-black/75 hover:bg-black/95 text-white p-2
+              rounded-l-lg border-y border-l border-gray-800 backdrop-blur-sm
+              opacity-0 group-hover:opacity-100 transition-all duration-300
+              shadow-lg hidden md:flex items-center justify-center hover:scale-105"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button><div class="swiper swiper-initialized swiper-horizontal swiper-watch-progress nm-swiper !overflow-visible"><div class="swiper-wrapper" style="cursor: grab;"><div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="width: 305px; margin-right: 10px;"><a class="relative flex flex-col rounded-xl overflow-hidden
+        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        transition-all duration-500 ease-out
+        hover:border-zinc-500
+        hover:ring-2 hover:ring-zinc-500/20
+        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]" href="/movie/magudam-3160" data-discover="true"><div class="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden"><img alt="Magudam" class="w-full h-full object-cover object-top transition-transform duration-500" loading="lazy" src="https://img.youtube.com/vi/FzV1JBztvgU/hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div><div class="
+    absolute
+    top-0
+    left-0
+    right-0
+    
+
+    flex
+    items-center
+    justify-between
+
+    px-3
+    py-1.5
+
+    bg-gradient-to-r
+    from-zinc-700
+    via-zinc-800
+    to-zinc-900
+
+    border-b
+    border-zinc-600/30
+
+    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+  "><span class="
+        new-release-badge
+        relative
+        overflow-hidden
+
+        shrink-0
+
+        inline-flex
+        items-center
+        justify-center
+
+        px-2
+        py-[3px]
+
+        rounded-md
+
+        text-[7px]
+        md:text-[8px]
+
+        uppercase
+        tracking-[0.12em]
+
+        text-zinc-100
+      "><span class="shine"></span>UPCOMING</span></div><div class="
+    absolute
+    bottom-0
+    left-0
+    w-full
+    flex
+    items-center
+    justify-between
+    px-3
+    py-1.5
+    bg-gradient-to-r
+    from-zinc-700
+    to-zinc-900
+    border-t
+    border-zinc-600/30
+    z-10
+  "><div class="flex items-center gap-2"><span class="
+        text-zinc-200
+        text-[9px]
+        font-bold
+        uppercase
+        tracking-[.08em]
+      ">Aug 14 2026</span></div><span class="
+        theatre-badge
+        relative
+        overflow-hidden
+        shrink-0
+        inline-flex
+        items-center
+        justify-center
+        px-2
+        py-[3px]
+        rounded-md
+        text-[7px]
+        md:text-[9px]
+        
+        tracking-[0.08em]
+        text-zinc-300
+      "><span class="shine"></span>2 days</span></div></div><div class="flex flex-col bg-zinc-900 border-t border-zinc-800
+        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"><div class="flex items-center justify-between gap-2 mb-1"><div class="flex-1 min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="" style="--distance: 0px;"><h3 class="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
+          font-bold leading-tight whitespace-nowrap">Magudam</h3></div></div></div></div><div class="mb-2 overflow-hidden"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Action</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Drama</span></div></div></div><div class="border-t border-zinc-800 mb-1.5"></div><div class="flex flex-col gap-1 w-full"><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Dir</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="inline-flex items-center bg-zinc-800 text-zinc-400
+          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">Vishal</span></div></div></div></div><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Cast</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--marquee-distance: -386px; --marquee-duration: 16s;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Vishal</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Anjali</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Dushara Vijayan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">John Vijay</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Jeyaprakash</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Yogi Babu</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Thambi Ramaiah</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Ajay</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Vamsi Krishna</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Abu Salim</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Arjai</span></div></div></div></div></div><style jsx="true">
+          /* ── Marquee keyframes (nm- prefixed to avoid conflicts) ── */
+          @keyframes nmDirectorMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            40% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            70% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-director-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmDirectorMarquee 8s ease-in-out infinite;
+          }
+
+          @keyframes nmCastMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-cast-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmCastMarquee 35s ease-in-out infinite;
+          }
+
+          @keyframes nmGenreMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-genre-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmGenreMarquee 15s ease-in-out infinite;
+          }
+
+          @keyframes nmTitleMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-title-marquee {
+            display: inline-block;
+            width: max-content;
+            animation: nmTitleMarquee 10s ease-in-out infinite;
+          }
+
+          .new-release-badge {
+            border: 1px solid rgba(161, 161, 170, 0.35);
+            font-family: "Science Gothic", sans-serif;
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 200;
+            letter-spacing: 0.12em;
+          }
+
+          .new-release-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.13) 0%,
+              transparent 100%
+            );
+            border-radius: 6px 6px 0 0;
+            pointer-events: none;
+          }
+
+          .new-release-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.38) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+            animation: goldShine 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+          }
+          @keyframes goldShine {
+            0% {
+              transform: translateX(-160%) skewX(-18deg);
+            }
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+
+          /* ── Golden rating score ── */
+          .nm-rating-score {
+            background: linear-gradient(
+              180deg,
+              #fff7c2 0%,
+              #ffd95a 25%,
+              #facc15 55%,
+              #d97706 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+          }
+        </style></div></a></div><div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-next" style="width: 305px; margin-right: 10px;"><a class="relative flex flex-col rounded-xl overflow-hidden
+        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        transition-all duration-500 ease-out
+        hover:border-zinc-500
+        hover:ring-2 hover:ring-zinc-500/20
+        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]" href="/movie/irumudi-kattu-4706" data-discover="true"><div class="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden"><img alt="Irumudi" class="w-full h-full object-cover object-top transition-transform duration-500" loading="lazy" src="https://img.youtube.com/vi/27wtdPHw25c/hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div><div class="
+    absolute
+    top-0
+    left-0
+    right-0
+    
+
+    flex
+    items-center
+    justify-between
+
+    px-3
+    py-1.5
+
+    bg-gradient-to-r
+    from-zinc-700
+    via-zinc-800
+    to-zinc-900
+
+    border-b
+    border-zinc-600/30
+
+    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+  "><span class="
+        new-release-badge
+        relative
+        overflow-hidden
+
+        shrink-0
+
+        inline-flex
+        items-center
+        justify-center
+
+        px-2
+        py-[3px]
+
+        rounded-md
+
+        text-[7px]
+        md:text-[8px]
+
+        uppercase
+        tracking-[0.12em]
+
+        text-zinc-100
+      "><span class="shine"></span>UPCOMING</span></div><div class="
+    absolute
+    bottom-0
+    left-0
+    w-full
+    flex
+    items-center
+    justify-between
+    px-3
+    py-1.5
+    bg-gradient-to-r
+    from-zinc-700
+    to-zinc-900
+    border-t
+    border-zinc-600/30
+    z-10
+  "><div class="flex items-center gap-2"><span class="
+        text-zinc-200
+        text-[9px]
+        font-bold
+        uppercase
+        tracking-[.08em]
+      ">Aug 21 2026</span></div><span class="
+        theatre-badge
+        relative
+        overflow-hidden
+        shrink-0
+        inline-flex
+        items-center
+        justify-center
+        px-2
+        py-[3px]
+        rounded-md
+        text-[7px]
+        md:text-[9px]
+        
+        tracking-[0.08em]
+        text-zinc-300
+      "><span class="shine"></span>9 days</span></div></div><div class="flex flex-col bg-zinc-900 border-t border-zinc-800
+        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"><div class="flex items-center justify-between gap-2 mb-1"><div class="flex-1 min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="" style="--distance: 0px;"><h3 class="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
+          font-bold leading-tight whitespace-nowrap">Irumudi</h3></div></div></div></div><div class="mb-2 overflow-hidden"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Devotional</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Drama</span></div></div></div><div class="border-t border-zinc-800 mb-1.5"></div><div class="flex flex-col gap-1 w-full"><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Dir</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="inline-flex items-center bg-zinc-800 text-zinc-400
+          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">Shiva Nirvana</span></div></div></div></div><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Cast</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--marquee-distance: -117px; --marquee-duration: 16s;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Priya Bhavanishankar</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Mass Maharaja Raviteja</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sai Kumar</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Baby Nakshathra</span></div></div></div></div></div><style jsx="true">
+          /* ── Marquee keyframes (nm- prefixed to avoid conflicts) ── */
+          @keyframes nmDirectorMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            40% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            70% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-director-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmDirectorMarquee 8s ease-in-out infinite;
+          }
+
+          @keyframes nmCastMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-cast-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmCastMarquee 35s ease-in-out infinite;
+          }
+
+          @keyframes nmGenreMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-genre-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmGenreMarquee 15s ease-in-out infinite;
+          }
+
+          @keyframes nmTitleMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-title-marquee {
+            display: inline-block;
+            width: max-content;
+            animation: nmTitleMarquee 10s ease-in-out infinite;
+          }
+
+          .new-release-badge {
+            border: 1px solid rgba(161, 161, 170, 0.35);
+            font-family: "Science Gothic", sans-serif;
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 200;
+            letter-spacing: 0.12em;
+          }
+
+          .new-release-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.13) 0%,
+              transparent 100%
+            );
+            border-radius: 6px 6px 0 0;
+            pointer-events: none;
+          }
+
+          .new-release-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.38) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+            animation: goldShine 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+          }
+          @keyframes goldShine {
+            0% {
+              transform: translateX(-160%) skewX(-18deg);
+            }
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+
+          /* ── Golden rating score ── */
+          .nm-rating-score {
+            background: linear-gradient(
+              180deg,
+              #fff7c2 0%,
+              #ffd95a 25%,
+              #facc15 55%,
+              #d97706 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+          }
+        </style></div></a></div><div class="swiper-slide swiper-slide-visible" style="width: 305px; margin-right: 10px;"><a class="relative flex flex-col rounded-xl overflow-hidden
+        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        transition-all duration-500 ease-out
+        hover:border-zinc-500
+        hover:ring-2 hover:ring-zinc-500/20
+        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]" href="/movie/hi-4626" data-discover="true"><div class="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden"><img alt="Hi" class="w-full h-full object-cover object-top transition-transform duration-500" loading="lazy" src="https://img.youtube.com/vi/pnOB6HQ7AYc/hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div><div class="
+    absolute
+    top-0
+    left-0
+    right-0
+    
+
+    flex
+    items-center
+    justify-between
+
+    px-3
+    py-1.5
+
+    bg-gradient-to-r
+    from-zinc-700
+    via-zinc-800
+    to-zinc-900
+
+    border-b
+    border-zinc-600/30
+
+    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+  "><span class="
+        new-release-badge
+        relative
+        overflow-hidden
+
+        shrink-0
+
+        inline-flex
+        items-center
+        justify-center
+
+        px-2
+        py-[3px]
+
+        rounded-md
+
+        text-[7px]
+        md:text-[8px]
+
+        uppercase
+        tracking-[0.12em]
+
+        text-zinc-100
+      "><span class="shine"></span>UPCOMING</span></div><div class="
+    absolute
+    bottom-0
+    left-0
+    w-full
+    flex
+    items-center
+    justify-between
+    px-3
+    py-1.5
+    bg-gradient-to-r
+    from-zinc-700
+    to-zinc-900
+    border-t
+    border-zinc-600/30
+    z-10
+  "><div class="flex items-center gap-2"><span class="
+        text-zinc-200
+        text-[9px]
+        font-bold
+        uppercase
+        tracking-[.08em]
+      ">Aug 28 2026</span></div><span class="
+        theatre-badge
+        relative
+        overflow-hidden
+        shrink-0
+        inline-flex
+        items-center
+        justify-center
+        px-2
+        py-[3px]
+        rounded-md
+        text-[7px]
+        md:text-[9px]
+        
+        tracking-[0.08em]
+        text-zinc-300
+      "><span class="shine"></span>16 days</span></div></div><div class="flex flex-col bg-zinc-900 border-t border-zinc-800
+        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"><div class="flex items-center justify-between gap-2 mb-1"><div class="flex-1 min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="" style="--distance: 0px;"><h3 class="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
+          font-bold leading-tight whitespace-nowrap">Hi</h3></div></div></div></div><div class="mb-2 overflow-hidden"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Romance</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Drama</span></div></div></div><div class="border-t border-zinc-800 mb-1.5"></div><div class="flex flex-col gap-1 w-full"><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Dir</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="inline-flex items-center bg-zinc-800 text-zinc-400
+          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">Vignesh Shivan</span></div></div></div></div><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Cast</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--marquee-distance: -0px; --marquee-duration: 16s;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Kavin</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Nayanthara</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Yogi Babu</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sathyaraj</span></div></div></div></div></div><style jsx="true">
+          /* ── Marquee keyframes (nm- prefixed to avoid conflicts) ── */
+          @keyframes nmDirectorMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            40% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            70% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-director-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmDirectorMarquee 8s ease-in-out infinite;
+          }
+
+          @keyframes nmCastMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-cast-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmCastMarquee 35s ease-in-out infinite;
+          }
+
+          @keyframes nmGenreMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-genre-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmGenreMarquee 15s ease-in-out infinite;
+          }
+
+          @keyframes nmTitleMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-title-marquee {
+            display: inline-block;
+            width: max-content;
+            animation: nmTitleMarquee 10s ease-in-out infinite;
+          }
+
+          .new-release-badge {
+            border: 1px solid rgba(161, 161, 170, 0.35);
+            font-family: "Science Gothic", sans-serif;
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 200;
+            letter-spacing: 0.12em;
+          }
+
+          .new-release-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.13) 0%,
+              transparent 100%
+            );
+            border-radius: 6px 6px 0 0;
+            pointer-events: none;
+          }
+
+          .new-release-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.38) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+            animation: goldShine 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+          }
+          @keyframes goldShine {
+            0% {
+              transform: translateX(-160%) skewX(-18deg);
+            }
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+
+          /* ── Golden rating score ── */
+          .nm-rating-score {
+            background: linear-gradient(
+              180deg,
+              #fff7c2 0%,
+              #ffd95a 25%,
+              #facc15 55%,
+              #d97706 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+          }
+        </style></div></a></div><div class="swiper-slide" style="width: 305px; margin-right: 10px;"><a class="relative flex flex-col rounded-xl overflow-hidden
+        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        transition-all duration-500 ease-out
+        hover:border-zinc-500
+        hover:ring-2 hover:ring-zinc-500/20
+        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]" href="/movie/karathey-babu-7254" data-discover="true"><div class="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden"><img alt="Karathey Babu" class="w-full h-full object-cover object-top transition-transform duration-500" loading="lazy" src="https://img.youtube.com/vi/v0F4HLgmAZg/hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent"></div><div class="
+    absolute
+    top-0
+    left-0
+    right-0
+    
+
+    flex
+    items-center
+    justify-between
+
+    px-3
+    py-1.5
+
+    bg-gradient-to-r
+    from-zinc-700
+    via-zinc-800
+    to-zinc-900
+
+    border-b
+    border-zinc-600/30
+
+    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+  "><span class="
+        new-release-badge
+        relative
+        overflow-hidden
+
+        shrink-0
+
+        inline-flex
+        items-center
+        justify-center
+
+        px-2
+        py-[3px]
+
+        rounded-md
+
+        text-[7px]
+        md:text-[8px]
+
+        uppercase
+        tracking-[0.12em]
+
+        text-zinc-100
+      "><span class="shine"></span>UPCOMING</span></div><div class="
+    absolute
+    bottom-0
+    left-0
+    w-full
+    flex
+    items-center
+    justify-between
+    px-3
+    py-1.5
+    bg-gradient-to-r
+    from-zinc-700
+    to-zinc-900
+    border-t
+    border-zinc-600/30
+    z-10
+  "><div class="flex items-center gap-2"><span class="
+        text-zinc-200
+        text-[9px]
+        font-bold
+        uppercase
+        tracking-[.08em]
+      ">Aug 28 2026</span></div><span class="
+        theatre-badge
+        relative
+        overflow-hidden
+        shrink-0
+        inline-flex
+        items-center
+        justify-center
+        px-2
+        py-[3px]
+        rounded-md
+        text-[7px]
+        md:text-[9px]
+        
+        tracking-[0.08em]
+        text-zinc-300
+      "><span class="shine"></span>16 days</span></div></div><div class="flex flex-col bg-zinc-900 border-t border-zinc-800
+        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"><div class="flex items-center justify-between gap-2 mb-1"><div class="flex-1 min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="" style="--distance: 0px;"><h3 class="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
+          font-bold leading-tight whitespace-nowrap">Karathey Babu</h3></div></div></div></div><div class="mb-2 overflow-hidden"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Action</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sports</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Drama</span></div></div></div><div class="border-t border-zinc-800 mb-1.5"></div><div class="flex flex-col gap-1 w-full"><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Dir</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--distance: 0px;"><span class="inline-flex items-center bg-zinc-800 text-zinc-400
+          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">Ganesh K. Babu</span></div></div></div></div><div class="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]"><span class="text-zinc-600 font-semibold tracking-wider mt-0.5">Cast</span><div class="overflow-hidden min-w-0"><div class="overflow-hidden min-w-0 w-full"><div class="inline-flex" style="--marquee-distance: -1249px; --marquee-duration: 16s;"><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Ravi Mohan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Daudee S. Jiwal</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Shakthi Vasudevan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">K. S. Ravikumar</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Nassar</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Kaali Venkat</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">VTV Ganesh</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Subramaniam Siva</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Kavithalayaa Krishnan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Pradeep Antony</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Raja Rani Pandian</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sandeep Raj</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Knife Naren</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">VJ Ashiq</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sindhupriya</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Ajith Gosh</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Aravindh</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Kalki Raja</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sri Dhanya</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Anandhi</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Ilan</span><span class="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1">Sam Anderson</span></div></div></div></div></div><style jsx="true">
+          /* ── Marquee keyframes (nm- prefixed to avoid conflicts) ── */
+          @keyframes nmDirectorMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            40% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            70% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-director-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmDirectorMarquee 8s ease-in-out infinite;
+          }
+
+          @keyframes nmCastMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-cast-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmCastMarquee 35s ease-in-out infinite;
+          }
+
+          @keyframes nmGenreMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-genre-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: nmGenreMarquee 15s ease-in-out infinite;
+          }
+
+          @keyframes nmTitleMarquee {
+            0% {
+              transform: translateX(0);
+            }
+            45% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            75% {
+              transform: translateX(calc(-1 * var(--distance)));
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .nm-title-marquee {
+            display: inline-block;
+            width: max-content;
+            animation: nmTitleMarquee 10s ease-in-out infinite;
+          }
+
+          .new-release-badge {
+            border: 1px solid rgba(161, 161, 170, 0.35);
+            font-family: "Science Gothic", sans-serif;
+            box-shadow:
+              0 0 10px rgba(161, 161, 170, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 200;
+            letter-spacing: 0.12em;
+          }
+
+          .new-release-badge::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0.13) 0%,
+              transparent 100%
+            );
+            border-radius: 6px 6px 0 0;
+            pointer-events: none;
+          }
+
+          .new-release-badge .shine {
+            position: absolute;
+            inset: 0;
+            width: 45%;
+            background: linear-gradient(
+              105deg,
+              transparent 0%,
+              rgba(255, 255, 255, 0.06) 20%,
+              rgba(255, 255, 255, 0.38) 50%,
+              rgba(255, 255, 255, 0.06) 80%,
+              transparent 100%
+            );
+            animation: goldShine 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            pointer-events: none;
+          }
+          @keyframes goldShine {
+            0% {
+              transform: translateX(-160%) skewX(-18deg);
+            }
+            100% {
+              transform: translateX(320%) skewX(-18deg);
+            }
+          }
+
+          /* ── Golden rating score ── */
+          .nm-rating-score {
+            background: linear-gradient(
+              180deg,
+              #fff7c2 0%,
+              #ffd95a 25%,
+              #facc15 55%,
+              #d97706 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+          }
+        </style></div></a></div></div></div></div></div></div><style jsx="true">
+        .nm-custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .nm-custom-scrollbar::-webkit-scrollbar-track {
+          background: #1a1a1a;
+          border-radius: 10px;
+        }
+        .nm-custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #333;
+          border-radius: 10px;
+        }
+        .nm-custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #ff7d3b;
+        }
+      </style></div></div></div></section></div></div></div><div class="lg:hidden fixed bottom-0 left-0 right-0 z-[9999]" style="padding-bottom: env(safe-area-inset-bottom);"><div class="relative w-full" style="height: 80px;"><svg viewBox="0 0 390 80" preserveAspectRatio="none" class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="navBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1c1c1f"></stop><stop offset="100%" stop-color="#0f0f12"></stop></linearGradient><filter id="blueGlow"><feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur><feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><path fill="url(#navBg)" d="M0,0 L305,0 Q319,0 325,8.96 Q345,28 351,28 Q357,28 377,8.96 Q383,0 397,0 L390,0 L390,80 L0,80 Z"></path><line x1="0" y1="0.5" y2="0.5" stroke="#3f3f46" stroke-width="0.6" x2="305"></line><line x2="390" y1="0.5" y2="0.5" stroke="#3f3f46" stroke-width="0.6" x1="397"></line><rect x="0" y="0" width="390" height="20" fill="url(#sheen)" opacity="0.04"></rect></svg><div class="absolute inset-0 flex items-end justify-around pb-2.5 px-1"><button class="relative flex flex-col items-center justify-end gap-1 min-w-[60px] pb-0.5" style="min-height: 56px;"><div class="relative z-10" style="transform: none; opacity: 1;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="text-[22px] text-zinc-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15.98 2.442H8.02L0 10.46h2.275l6.882-6.88 6.881 6.881H24l-8.02-8.018m-.492 9.348L9.157 5.459 4.01 10.605v4.987a1.33 1.33 0 0 0 1.329 1.329h6.077l4.637 4.637v-4.637h2.598a1.33 1.33 0 0 0 1.33-1.33V11.79h-4.494Z"></path></svg></div><span class="relative z-10 text-[10px] font-medium transition-colors duration-300
+        text-zinc-500">Home</span></button><button class="relative flex flex-col items-center justify-end gap-1 min-w-[60px] pb-0.5" style="min-height: 56px;"><div class="relative z-10" style="transform: none; opacity: 1;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" class="text-[22px] text-zinc-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M216,40H40A16,16,0,0,0,24,56V216a8,8,0,0,0,11.58,7.15L64,208.94l28.42,14.21a8,8,0,0,0,7.16,0L128,208.94l28.42,14.21a8,8,0,0,0,7.16,0L192,208.94l28.42,14.21A8,8,0,0,0,232,216V56A16,16,0,0,0,216,40Zm0,163.06-20.42-10.22a8,8,0,0,0-7.16,0L160,207.06l-28.42-14.22a8,8,0,0,0-7.16,0L96,207.06,67.58,192.84a8,8,0,0,0-7.16,0L40,203.06V56H216ZM136,112a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H144A8,8,0,0,1,136,112Zm0,32a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H144A8,8,0,0,1,136,144ZM64,168h48a8,8,0,0,0,8-8V96a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v64A8,8,0,0,0,64,168Zm8-64h32v48H72Z"></path></svg></div><span class="relative z-10 text-[10px] font-medium transition-colors duration-300
+        text-zinc-500">News</span></button><button class="relative flex flex-col items-center justify-end gap-1 min-w-[60px] pb-0.5" style="min-height: 56px;"><div class="relative z-10" style="transform: none; opacity: 1;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="text-[22px] text-zinc-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg></div><span class="relative z-10 text-[10px] font-medium transition-colors duration-300
+        text-zinc-500">Search</span></button><button class="relative flex flex-col items-center justify-end gap-1 min-w-[60px] pb-0.5" style="min-height: 56px;"><div class="relative z-10" style="transform: none; opacity: 1;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-[22px] text-zinc-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g id="Stream_On"><g><path d="M6.26,19.089A9.625,9.625,0,0,1,6.234,4.911C6.709,4.475,6,3.769,5.527,4.2A10.516,10.516,0,0,0,5.553,19.8c.475.433,1.184-.273.707-.707Z"></path><path d="M8.84,15.706a5.024,5.024,0,0,1-.014-7.412c.474-.437-.234-1.143-.707-.707a6.028,6.028,0,0,0,.014,8.826c.474.434,1.183-.272.707-.707Z"></path><circle cx="12" cy="12" r="1.244"></circle><path d="M17.74,4.911a9.625,9.625,0,0,1,.026,14.178c-.475.436.234,1.142.707.707A10.516,10.516,0,0,0,18.447,4.2c-.475-.433-1.184.273-.707.707Z"></path><path d="M15.16,8.294a5.024,5.024,0,0,1,.014,7.412c-.474.437.234,1.143.707.707a6.028,6.028,0,0,0-.014-8.826c-.474-.434-1.183.272-.707.707Z"></path></g></g></svg></div><span class="relative z-10 text-[10px] font-medium transition-colors duration-300
+        text-zinc-500">Stream</span></button><button class="relative flex flex-col items-center justify-end gap-1 min-w-[60px] pb-0.5" style="min-height: 56px;"><div class="absolute flex items-center justify-center rounded-full z-20" style="top: -30px; width: 52px; height: 52px; background: linear-gradient(145deg, rgb(30, 58, 138), rgb(37, 99, 235), rgb(96, 165, 250)); box-shadow: rgb(15, 15, 18) 0px 0px 0px 3px, rgba(96, 165, 250, 0.55) 0px 0px 18px, rgba(0, 0, 0, 0.6) 0px 4px 14px; opacity: 1; transform: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-[22px] text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 11c0-.959-.68-1.761-1.581-1.954C16.779 8.445 17 7.75 17 7c0-2.206-1.794-4-4-4-1.516 0-2.822.857-3.5 2.104C8.822 3.857 7.516 3 6 3 3.794 3 2 4.794 2 7c0 .902.312 1.726.817 2.396A1.993 1.993 0 0 0 2 11v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-2.637l4 2v-7l-4 2V11zm-5-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zM6 5c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path></svg><div class="absolute -bottom-1.5 left-1/2 -translate-x-1/2
+              w-8 h-2 rounded-full blur-md
+              bg-blue-400/40"></div></div><div class="relative z-10" style="transform: scale(0.8); opacity: 0;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-[22px] text-zinc-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 11c0-.959-.68-1.761-1.581-1.954C16.779 8.445 17 7.75 17 7c0-2.206-1.794-4-4-4-1.516 0-2.822.857-3.5 2.104C8.822 3.857 7.516 3 6 3 3.794 3 2 4.794 2 7c0 .902.312 1.726.817 2.396A1.993 1.993 0 0 0 2 11v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-2.637l4 2v-7l-4 2V11zm-5-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zM6 5c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path></svg></div><span class="relative z-10 text-[10px] font-medium transition-colors duration-300
+        text-blue-300 font-semibold">Movies</span></button></div></div></div><footer class="bg-black/90 text-gray-300 mb-20 md:mb-0  border-t border-white/10"><div class="flex flex-row items-center px-4 md:px-10 mx-auto justify-between py-2 max-w-7xl"><div class="flex  flex-col  items-center md:items-start gap-1 md:max-w-sm"><a class="flex self-start gap-1" href="/" data-discover="true"><img alt="NextShow Logo" class="w-20 h-14 object-contain" src="/logo3.png"></a><div class="flex justify-center md:justify-end gap-3 "><a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20 hover:scale-105 transition"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" class="text-[14px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a><a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20 hover:scale-105 transition"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-[14px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20 hover:scale-105 transition"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="text-[14px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a><a href="#" class="p-2 bg-white/10 rounded-full hover:bg-white/20 hover:scale-105 transition"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[14px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></div></div><div class="flex flex-col gap-1 text-[12px] text-gray-400 text-center md:text-right"><h3 class="text-white text-sm text-end font-semibold">Contact</h3><p>Have suggestions or feedback?</p><p class="self-end">Email: <a href="mailto:info@nextshow.in" class="text-orange-400 hover:text-orange-300 transition-colors">info@nextshow.in</a></p><span>Developed by <a target="_blank" href="https://amigowebster.com/" class="text-orange-400 underline hover:text-orange-300 transition">Nextshow Team</a></span></div></div></footer></div></div>
+  
+
+<script src="https://accounts.google.com/gsi/client" async="" defer=""></script></body></html>

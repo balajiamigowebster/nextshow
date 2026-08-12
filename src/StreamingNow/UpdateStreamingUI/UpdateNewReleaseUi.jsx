@@ -41,32 +41,30 @@ const TimelineContent = ({
     (_, i) => CURRENT_YEAR - i,
   );
 
-  const timelineMonths = useMemo(() => {
-    const currentMonth = CURRENT.getMonth();
-    const currentYear = CURRENT.getFullYear();
+  const monthsList = useMemo(() => {
     const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    const list = [];
+    const currentMonthIdx = CURRENT.getMonth();
     
-    if (direction === "backward") {
-      for (let i = 5; i >= 0; i--) {
-        const d = new Date(currentYear, currentMonth - i, 1);
+    if (direction === "forward") {
+      const list = [];
+      for (let i = 0; i < 12; i++) {
+        const idx = (currentMonthIdx + i) % 12;
         list.push({
-          name: MONTH_NAMES[d.getMonth()],
-          monthNumber: d.getMonth() + 1,
-          year: d.getFullYear(),
+          name: MONTH_NAMES[idx],
+          monthNumber: idx + 1,
         });
       }
+      return list;
     } else {
-      for (let i = 0; i < 6; i++) {
-        const d = new Date(currentYear, currentMonth + i, 1);
+      const list = [];
+      for (let i = 0; i < 12; i++) {
         list.push({
-          name: MONTH_NAMES[d.getMonth()],
-          monthNumber: d.getMonth() + 1,
-          year: d.getFullYear(),
+          name: MONTH_NAMES[i],
+          monthNumber: i + 1,
         });
       }
+      return list;
     }
-    return list;
   }, [direction]);
 
   const totalDays = useMemo(() => {
