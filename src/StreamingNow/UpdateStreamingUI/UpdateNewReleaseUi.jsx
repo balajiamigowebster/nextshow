@@ -340,6 +340,61 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
   const [yearPopupOpen, setYearPopupOpen] = useState(false);
   const [datePopupOpen, setDatePopupOpen] = useState(false);
 
+  useEffect(() => {
+    if (newReleaseStreaming && newReleaseStreaming.length > 0) {
+      const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+      const currentMonth = new Date().getMonth() + 1;
+      
+      const hasCurrentMonthData = newReleaseStreaming.some((movie) => {
+        const dateToCheck = movie.ottReleaseDate || movie.releaseDate;
+        if (!dateToCheck || dateToCheck === "TBA") return false;
+        const parts = dateToCheck.trim().split(/\s+/);
+        let monthNumber = -1;
+        let yearVal = "";
+        parts.forEach((part) => {
+          const cleanPart = part.toUpperCase().replace(/[^A-Z]/g, "");
+          if (cleanPart.length === 3) {
+            const idx = MONTH_NAMES.indexOf(cleanPart);
+            if (idx !== -1) monthNumber = idx + 1;
+          }
+          if (/^\d{4}$/.test(part)) yearVal = part;
+        });
+        return monthNumber === currentMonth && yearVal === String(selectedYear);
+      });
+      
+      if (!hasCurrentMonthData && selectedMonth === currentMonth) {
+        let closestMonth = currentMonth;
+        let minDiff = 13;
+        
+        newReleaseStreaming.forEach((movie) => {
+          const dateToCheck = movie.ottReleaseDate || movie.releaseDate;
+          if (!dateToCheck || dateToCheck === "TBA") return;
+          const parts = dateToCheck.trim().split(/\s+/);
+          let monthNumber = -1;
+          let yearVal = "";
+          parts.forEach((part) => {
+            const cleanPart = part.toUpperCase().replace(/[^A-Z]/g, "");
+            if (cleanPart.length === 3) {
+              const idx = MONTH_NAMES.indexOf(cleanPart);
+              if (idx !== -1) monthNumber = idx + 1;
+            }
+            if (/^\d{4}$/.test(part)) yearVal = part;
+          });
+          
+          if (monthNumber !== -1 && yearVal === String(selectedYear)) {
+            const diff = Math.abs(monthNumber - currentMonth);
+            if (diff < minDiff) {
+              minDiff = diff;
+              closestMonth = monthNumber;
+            }
+          }
+        });
+        
+        setSelectedMonth(closestMonth);
+      }
+    }
+  }, [newReleaseStreaming, selectedYear]);
+
   // =========================
   // API CALLS
   // =========================
