@@ -336,8 +336,14 @@ export default function VideoDetailScreen({
           {/* ✅ YouTube Background Video */}
           {upcomingTrailers.length > 0 ? (
             <>
+              {/* Backdrop image for mobile / fallback */}
+              <div 
+                className="absolute inset-0 md:hidden bg-cover bg-center opacity-40"
+                style={{ backgroundImage: `url(${getImageUrl(currentVideo?.backdropPath || currentVideo?.posterPath)})` }}
+              />
+
               {!isWatchingFull && (
-                <div className="absolute inset-0">
+                <div className="absolute inset-0 hidden md:block">
                   <iframe
                     ref={bgIframeRef}
                     key={`bg-${currentVideo?.trailerUrl}`}
@@ -358,7 +364,7 @@ export default function VideoDetailScreen({
               {/* ✅ VOLUME TOGGLE BUTTON */}
               <button
                 onClick={toggleVolume}
-                className="absolute right-6 bottom-12 md:bottom-20 lg:bottom-12 z-30 bg-black/40 hover:bg-white/20 p-3 rounded-full border border-white/10 transition-all active:scale-90"
+                className="absolute right-6 bottom-12 md:bottom-20 lg:bottom-12 z-30 bg-black/40 hover:bg-white/20 p-3 rounded-full border border-white/10 transition-all active:scale-90 hidden md:block"
                 title={isBgMuted ? "Unmute background" : "Mute background"}
               >
                 {isBgMuted ? (
@@ -396,7 +402,7 @@ export default function VideoDetailScreen({
               )}
 
               {/* ✅ MOVIE DETAILS SECTION (Image style implementation) */}
-              <div className="absolute bottom-12 md:bottom-20 lg:bottom-12 left-6 md:left-12 z-20 max-w-[90%] md:max-w-[70%] space-y-4">
+              <div className="absolute bottom-12 md:bottom-20 lg:bottom-12 right-6 left-6 md:left-12 md:right-auto z-20 max-w-[90%] md:max-w-[70%] space-y-2 md:space-y-4 text-right md:text-left flex flex-col items-end md:items-start">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.div
                     key={currentIndex}
@@ -404,12 +410,12 @@ export default function VideoDetailScreen({
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="space-y-3"
+                    className="space-y-2 md:space-y-3 flex flex-col items-end md:items-start"
                   >
                     {/* Title / Logo Style */}
-                    <div className="overflow-hidden max-w-full mb-2">
+                    <div className="overflow-hidden max-w-full mb-1 md:mb-2">
                       <h1
-                        className="text-2xl md:text-3xl lg:text-4xl uppercase tracking-tighter drop-shadow-lg text-white whitespace-nowrap inline-block"
+                        className="text-lg md:text-3xl lg:text-4xl uppercase tracking-tighter drop-shadow-lg text-white whitespace-nowrap inline-block"
                         style={{
                           animation:
                             currentVideo?.title?.length > 20
@@ -422,31 +428,20 @@ export default function VideoDetailScreen({
                     </div>
 
                     {/* Metadata (IMDb, Year, Duration, Language) */}
-                    {/* <div className="flex flex-wrap items-center gap-3 text-[14px] font-bold text-gray-300">
-              <span className="text-blue-400 font-extrabold tracking-wide">
-                IMDb {currentVideo?.imdbRating || "8.5"}
-              </span>
-              <span className="w-1.5 h-1.5 bg-gray-500 rounded-full"></span>
-              <span className="text-white bg-blue-600/20 px-2 py-0.5 rounded text-[11px] uppercase">
-                Newly Added
-              </span>
-            </div> */}
-
-                    <div className="flex flex-wrap items-center gap-3 text-[10px] md:text-[13px] text-white/90">
-                      <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center justify-end md:justify-start gap-2 md:gap-3 text-[9px] md:text-[13px] text-white/90">
+                      <div className="flex items-center gap-1">
                         {renderReleaseStatus()}
                       </div>
-                      <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
-                      {/* Duration: Empty -> TBA (Dim) */}
+                      <span className="w-0.5 h-0.5 md:w-1 md:h-1 bg-gray-500 rounded-full"></span>
                       <div className="flex items-center">
                         {renderDuration()}
                       </div>
-                      <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
-                      <span className="border border-white/40 px-1.5 rounded text-[10px]">
+                      <span className="w-0.5 h-0.5 md:w-1 md:h-1 bg-gray-500 rounded-full"></span>
+                      <span className="border border-white/40 px-1.5 rounded text-[8px] md:text-[10px]">
                         {currentVideo?.certification || "U/A"}
                       </span>
-                      <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
-                      <div className="flex-1 min-w-0">
+                      <span className="w-0.5 h-0.5 md:w-1 md:h-1 bg-gray-500 rounded-full"></span>
+                      <div className="min-w-0">
                         <LanguageMarquee
                           languages={currentVideo?.language || []}
                         />
@@ -458,7 +453,7 @@ export default function VideoDetailScreen({
                       className="
                       hidden
                       lg:block
-                      text-[13px]
+                      text-[12px]
                       md:text-[14px]
                       text-gray-300
                       leading-relaxed
@@ -476,37 +471,34 @@ export default function VideoDetailScreen({
                     </p>
 
                     {/* Genres */}
-                    {/* ✅ Dynamic Genres with Dot Separator */}
-                    <div className="flex flex-wrap items-center gap-1 text-[10px] md:text-[13px]  text-white/80">
+                    <div className="flex flex-wrap items-center justify-end md:justify-start gap-1 text-[9px] md:text-[13px] text-white/80">
                       {currentVideo?.genres &&
                       currentVideo.genres.length > 0 ? (
                         currentVideo.genres.map((genre, idx) => (
                           <React.Fragment key={idx}>
                             <span
                               key={idx}
-                              className="px-1 py-1 text-[12px] font-bold tracking-wider text-orange-400  drop-shadow-[0_0_12px_rgba(251,146,60,0.9)] hover:drop-shadow-[0_0_15px_rgba(251,146,60,1)] transition-all duration-300 cursor-default"
+                              className="px-0.5 py-0.5 text-[10px] md:text-[12px] font-bold tracking-wider text-orange-400 drop-shadow-[0_0_12px_rgba(251,146,60,0.9)] hover:drop-shadow-[0_0_15px_rgba(251,146,60,1)] transition-all duration-300 cursor-default"
                             >
                               {genre}
                             </span>
-                            {/* Last genre-ku aprom dot vara koodathu */}
                             {idx < currentVideo.genres.length - 1 && (
-                              <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
+                              <span className="w-0.5 h-0.5 md:w-1 md:h-1 bg-gray-500 rounded-full"></span>
                             )}
                           </React.Fragment>
                         ))
                       ) : (
-                        /* Data illana mattum default-ah ithu show aagum */
                         <span>Action • Drama • Thriller</span>
                       )}
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex items-center gap-4 pt-4">
+                    <div className="flex justify-end md:justify-start items-center gap-3 pt-2 md:pt-4">
                       <button
                         onClick={handleWatchNow}
-                        className="bg-gradient-to-r from-orange-600 to-orange-300 hover:opacity-75 cursor-pointer text-white  py-3 px-8 md:px-9 rounded-lg transition transform active:scale-95 shadow-xl flex items-center gap-3 text-sm md:text-base"
+                        className="bg-gradient-to-r from-orange-600 to-orange-300 hover:opacity-75 cursor-pointer text-white py-2 px-5 md:py-3 md:px-9 rounded-lg transition transform active:scale-95 shadow-xl flex items-center gap-2 text-xs md:text-base font-bold"
                       >
-                        <FaPlay size={14} /> <span>WATCH NOW</span>
+                        <FaPlay size={10} /> <span>WATCH NOW</span>
                       </button>
                     </div>
                   </motion.div>
