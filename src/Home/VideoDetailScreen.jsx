@@ -188,25 +188,17 @@ export default function VideoDetailScreen({
 
   // console.log("Current Video", upcomingTrailers);
 
-  // ✅ Sync background play and volume state to the background iframe
-  useEffect(() => {
-    if (!isWatchingFull) {
-      const timer = setTimeout(() => {
-        sendBgCommand("playVideo");
-        sendBgCommand(isBgMuted ? "mute" : "unMute");
-      }, 1000);
-      return () => clearTimeout(timer);
-    }
-    return undefined;
-  }, [isBgMuted, currentIndex, isWatchingFull]);
-  // ✅ Force iframe to display after 1.5s in case onLoad is delayed or missed
-  useEffect(() => {
-    setIsIframeLoaded(false);
-    const timer = setTimeout(() => {
-      setIsIframeLoaded(true);
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, [currentIndex]);
+  // ✅ Sync background volume state to the background iframe
+  // useEffect(() => {
+  //   if (!isWatchingFull) {
+  //     const timer = setTimeout(() => {
+  //       sendBgCommand(isBgMuted ? "mute" : "unMute");
+  //     }, 1000);
+  //     return () => clearTimeout(timer);
+  //   }
+  //   return undefined;
+  // }, [isBgMuted, currentIndex, isWatchingFull]);
+
   // ✅ Full video player
   const getFullVideoUrl = (url) => {
     const videoId = extractVideoId(url);
@@ -356,15 +348,14 @@ export default function VideoDetailScreen({
               />
 
               {!isWatchingFull && (
-                <div className="absolute inset-0 hidden md:block">
+                <div className="absolute inset-0">
                   <iframe
                     ref={bgIframeRef}
                     key={`bg-${currentVideo?.trailerUrl}`}
                     src={getEmbedUrl(currentVideo?.trailerUrl)}
-                    className={`w-full h-[150%] -translate-y-[15%] object-cover scale-[1.4] pointer-events-none transition-opacity duration-700 ${isIframeLoaded ? "opacity-80" : "opacity-0"}`}
+                    className="w-full h-[150%] -translate-y-[15%] object-cover scale-[1.4] pointer-events-none opacity-80"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    onLoad={handleBgIframeLoad}
                   ></iframe>
                 </div>
               )}
@@ -377,7 +368,7 @@ export default function VideoDetailScreen({
               {/* ✅ VOLUME TOGGLE BUTTON */}
               <button
                 onClick={toggleVolume}
-                className="absolute right-6 bottom-12 md:bottom-20 lg:bottom-12 z-30 bg-black/40 hover:bg-white/20 p-3 rounded-full border border-white/10 transition-all active:scale-90 hidden md:block"
+                className="absolute right-6 bottom-12 md:bottom-20 lg:bottom-12 z-30 bg-black/40 hover:bg-white/20 p-3 rounded-full border border-white/10 transition-all active:scale-90"
                 title={isBgMuted ? "Unmute background" : "Mute background"}
               >
                 {isBgMuted ? (
@@ -415,7 +406,7 @@ export default function VideoDetailScreen({
               )}
 
               {/* ✅ MOVIE DETAILS SECTION (Image style implementation) */}
-              <div className="absolute bottom-12 md:bottom-20 lg:bottom-12 right-6 left-6 md:left-12 md:right-auto z-20 max-w-[90%] md:max-w-[70%] space-y-2 md:space-y-4 text-right md:text-left flex flex-col items-end md:items-start">
+              <div className="absolute bottom-12 md:bottom-20 lg:bottom-12 right-6 left-auto z-20 max-w-[50%] md:max-w-[70%] md:left-12 md:right-auto space-y-2 md:space-y-4 text-right md:text-left flex flex-col items-end md:items-start">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.div
                     key={currentIndex}

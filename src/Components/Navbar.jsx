@@ -31,7 +31,7 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/stream", label: "Streaming Now" },
   { to: "/new", label: "New Movies" },
-  { to: "/videos", label: "Videos" },
+  // { to: "/videos", label: "Videos" },
   { to: "/news", label: "News" },
   // { to: "/about", label: "About Us" },
   { to: "/auth/login", label: "Login", isLogin: true },
