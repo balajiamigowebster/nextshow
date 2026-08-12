@@ -365,11 +365,12 @@ const UpdateNewMoviesUi = ({ upcomingNewMovies = [] }) => {
   const [datePopupOpen, setDatePopupOpen] = useState(false);
 
   useEffect(() => {
-    if (upcomingNewMovies && upcomingNewMovies.length > 0) {
+    const list = Array.isArray(upcomingNewMovies) ? upcomingNewMovies : [];
+    if (list.length > 0) {
       const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
       const currentMonth = new Date().getMonth() + 1;
       
-      const hasCurrentMonthData = upcomingNewMovies.some((movie) => {
+      const hasCurrentMonthData = list.some((movie) => {
         const dateToCheck = movie.theatreReleaseDate || movie.releaseDate;
         if (!dateToCheck || dateToCheck === "TBA") return false;
         const parts = dateToCheck.trim().split(/\s+/);
@@ -390,7 +391,7 @@ const UpdateNewMoviesUi = ({ upcomingNewMovies = [] }) => {
         let closestMonth = currentMonth;
         let minDiff = 13;
         
-        upcomingNewMovies.forEach((movie) => {
+        list.forEach((movie) => {
           const dateToCheck = movie.theatreReleaseDate || movie.releaseDate;
           if (!dateToCheck || dateToCheck === "TBA") return;
           const parts = dateToCheck.trim().split(/\s+/);
@@ -438,12 +439,13 @@ const UpdateNewMoviesUi = ({ upcomingNewMovies = [] }) => {
   });
 
   const movies = useMemo(() => {
+    const list = Array.isArray(upcomingNewMovies) ? upcomingNewMovies : [];
     if (selectedDate) {
       return selectedMovies?.data ?? [];
     }
     if (selectedMonth) {
       const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-      return upcomingNewMovies.filter((movie) => {
+      return list.filter((movie) => {
         const dateToCheck = movie.theatreReleaseDate || movie.releaseDate;
         if (!dateToCheck || dateToCheck === "TBA") return false;
         const parts = dateToCheck.trim().split(/\s+/);

@@ -347,11 +347,12 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
   const [datePopupOpen, setDatePopupOpen] = useState(false);
 
   useEffect(() => {
-    if (newReleaseMovies && newReleaseMovies.length > 0) {
+    const list = Array.isArray(newReleaseMovies) ? newReleaseMovies : [];
+    if (list.length > 0) {
       const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
       const currentMonth = new Date().getMonth() + 1;
       
-      const hasCurrentMonthData = newReleaseMovies.some((movie) => {
+      const hasCurrentMonthData = list.some((movie) => {
         const dateToCheck = movie.theatreReleaseDate || movie.releaseDate;
         if (!dateToCheck || dateToCheck === "TBA") return false;
         const parts = dateToCheck.trim().split(/\s+/);
@@ -372,7 +373,7 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
         let closestMonth = currentMonth;
         let minDiff = 13;
         
-        newReleaseMovies.forEach((movie) => {
+        list.forEach((movie) => {
           const dateToCheck = movie.theatreReleaseDate || movie.releaseDate;
           if (!dateToCheck || dateToCheck === "TBA") return;
           const parts = dateToCheck.trim().split(/\s+/);
@@ -422,12 +423,13 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
     });
 
   const movies = useMemo(() => {
+    const list = Array.isArray(newReleaseMovies) ? newReleaseMovies : [];
     if (selectedDate) {
       return selectedMovies?.data ?? [];
     }
     if (selectedMonth) {
       const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-      return newReleaseMovies.filter((movie) => {
+      return list.filter((movie) => {
         const dateToCheck = movie.theatreReleaseDate || movie.releaseDate;
         if (!dateToCheck || dateToCheck === "TBA") return false;
         const parts = dateToCheck.trim().split(/\s+/);
