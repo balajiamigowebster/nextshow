@@ -221,7 +221,9 @@ const TimelineContent = ({
 
           {/* DATE */}
 
-          {/* <div className="relative w-[38px] md:w-[42px]">
+          {/* DATE */}
+
+          <div className="relative w-[38px] md:w-[42px]">
             <button
               onClick={() => {
                 if (!selectedYear || !selectedMonth) return;
@@ -250,7 +252,7 @@ const TimelineContent = ({
                     w-[80px]
                     max-h-[260px]
                     overflow-y-auto
-                    no-scrollbar
+                    custom-scrollbar
                     rounded-xl
                     border
                     border-zinc-700
@@ -270,7 +272,6 @@ const TimelineContent = ({
                       <button
                         key={day}
                         onClick={() => {
-                          if (!hasData) return;
                           setSelectedDate(day);
                           setDatePopupOpen(false);
                         }}
@@ -282,10 +283,10 @@ const TimelineContent = ({
                           font-semibold
                           transition-all
                           ${
-                            !hasData
-                              ? "text-zinc-700 cursor-not-allowed opacity-40"
-                              : selectedDate === day
-                                ? "bg-zinc-800 text-white"
+                            selectedDate === day
+                              ? "bg-zinc-800 text-white font-black"
+                              : hasData
+                                ? "text-orange-400 hover:bg-zinc-800 hover:text-white"
                                 : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
                           }
                         `}
@@ -297,22 +298,23 @@ const TimelineContent = ({
                 </motion.div>
               )}
             </AnimatePresence>
-          </div> */}
+          </div>
         </div>
 
         {/* MONTHS */}
 
-        <div className="h-[240px] md:h-[280px] overflow-y-auto no-scrollbar">
-          {timelineMonths.map((item) => (
+        <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar">
+          {MONTHS.map((month, index) => (
             <button
-              key={`${item.year}-${item.monthNumber}`}
+              key={month}
               onClick={() => {
-                setSelectedMonth(item.monthNumber);
-                setSelectedYear(item.year);
+                const monthNumber = index + 1;
+
+                setSelectedMonth(monthNumber);
 
                 const maxDays = new Date(
-                  item.year,
-                  item.monthNumber,
+                  selectedYear,
+                  monthNumber,
                   0,
                 ).getDate();
 
@@ -332,13 +334,13 @@ const TimelineContent = ({
                 font-bold
                 transition-all
                 ${
-                  selectedMonth === item.monthNumber && selectedYear === item.year
+                  selectedMonth !== null && selectedMonth === index + 1
                     ? "bg-zinc-800 text-white border-r-2 border-r-zinc-500"
                     : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
                 }
               `}
             >
-              {item.name}
+              {month}
             </button>
           ))}
         </div>

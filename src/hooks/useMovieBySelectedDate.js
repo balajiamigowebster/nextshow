@@ -32,7 +32,7 @@ export const useMovieBySelectedDate = ({
       return data;
     },
 
-    enabled: !!year && !!month,
+    enabled: !!year && !!month && !!day,
 
     refetchOnWindowFocus: true,
   });

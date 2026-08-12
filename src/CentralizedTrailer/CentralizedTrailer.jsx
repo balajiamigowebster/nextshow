@@ -196,17 +196,15 @@ const TimelineContent = ({
           h-[240px]
           md:h-[280px]
           overflow-y-auto
-          no-scrollbar
+          custom-scrollbar
         "
       >
-        {timelineMonths.map((item) => {
+        {MONTHS.map((month, index) => {
+          const monthNumber = index + 1;
           return (
             <button
-              key={`${item.year}-${item.monthNumber}`}
-              onClick={() => {
-                setSelectedMonth(item.monthNumber);
-                setSelectedYear(item.year);
-              }}
+              key={month}
+              onClick={() => setSelectedMonth(monthNumber)}
               className={`
               w-full
               h-10
@@ -221,7 +219,7 @@ const TimelineContent = ({
               transition-all
 
               ${
-                selectedMonth === item.monthNumber && selectedYear === item.year
+                selectedMonth === monthNumber
                   ? `
                     bg-zinc-800
                     text-white
@@ -236,7 +234,7 @@ const TimelineContent = ({
               }
             `}
             >
-              {item.name}
+              {month}
             </button>
           );
         })}

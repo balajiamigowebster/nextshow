@@ -221,7 +221,9 @@ const TimelineContent = ({
 
           {/* DATE */}
 
-          {/* <div className="relative w-[38px] md:w-[42px]">
+          {/* DATE */}
+
+          <div className="relative w-[38px] md:w-[42px]">
             <button
               onClick={() => {
                 if (!selectedYear || !selectedMonth) return;
@@ -250,7 +252,7 @@ const TimelineContent = ({
                     w-[80px]
                     max-h-[260px]
                     overflow-y-auto
-                    no-scrollbar
+                    custom-scrollbar
                     rounded-xl
                     border
                     border-zinc-700
@@ -270,27 +272,24 @@ const TimelineContent = ({
                       <button
                         key={day}
                         onClick={() => {
-                          if (!hasData) return;
-
                           setSelectedDate(day);
                           setDatePopupOpen(false);
                         }}
                         className={`
-          w-full
-          rounded-lg
-          py-2
-          text-xs
-          font-semibold
-          transition-all
-
-          ${
-            !hasData
-              ? "text-zinc-700 cursor-not-allowed opacity-40"
-              : selectedDate === day
-                ? "bg-zinc-800 text-white"
-                : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
-          }
-        `}
+                          w-full
+                          rounded-lg
+                          py-2
+                          text-xs
+                          font-semibold
+                          transition-all
+                          ${
+                            selectedDate === day
+                              ? "bg-zinc-800 text-white font-black"
+                              : hasData
+                                ? "text-orange-400 hover:bg-zinc-800 hover:text-white"
+                                : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
+                          }
+                        `}
                       >
                         {day}
                       </button>
@@ -299,26 +298,26 @@ const TimelineContent = ({
                 </motion.div>
               )}
             </AnimatePresence>
-          </div> */}
+          </div>
         </div>
 
         {/* MONTHS */}
 
-        <div className="h-[240px] md:h-[280px] overflow-y-auto no-scrollbar">
-          {timelineMonths.map((item) => (
+        <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar">
+          {MONTHS.map((month, index) => (
             <button
-              key={`${item.year}-${item.monthNumber}`}
+              key={month}
               onClick={() => {
-                setSelectedMonth(item.monthNumber);
-                setSelectedYear(item.year);
+                const monthNumber = index + 1;
+                setSelectedMonth(monthNumber);
               }}
               className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
-                selectedMonth === item.monthNumber && selectedYear === item.year
+                selectedMonth !== null && selectedMonth === index + 1
                   ? "bg-zinc-800 text-white border-r-2 border-r-zinc-500"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
             >
-              {item.name}
+              {month}
             </button>
           ))}
         </div>
@@ -333,7 +332,7 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
   const CURRENT_MONTH = CURRENT.getMonth() + 1;
   const CURRENT_DAY = CURRENT.getDate();
 
-  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const [selectedMonth, setSelectedMonth] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
 
