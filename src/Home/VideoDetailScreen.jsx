@@ -357,8 +357,8 @@ export default function VideoDetailScreen({
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   ></iframe>
-                  {/* Transparent pointer-capturer to prevent mobile browser touches from triggering YouTube player overlays */}
-                  <div className="absolute inset-0 z-10 bg-transparent"></div>
+                  {/* Transparent pointer-capturer to prevent mobile browser touches and desktop hovers from triggering YouTube player overlays */}
+                  <div className="absolute inset-0 z-10" style={{ backgroundColor: "rgba(0, 0, 0, 0.001)" }}></div>
                 </div>
               )}
 
