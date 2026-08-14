@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { STREAMING_PLATFORMS } from "../Components/OttPlatformComponent";
-import { Film } from "lucide-react";
+import { Film, Clapperboard, Users } from "lucide-react";
 import LiveRelativeDate from "../Components/LiveRelativeDate";
 
 const DirectorMarquee = ({ director, isHovered }) => {
@@ -638,13 +638,11 @@ const StreamingReviewCard = ({ review, title }) => {
         {/* Director & Cast Container */}
         <div className="flex flex-col gap-1 w-full">
           {/* Director */}
-          <div className="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]">
-            <span className="text-zinc-600 font-semibold tracking-wider mt-0.5">
-              Dir
-            </span>
+          <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
+            <Clapperboard size={13} className="text-zinc-500 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
-              <DirectorMarquee
+               <DirectorMarquee
                 director={review.director || "TBA"}
                 isHovered={isAnimationActive}
               />
@@ -652,10 +650,8 @@ const StreamingReviewCard = ({ review, title }) => {
           </div>
 
           {/* Cast */}
-          <div className="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]">
-            <span className="text-zinc-600 font-semibold tracking-wider mt-0.5">
-              Cast
-            </span>
+          <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
+            <Users size={13} className="text-zinc-500 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
               <CastMarquee

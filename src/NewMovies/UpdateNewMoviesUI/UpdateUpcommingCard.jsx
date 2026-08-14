@@ -1,4 +1,4 @@
-import { Film } from "lucide-react";
+import { Film, Clapperboard, Users } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import LiveRelativeDate from "../../Components/LiveRelativeDate";
@@ -589,10 +589,8 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
 
         {/* Director & Cast */}
         <div className="flex flex-col gap-1 w-full">
-          <div className="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]">
-            <span className="text-zinc-600 font-semibold tracking-wider mt-0.5">
-              Dir
-            </span>
+          <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
+            <Clapperboard size={13} className="text-zinc-500 shrink-0" />
             <div className="overflow-hidden min-w-0">
               <DirectorMarquee
                 director={movie.director || "TBA"}
@@ -600,10 +598,8 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]">
-            <span className="text-zinc-600 font-semibold tracking-wider mt-0.5">
-              Cast
-            </span>
+          <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
+            <Users size={13} className="text-zinc-500 shrink-0" />
             <div className="overflow-hidden min-w-0">
               <CastMarquee cast={castList} isHovered={isAnimationActive} />
             </div>

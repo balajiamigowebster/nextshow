@@ -265,13 +265,13 @@ const ScheduledCardBody = ({ trailer, statusLabel, statusClass }) => {
         className="flex flex-col gap-1 w-full opacity-0 pointer-events-none select-none"
         aria-hidden="true"
       >
-        <div className="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]">
+        <div className="grid grid-cols-[20px_1fr] gap-1 items-start text-[10px]">
           <span className="text-zinc-600 font-semibold tracking-wider mt-0.5">
             Dir
           </span>
           <div className="h-[18px] rounded bg-zinc-800/40" />
         </div>
-        <div className="grid grid-cols-[30px_1fr] gap-1 items-start text-[10px]">
+        <div className="grid grid-cols-[20px_1fr] gap-1 items-start text-[10px]">
           <span className="text-zinc-600 font-semibold tracking-wider mt-0.5">
             Cast
           </span>
@@ -414,20 +414,16 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
       {/* Dir & Cast */}
       {hasMovieMeta ? (
         <div className="flex flex-col gap-1 w-full">
-          <div className="grid grid-cols-[30px_1fr] gap-2 items-start text-[10px]">
-            <div className="text-zinc-600 font-semibold tracking-wider mt-0.5">
-              Dir
-            </div>
+          <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
+            <Clapperboard size={13} className="text-zinc-500 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
               <DirectorMarquee director={director} isHovered={isHovered} />
             </div>
           </div>
 
-          <div className="grid grid-cols-[38px_1fr] gap-1 items-start text-[10px]">
-            <div className="text-zinc-600 font-semibold tracking-wider mt-0.5">
-              Cast
-            </div>
+          <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
+            <Users size={13} className="text-zinc-500 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
               <CastMarquee isHovered={isHovered} cast={castList} />
