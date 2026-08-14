@@ -23,6 +23,9 @@ const navItems = [
 const getNotchPath = (activeIndex, total = 5) => {
   const W = 390;
   const H = 80;
+  if (activeIndex === -1) {
+    return `M0,0 L${W},0 L${W},${H} L0,${H} Z`;
+  }
   const slotW = W / total;
   const cx = slotW * activeIndex + slotW / 2;
   const r = 28; // notch radius
@@ -124,14 +127,16 @@ const MobileBottomNavigation = () => {
 
           {/* Animated notch path */}
           <motion.path
-            animate={{ d: getNotchPath(safeIndex) }}
+            animate={{ d: getNotchPath(activeIndex) }}
             transition={{ type: "spring", stiffness: 320, damping: 30 }}
             fill="url(#navBg)"
           />
 
           {/* Top border — left of notch */}
           <motion.line
-            animate={{ x2: (390 / 5) * safeIndex + 390 / 5 / 2 - 46 }}
+            animate={{
+              x2: activeIndex === -1 ? 390 : (390 / 5) * activeIndex + 390 / 5 / 2 - 46,
+            }}
             transition={{ type: "spring", stiffness: 320, damping: 30 }}
             x1="0"
             y1="0.5"
@@ -141,7 +146,9 @@ const MobileBottomNavigation = () => {
           />
           {/* Top border — right of notch */}
           <motion.line
-            animate={{ x1: (390 / 5) * safeIndex + 390 / 5 / 2 + 46 }}
+            animate={{
+              x1: activeIndex === -1 ? 390 : (390 / 5) * activeIndex + 390 / 5 / 2 + 46,
+            }}
             transition={{ type: "spring", stiffness: 320, damping: 30 }}
             x2="390"
             y1="0.5"
