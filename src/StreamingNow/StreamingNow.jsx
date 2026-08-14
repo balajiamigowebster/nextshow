@@ -169,7 +169,7 @@ const StreamingNow = () => {
   }
 
   return (
-    <div className="pt-28 bg-[#0f0f0f]  min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
+    <div className="pt-28 px-4 md:px-8 bg-[#0f0f0f] min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
       {/* <div className="overflow-hidden rounded-[18px] border border-white/10 shadow-2xl shadow-black/30 md:rounded-[28px]">
         <div className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-zinc-950 px-5 py-6 md:px-8 md:py-8">
           <div className="flex flex-nowrap items-center gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:gap-3">
@@ -215,7 +215,7 @@ const StreamingNow = () => {
       </div> */}
       <div className="">
         <div className="pt-8 pb-14">
-          <div className="ml-5 mb-4 flex items-center gap-3">
+          <div className="ml-1 mb-4 flex items-center gap-3">
             {/* Left Accent Bar */}
             <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
 
@@ -257,7 +257,7 @@ const StreamingNow = () => {
           />
         </div>
         <div className="pt-12 md:pt-16">
-          <div className="ml-5 mb-4 flex items-center gap-3">
+          <div className="ml-1 mb-4 flex items-center gap-3">
             {/* Left Accent Bar */}
             <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
 

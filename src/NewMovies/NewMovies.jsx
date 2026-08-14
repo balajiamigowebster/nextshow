@@ -97,7 +97,7 @@ const NewMovies = () => {
   }
 
   return (
-    <div className="mt-28 min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
+    <div className="mt-28 px-4 md:px-8 bg-[#0f0f0f] min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
       {/* <div className="rounded-[28px] border border-white/10 shadow-2xl shadow-black/30 overflow-hidden">
         <div className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-zinc-950 px-5 py-6 md:px-8 md:py-8">
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
@@ -150,7 +150,7 @@ const NewMovies = () => {
       </div> */}
       <div className="">
         <div className="pt-8 pb-14">
-          <div className="ml-5 mb-4 flex items-center justify-between shrink-0">
+          <div className="ml-1 mb-4 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">
               {/* Left Accent Bar */}
               <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
@@ -195,7 +195,7 @@ const NewMovies = () => {
           />
         </div>
         <div className="pt-12 md:pt-16">
-          <div className="ml-5 mb-4 flex items-center gap-3">
+          <div className="ml-1 mb-4 flex items-center gap-3">
             {/* Left Accent Bar */}
             <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
 

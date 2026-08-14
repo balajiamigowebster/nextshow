@@ -170,7 +170,7 @@ const CarouselRow = ({ title, movies, onSeeAll }) => {
 
 const SectionTitle = ({ smallTitle = "", title = "", className = "" }) => {
   return (
-    <div className={`ml-3 flex items-center gap-3 ${className}`}>
+    <div className={`ml-1 flex items-center gap-3 ${className}`}>
       {/* Left Accent */}
       <div
         className="
