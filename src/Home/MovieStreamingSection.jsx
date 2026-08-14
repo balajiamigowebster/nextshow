@@ -335,7 +335,7 @@ const MovieStreamingSection = ({ activeItems, streamingData }) => {
   };
 
   return (
-    <div className="bg-[#0f0f0f] pt-5 pb-5 px-4 md:px-8">
+    <div className="bg-[#0f0f0f] pt-12 md:pt-16 pb-5 px-4 md:px-8">
       <div className="flex items-center justify-between  shrink-0">
         <SectionTitle smallTitle="Streaming" title="Trending" />
       </div>

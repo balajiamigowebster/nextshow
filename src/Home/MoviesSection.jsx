@@ -326,7 +326,7 @@ const MovieSection = ({ activeItems, newMovies }) => {
   };
 
   return (
-    <div className="bg-[#0f0f0f]  pb-10 px-4 md:px-8 ">
+    <div className="bg-[#0f0f0f] pt-12 md:pt-16 pb-10 px-4 md:px-8 ">
       <div className="flex items-center justify-between  shrink-0">
         <div className="flex items-center justify-between  shrink-0">
           <SectionTitle smallTitle="New Movies" title="Trending" />

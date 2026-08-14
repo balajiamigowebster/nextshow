@@ -194,7 +194,7 @@ const NewMovies = () => {
             newReleaseMovies={homeMoviesData?.theatrical?.newRelease ?? []}
           />
         </div>
-        <div>
+        <div className="pt-12 md:pt-16">
           <div className="ml-5 mb-4 flex items-center gap-3">
             {/* Left Accent Bar */}
             <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
