@@ -292,13 +292,14 @@ const Navbar = () => {
             <SearchBar />
           </div>
 
-          <div className="flex items-center gap-6">
-            {/* LANGUAGE ICON DROPDOWN */}
-            <div className="relative hidden lg:block" ref={langRef}>
+          <div className="flex items-center gap-4 sm:gap-6">
+            {/* LANGUAGE ICON DROPDOWN (DESKTOP & MOBILE) */}
+            <div className="relative" ref={langRef}>
+              {/* DESKTOP LANGUAGE BUTTON */}
               <button
                 disabled
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center gap-1 text-white/70  transition-all text-sm cursor-not-allowed opacity-50 "
+                className="hidden lg:flex items-center gap-1 text-white/70 transition-all text-sm cursor-not-allowed opacity-50 "
               >
                 <HiOutlineTranslate className="text-xl" />
                 <span>{selectedLang}</span>
@@ -310,13 +311,35 @@ const Navbar = () => {
                 </motion.div>
               </button>
 
+              {/* MOBILE LANGUAGE BUTTON */}
+              <button
+                disabled
+                onClick={() => {
+                  setIsLangOpen(!isLangOpen);
+                  if (isOpen) {
+                    setIsOpen(false);
+                  }
+                }}
+                className="lg:hidden flex items-center gap-1 text-zinc-300 hover:text-white transition-all duration-300 cursor-not-allowed opacity-50 text-[15px] font-medium"
+              >
+                <HiOutlineTranslate className="text-[22px]" />
+                <span>{selectedLang}</span>
+                <motion.div
+                  animate={{ rotate: isLangOpen ? 90 : 0 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <HiChevronRight className="text-zinc-500 text-[20px]" />
+                </motion.div>
+              </button>
+
+              {/* SHARED LANGUAGE DROPDOWN */}
               <AnimatePresence>
                 {isLangOpen && (
                   <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 5 }}
                     exit={{ opacity: 0, y: 15 }}
-                    className="absolute top-[50px] right-4 w-[240px] bg-[#121212]/95 border border-white/10 backdrop-blur-2xl rounded-3xl p-2 shadow-2xl"
+                    className="absolute top-[50px] right-0 lg:right-4 w-[180px] lg:w-[240px] bg-[#121212]/95 border border-white/10 backdrop-blur-2xl rounded-3xl p-2 shadow-2xl z-[9999]"
                   >
                     {languages.map((lang) => (
                       <button
@@ -358,7 +381,6 @@ const Navbar = () => {
                 />
               </button>
 
-              {/* DESKTOP DROPDOWN MENU - Moved to Left via right-4 */}
               <AnimatePresence>
                 {navMenuOpen && (
                   <motion.div
@@ -400,46 +422,32 @@ const Navbar = () => {
             </div>
 
             {!authChecked ? (
-              <div className="hidden md:hidden lg:block">
+              <div className="block">
                 <div
                   className="
       flex items-center gap-2
-
       px-3 sm:px-4
-
       h-[42px]
-
       rounded-2xl
-
       border border-white/5
-
       bg-white/[0.03]
-
       animate-pulse
-
       shrink-0
     "
                 >
-                  {/* ICON SKELETON */}
                   <div
                     className="
         w-7 h-7
-
         rounded-full
-
         bg-white/10
-
         relative overflow-hidden
       "
                   >
                     <div
                       className="
           absolute inset-0
-
           -translate-x-full
-
           animate-[shimmer_1.8s_infinite]
-
           bg-gradient-to-r
           from-transparent
           via-white/10
@@ -447,27 +455,20 @@ const Navbar = () => {
         "
                     />
                   </div>
-                  {/* TEXT SKELETON */}
                   <div
                     className="
         h-[12px]
         w-[52px]
-
         rounded-full
-
         bg-white/10
-
         relative overflow-hidden
       "
                   >
                     <div
                       className="
           absolute inset-0
-
           -translate-x-full
-
           animate-[shimmer_1.8s_infinite]
-
           bg-gradient-to-r
           from-transparent
           via-white/10
@@ -484,27 +485,25 @@ const Navbar = () => {
                 setIsProfileOpen={setIsProfileOpen}
               />
             ) : (
-              <div className="hidden md:hidden lg:block profile-dropdown">
+              <div className="block profile-dropdown">
                 <button
                   onClick={() => {
                     openAuth();
                     setNavMenuOpen(false);
                   }}
                   className="
-              flex items-center gap-2
-              px-3 sm:px-4
-              h-[42px]
-              rounded-2xl
-              border border-orange-500/20
-              bg-gradient-to-br from-orange-500/20 to-orange-600/5
-              hover:from-orange-500/30 hover:to-orange-600/10
-              transition-all duration-300
-              group
-              shrink-0
+               flex items-center gap-2
+               px-3 sm:px-4
+               h-[42px]
+               rounded-2xl
+               border border-orange-500/20
+               bg-gradient-to-br from-orange-500/20 to-orange-600/5
+               hover:from-orange-500/30 hover:to-orange-600/10
+               transition-all duration-300
+               group
+               shrink-0
     "
                 >
-                  {/* ICON */}
-
                   <div
                     className="
         w-7 h-7
@@ -517,8 +516,6 @@ const Navbar = () => {
                     <FaUser size={15} className="text-white" />
                   </div>
 
-                  {/* TEXT */}
-
                   <div className="hidden sm:flex flex-col items-start leading-none">
                     <span className="text-[14px]  text-white group-hover:text-orange-300 transition-all">
                       Login
@@ -527,146 +524,6 @@ const Navbar = () => {
                 </button>
               </div>
             )}
-          </div>
-
-          {/* MOBILE RIGHT SECTION */}
-          <div className="flex items-center gap-5 lg:hidden">
-            {/* MOBILE LANGUAGE */}
-            <div className="relative" ref={langRef}>
-              <button
-                disabled
-                onClick={() => {
-                  setIsLangOpen(!isLangOpen);
-                  if (isOpen) {
-                    setIsOpen(false);
-                  }
-                }}
-                className="
-        flex items-center gap-1
-
-        text-zinc-300
-        hover:text-white
-
-        transition-all duration-300
-              cursor-not-allowed
-              opacity-50
-        text-[15px]
-        font-medium
-      "
-              >
-                <HiOutlineTranslate className="text-[22px]" />
-
-                <span>{selectedLang}</span>
-
-                <motion.div
-                  animate={{ rotate: isLangOpen ? 90 : 0 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <HiChevronRight className="text-zinc-500 text-[20px]" />
-                </motion.div>
-              </button>
-
-              {/* MOBILE LANGUAGE DROPDOWN */}
-              <AnimatePresence>
-                {isLangOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{ duration: 0.25 }}
-                    className="
-            absolute top-[45px] right-0
-
-            w-[180px]
-
-            overflow-hidden
-
-            rounded-2xl
-
-            border border-white/[0.08]
-
-            bg-gradient-to-br
-            from-zinc-900/95
-            via-neutral-900/92
-            to-slate-950/95
-
-            backdrop-blur-3xl
-
-            shadow-[0_10px_45px_rgba(0,0,0,0.45)]
-
-            z-[9999]
-          "
-                  >
-                    {languages.map((lang) => (
-                      <button
-                        key={lang}
-                        onClick={() => {
-                          setSelectedLang(lang);
-                          setIsLangOpen(false);
-                        }}
-                        className={`
-                w-full
-                text-left
-
-                px-4 py-3
-
-                text-[14px]
-
-                transition-all duration-300
-
-                ${
-                  selectedLang === lang
-                    ? `
-                      bg-orange-500
-                      text-white
-                    `
-                    : `
-                      text-zinc-300
-                      hover:bg-white/[0.04]
-                      hover:text-white
-                    `
-                }
-              `}
-                      >
-                        {lang}
-                      </button>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* MOBILE MENU ICON */}
-            <button
-              className=" hidden
-       flex-col gap-[6px]
-      p-2
-      cursor-pointer
-      group
-    "
-              onClick={() => {
-                setIsOpen(!isOpen);
-                if (isLangOpen) {
-                  setIsLangOpen(false);
-                }
-              }}
-            >
-              <motion.div
-                variants={topBar}
-                animate={isOpen ? "opened" : "closed"}
-                className="w-8 h-[3px] bg-white rounded-full group-hover:bg-orange-500 transition-colors"
-              />
-              <motion.div
-                variants={midBar}
-                animate={isOpen ? "opened" : "closed"}
-                className="w-8 h-[2px] bg-white rounded-full group-hover:bg-orange-500 transition-colors"
-              />
-              <motion.div
-                variants={botBar}
-                animate={isOpen ? "opened" : "closed"}
-                className="w-5 h-[3px] bg-white rounded-full group-hover:bg-orange-500 transition-colors self-end"
-              />
-            </button>
           </div>
         </nav>
 

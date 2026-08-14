@@ -84,7 +84,7 @@ export default function ProfileDropdown({
   // ======================================================
   const firstLetter = currentUser?.fullName?.[0]?.toUpperCase();
   return (
-    <div className="relative hidden lg:block" ref={profileRef}>
+    <div className="relative" ref={profileRef}>
       {/* ====================================================== */}
       {/* ✅ PROFILE BUTTON */}
       {/* ====================================================== */}
