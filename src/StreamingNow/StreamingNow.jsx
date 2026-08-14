@@ -252,9 +252,11 @@ const StreamingNow = () => {
               </h2>
             </div>
           </div>
-          <UpdateNewReleaseUi
-            newReleaseStreaming={homeMoviesData?.streaming?.newRelease}
-          />
+          <div className="mt-6 md:mt-8">
+            <UpdateNewReleaseUi
+              newReleaseStreaming={homeMoviesData?.streaming?.newRelease}
+            />
+          </div>
         </div>
         <div className="pt-12 md:pt-16">
           <div className="ml-1 mb-4 flex items-center gap-3">
@@ -296,7 +298,9 @@ const StreamingNow = () => {
             </div>
           </div>
 
-          <UpdateStreamingUi upcoming={homeMoviesData?.streaming?.upcoming} />
+          <div className="mt-6 md:mt-8">
+            <UpdateStreamingUi upcoming={homeMoviesData?.streaming?.upcoming} />
+          </div>
         </div>
       </div>
     </div>

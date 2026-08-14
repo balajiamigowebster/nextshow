@@ -190,9 +190,11 @@ const NewMovies = () => {
               </div>
             </div>
           </div>
-          <UpdateNewReleaseMovieUi
-            newReleaseMovies={homeMoviesData?.theatrical?.newRelease ?? []}
-          />
+          <div className="mt-6 md:mt-8">
+            <UpdateNewReleaseMovieUi
+              newReleaseMovies={homeMoviesData?.theatrical?.newRelease ?? []}
+            />
+          </div>
         </div>
         <div className="pt-12 md:pt-16">
           <div className="ml-1 mb-4 flex items-center gap-3">
@@ -233,7 +235,9 @@ const NewMovies = () => {
               </h2>
             </div>
           </div>
-          <UpdateNewMoviesUi upcomingNewMovies={upcoming} />
+          <div className="mt-6 md:mt-8">
+            <UpdateNewMoviesUi upcomingNewMovies={upcoming} />
+          </div>
         </div>
       </div>
     </div>
