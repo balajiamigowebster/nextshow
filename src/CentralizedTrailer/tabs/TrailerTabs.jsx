@@ -32,7 +32,7 @@ const TrailerTabs = ({
   }, [activeSubTab]);
 
   return (
-    <div className="relative bg-[#0f0f0f] px-4 md:px-8">
+    <div className="relative bg-[#0f0f0f]">
       {/* ================= HEADING ================= */}
       <div className="flex items-center justify-between shrink-0 mb-4">
         <div className="flex items-center gap-3">
