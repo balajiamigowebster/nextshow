@@ -49,11 +49,15 @@
 
 import axios from "axios";
 
+const hostname = window.location.hostname;
+
 const isLocalhost =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1" ||
-  window.location.hostname.startsWith("192.168.") ||
-  window.location.hostname.startsWith("10.");
+  hostname === "localhost" ||
+  hostname === "127.0.0.1" ||
+  hostname.startsWith("192.168.") ||
+  hostname.startsWith("10.");
+
+const isVercel = hostname.endsWith(".vercel.app");
 
 let activeBaseURL = "/api";
 
@@ -63,6 +67,8 @@ if (isLocalhost) {
     devBaseURL = "/api";
   }
   activeBaseURL = devBaseURL;
+} else if (!isVercel) {
+  activeBaseURL = "https://amigowebster.in/nextshow_backend_v2/api";
 }
 
 console.log("NextShow API Base URL:", activeBaseURL);
