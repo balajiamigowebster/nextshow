@@ -55,6 +55,8 @@ if (activeBaseURL.includes("localhost") && window.location.hostname !== "localho
   activeBaseURL = activeBaseURL.replace("localhost", window.location.hostname);
 }
 
+console.log("NextShow API Base URL:", activeBaseURL);
+
 const api = axios.create({
   baseURL: activeBaseURL,
 });

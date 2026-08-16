@@ -12,6 +12,7 @@ export default defineConfig({
       "/api": {
         target: "https://amigowebster.in/nextshow_backend_v2/api",
         changeOrigin: true,
+        secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
