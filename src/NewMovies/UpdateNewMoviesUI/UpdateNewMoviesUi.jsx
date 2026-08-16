@@ -104,7 +104,7 @@ const TimelineContent = ({
                 shadow-md shadow-black/40 border border-zinc-800 
                 transition-all active:scale-95 cursor-pointer whitespace-nowrap"
             >
-              Reset
+              Now
             </button>
           </motion.div>
         )}
