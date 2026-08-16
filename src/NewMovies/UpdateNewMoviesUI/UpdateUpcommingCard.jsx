@@ -491,7 +491,8 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
     px-3
     py-1.5
     bg-gradient-to-r
-    from-[#031d2f]
+    from-[#052438]
+    via-[#031d2f]
     to-[#021320]
     border-t
     border-[#0a3550]/40
