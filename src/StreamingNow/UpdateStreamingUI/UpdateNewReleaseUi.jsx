@@ -453,24 +453,6 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
     <section>
       {/* ================= CONTENT SECTION ================= */}
       <div className="mt-0 md:mt-2 flex">
-        {/* ================= TIMELINE ================= */}
-        <div className="md:block shrink-0">
-          <TimelineContent
-            selectedYear={selectedYear}
-            setSelectedYear={setSelectedYear}
-            selectedMonth={selectedMonth}
-            setSelectedMonth={setSelectedMonth}
-            selectedDate={selectedDate}
-            setSelectedDate={setSelectedDate}
-            yearPopupOpen={yearPopupOpen}
-            setYearPopupOpen={setYearPopupOpen}
-            datePopupOpen={datePopupOpen}
-            setDatePopupOpen={setDatePopupOpen}
-            availableDates={availableDates}
-            direction="backward"
-          />
-        </div>
-
         {/* ================= CONTENT ================= */}
         <motion.div
           layout
@@ -482,7 +464,7 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
     rounded-2xl
           "
         >
-          <UpdateStreamNewRelease newReleaseStreaming={movies} />
+          <UpdateStreamNewRelease newReleaseStreaming={newReleaseStreaming} />
         </motion.div>
       </div>
     </section>
