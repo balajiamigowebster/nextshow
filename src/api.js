@@ -49,15 +49,28 @@
 
 import axios from "axios";
 
-let devBaseURL = import.meta.env.VITE_API_BASE_URL;
-// 2. Client browser-oda dynamic hostname (e.g. localhost or 10.181.5.237) eduthu replace pannunga
-if (devBaseURL && devBaseURL.includes("localhost")) {
-  devBaseURL = devBaseURL.replace("localhost", window.location.hostname);
+const isLocalhost =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1" ||
+  window.location.hostname.startsWith("192.168.") ||
+  window.location.hostname.startsWith("10.");
+
+let activeBaseURL = "https://amigowebster.in/nextshow_backend_v2/api";
+
+if (!isLocalhost) {
+  activeBaseURL = "/api";
+} else {
+  let devBaseURL = import.meta.env.VITE_API_BASE_URL;
+  if (devBaseURL) {
+    if (devBaseURL.includes("localhost")) {
+      devBaseURL = devBaseURL.replace("localhost", window.location.hostname);
+    }
+    activeBaseURL = devBaseURL;
+  }
 }
 
 const api = axios.create({
-  baseURL: devBaseURL,
-  baseURL: "https://amigowebster.in/nextshow_backend_v2/api",
+  baseURL: activeBaseURL,
 });
 
 // Dynamic credentials check to avoid CORS issues on public routes for deployed domains
