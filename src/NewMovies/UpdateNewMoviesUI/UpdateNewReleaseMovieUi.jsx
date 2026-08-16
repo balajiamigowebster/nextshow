@@ -460,9 +460,27 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
   return (
     <section>
       <div className="mt-0 md:mt-2 flex">
+        {/* Timeline sidebar */}
+        <div className="md:block shrink-0">
+          <TimelineContent
+            selectedYear={selectedYear}
+            setSelectedYear={setSelectedYear}
+            selectedMonth={selectedMonth}
+            setSelectedMonth={setSelectedMonth}
+            selectedDate={selectedDate}
+            setSelectedDate={setSelectedDate}
+            yearPopupOpen={yearPopupOpen}
+            setYearPopupOpen={setYearPopupOpen}
+            datePopupOpen={datePopupOpen}
+            setDatePopupOpen={setDatePopupOpen}
+            availableDates={availableDates}
+            direction="forward"
+          />
+        </div>
+
         {/* Content area */}
         <motion.div layout className="flex-1 mt-2 min-w-0 w-full rounded-2xl">
-          <UpdateNewRelease newReleaseMovies={newReleaseMovies} />
+          <UpdateNewRelease newReleaseMovies={movies} />
         </motion.div>
       </div>
     </section>
