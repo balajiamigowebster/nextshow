@@ -51,6 +51,10 @@ import axios from "axios";
 
 let activeBaseURL = import.meta.env.VITE_API_BASE_URL || "/api";
 
+if (activeBaseURL.includes("localhost:5175") || activeBaseURL.includes("localhost:5173")) {
+  activeBaseURL = "/api";
+}
+
 if (activeBaseURL.includes("localhost") && window.location.hostname !== "localhost") {
   activeBaseURL = activeBaseURL.replace("localhost", window.location.hostname);
 }
