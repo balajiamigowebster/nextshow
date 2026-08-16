@@ -8,5 +8,12 @@ export default defineConfig({
   base: "/",
   server: {
     host: "0.0.0.0",
+    proxy: {
+      "/api": {
+        target: "https://amigowebster.in/nextshow_backend_v2/api",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
 });

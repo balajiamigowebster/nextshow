@@ -49,24 +49,10 @@
 
 import axios from "axios";
 
-const isLocalhost =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1" ||
-  window.location.hostname.startsWith("192.168.") ||
-  window.location.hostname.startsWith("10.");
+let activeBaseURL = import.meta.env.VITE_API_BASE_URL || "/api";
 
-let activeBaseURL = "https://amigowebster.in/nextshow_backend_v2/api";
-
-if (!isLocalhost) {
-  activeBaseURL = "/api";
-} else {
-  let devBaseURL = import.meta.env.VITE_API_BASE_URL;
-  if (devBaseURL) {
-    if (devBaseURL.includes("localhost")) {
-      devBaseURL = devBaseURL.replace("localhost", window.location.hostname);
-    }
-    activeBaseURL = devBaseURL;
-  }
+if (activeBaseURL.includes("localhost") && window.location.hostname !== "localhost") {
+  activeBaseURL = activeBaseURL.replace("localhost", window.location.hostname);
 }
 
 const api = axios.create({
