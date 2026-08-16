@@ -58,8 +58,20 @@ if (devBaseURL && devBaseURL.includes("localhost")) {
 const api = axios.create({
   baseURL: devBaseURL,
   baseURL: "https://amigowebster.in/nextshow_backend_v2/api",
-  withCredentials: true,
 });
+
+// Dynamic credentials check to avoid CORS issues on public routes for deployed domains
+api.interceptors.request.use(
+  (config) => {
+    if (config.url && config.url.includes("/auth/")) {
+      config.withCredentials = true;
+    } else {
+      config.withCredentials = false;
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
 
 api.interceptors.response.use(
   (response) => response,
