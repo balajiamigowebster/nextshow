@@ -370,7 +370,7 @@ export default function VideoDetailScreen({
               {/* ✅ VOLUME TOGGLE BUTTON */}
               <button
                 onClick={toggleVolume}
-                className="absolute right-6 bottom-12 md:bottom-20 lg:bottom-12 z-30 bg-black/40 hover:bg-white/20 p-3 rounded-full border border-white/10 transition-all active:scale-90"
+                className="absolute left-6 right-auto md:left-auto md:right-6 bottom-12 md:bottom-20 lg:bottom-12 z-30 bg-black/40 hover:bg-white/20 p-3 rounded-full border border-white/10 transition-all active:scale-90"
                 title={isBgMuted ? "Unmute background" : "Mute background"}
               >
                 {isBgMuted ? (
