@@ -49,14 +49,20 @@
 
 import axios from "axios";
 
-let activeBaseURL = import.meta.env.VITE_API_BASE_URL || "/api";
+const isLocalhost =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1" ||
+  window.location.hostname.startsWith("192.168.") ||
+  window.location.hostname.startsWith("10.");
 
-if (activeBaseURL.includes("localhost:5175") || activeBaseURL.includes("localhost:5173")) {
-  activeBaseURL = "/api";
-}
+let activeBaseURL = "/api";
 
-if (activeBaseURL.includes("localhost") && window.location.hostname !== "localhost") {
-  activeBaseURL = activeBaseURL.replace("localhost", window.location.hostname);
+if (isLocalhost) {
+  let devBaseURL = import.meta.env.VITE_API_BASE_URL || "/api";
+  if (devBaseURL.includes("localhost:5175") || devBaseURL.includes("localhost:5173")) {
+    devBaseURL = "/api";
+  }
+  activeBaseURL = devBaseURL;
 }
 
 console.log("NextShow API Base URL:", activeBaseURL);
