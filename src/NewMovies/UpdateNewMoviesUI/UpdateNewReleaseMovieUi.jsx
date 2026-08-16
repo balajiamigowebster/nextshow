@@ -74,6 +74,21 @@ const TimelineContent = ({
 
   const DAYS = Array.from({ length: totalDays }, (_, i) => i + 1);
 
+  const sortedDays = useMemo(() => {
+    return [...DAYS].sort((a, b) => {
+      if (selectedDate === a) return -1;
+      if (selectedDate === b) return 1;
+
+      const hasDataA = availableDates?.dates?.find((item) => item.day === a)?.hasData;
+      const hasDataB = availableDates?.dates?.find((item) => item.day === b)?.hasData;
+
+      if (hasDataA && !hasDataB) return -1;
+      if (!hasDataA && hasDataB) return 1;
+
+      return a - b;
+    });
+  }, [DAYS, selectedDate, availableDates]);
+
   const isFiltered =
     selectedYear !== null || selectedMonth !== null || selectedDate !== null;
 
@@ -257,7 +272,7 @@ const TimelineContent = ({
                     shadow-2xl
                   "
                 >
-                  {DAYS.map((day) => {
+                  {sortedDays.map((day) => {
                     const dateInfo = availableDates?.dates?.find(
                       (item) => item.day === day,
                     );
