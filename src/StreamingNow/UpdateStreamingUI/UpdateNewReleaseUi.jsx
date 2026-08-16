@@ -144,10 +144,9 @@ const TimelineContent = ({
         <div className="h-8 md:h-10 flex border-b border-zinc-800">
           {/* YEAR */}
 
-          <div className="relative flex-1 border-r border-zinc-800">
+          <div className="relative w-full h-full">
             <button
               onClick={() => {
-                setDatePopupOpen(false);
                 setYearPopupOpen(!yearPopupOpen);
               }}
               className="w-full h-full flex items-center justify-center px-1"
@@ -221,91 +220,6 @@ const TimelineContent = ({
                       {year}
                     </button>
                   ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-
-          {/* DATE */}
-
-          {/* DATE */}
-
-          <div className="relative w-[38px] md:w-[42px]">
-            <button
-              onClick={() => {
-                if (!selectedYear || !selectedMonth) return;
-                setYearPopupOpen(false);
-                setDatePopupOpen(!datePopupOpen);
-              }}
-              className={`w-full h-full flex items-center justify-center px-1 transition-all ${
-                selectedDate ? "bg-orange-500/10 border-l border-white/10" : ""
-              }`}
-            >
-              <span className={`text-[9px] md:text-[11px] font-black tracking-widest ${
-                selectedDate ? "text-orange-400" : "text-white"
-              }`}>
-                {selectedDate || "DATE"}
-              </span>
-            </button>
-
-            <AnimatePresence>
-              {datePopupOpen && (
-                <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -10 }}
-                  className="
-                    absolute
-                    left-full
-                    top-0
-                    ml-2
-                    z-50
-                    w-[80px]
-                    max-h-[260px]
-                    overflow-y-auto
-                    custom-scrollbar
-                    rounded-xl
-                    border
-                    border-zinc-700
-                    bg-zinc-900
-                    p-1
-                    shadow-2xl
-                  "
-                >
-                  {sortedDays.map((day) => {
-                    const dateInfo = availableDates?.dates?.find(
-                      (item) => item.day === day,
-                    );
-
-                    const hasData = dateInfo?.hasData;
-
-                    return (
-                      <button
-                        key={day}
-                        onClick={() => {
-                          setSelectedDate(day);
-                          setDatePopupOpen(false);
-                        }}
-                        className={`
-                          w-full
-                          rounded-lg
-                          py-2
-                          text-xs
-                          font-semibold
-                          transition-all
-                          ${
-                            selectedDate === day
-                              ? "bg-zinc-800 text-white font-black"
-                              : hasData
-                                ? "text-orange-400 hover:bg-zinc-800 hover:text-white"
-                                : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
-                          }
-                        `}
-                      >
-                        {day}
-                      </button>
-                    );
-                  })}
                 </motion.div>
               )}
             </AnimatePresence>
