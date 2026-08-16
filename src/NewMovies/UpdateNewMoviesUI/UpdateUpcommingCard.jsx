@@ -73,7 +73,7 @@ const DirectorMarquee = ({ director, isHovered }) => {
         style={{ "--distance": `${distance}px` }}
       >
         <span
-          className="inline-flex items-center bg-zinc-800 text-zinc-400
+          className="inline-flex items-center bg-[#031824] border border-[#0a3550]/40 text-zinc-300
           text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap"
         >
           {director}
@@ -123,7 +123,7 @@ const CastMarquee = ({ cast = [], isHovered }) => {
         {cast.map((actor) => (
           <span
             key={actor}
-            className="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
+            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
           >
             {actor}
           </span>
@@ -164,7 +164,7 @@ const GenreMarquee = ({ genres = [], isHovered }) => {
         {genres.map((genre) => (
           <span
             key={genre}
-            className="shrink-0 bg-zinc-800 text-zinc-400 text-[8px] sm:text-[9px]
+            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] sm:text-[9px]
               font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
           >
             {genre}
@@ -334,11 +334,12 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
       className="relative flex flex-col rounded-xl overflow-hidden
-        border border-zinc-800 bg-zinc-900 cursor-pointer flex-shrink-0 select-none
+        border border-[#07304b] bg-gradient-to-b from-[#080d14] to-[#041c2c] cursor-pointer flex-shrink-0 select-none
         transition-all duration-500 ease-out
-        hover:border-zinc-500
-        hover:ring-2 hover:ring-zinc-500/20
-        hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]"
+        shadow-[0_4px_25px_rgba(0,0,0,0.4),0_0_15px_rgba(7,48,75,0.2)]
+        hover:border-[#0f5480]
+        hover:ring-2 hover:ring-sky-500/20
+        hover:shadow-[0_4px_30px_rgba(0,0,0,0.5),0_0_25px_rgba(14,165,233,0.35)]"
     >
       {/* ── Poster ── */}
       <div className="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden">
@@ -350,7 +351,7 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
         />
 
         {/* Gradient fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080d14] via-[#080d14]/40 to-transparent" />
 
         {/* Section label — top left */}
         {/* <span
@@ -380,12 +381,12 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
     py-1.5
 
     bg-gradient-to-r
-    from-zinc-700
-    via-zinc-800
-    to-zinc-900
+    from-[#052438]
+    via-[#031d2f]
+    to-[#021320]
 
     border-b
-    border-zinc-600/30
+    border-[#0a3550]/40
 
     shadow-[0_2px_10px_rgba(0,0,0,0.35)]
   "
@@ -490,10 +491,10 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
     px-3
     py-1.5
     bg-gradient-to-r
-    from-zinc-700
-    to-zinc-900
+    from-[#031d2f]
+    to-[#021320]
     border-t
-    border-zinc-600/30
+    border-[#0a3550]/40
     z-10
   "
           >
@@ -544,7 +545,7 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
 
       {/* ── Details ── */}
       <div
-        className="flex flex-col bg-zinc-900 border-t border-zinc-800
+        className="flex flex-col bg-transparent border-t border-[#0a3550]/30
         px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 flex-shrink-0 min-h-0"
       >
         {/* Title + badge row */}
