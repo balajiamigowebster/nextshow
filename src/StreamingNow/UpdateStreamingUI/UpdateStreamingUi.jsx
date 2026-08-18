@@ -101,7 +101,7 @@ const TimelineContent = ({
   };
 
   return (
-    <div className="relative overflow-visible mt-2">
+    <div className="relative overflow-visible h-full">
       <div
         className="
           w-[55px]
@@ -115,6 +115,7 @@ const TimelineContent = ({
           overflow-visible
           flex
           flex-col
+          h-full
         "
       >
         {/* HEADER */}
@@ -206,7 +207,7 @@ const TimelineContent = ({
 
         {/* MONTHS */}
 
-        <div className="h-[240px] overflow-y-auto custom-scrollbar">
+        <div className="flex-grow h-0 flex flex-col">
           {monthsList.map((item) => (
             <button
               key={item.name}
@@ -226,7 +227,7 @@ const TimelineContent = ({
                   setSelectedDate(maxDays);
                 }
               }}
-              className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
+              className={`w-full flex-1 flex items-center justify-center border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
                 (selectedMonth !== null && selectedMonth === item.monthNumber && selectedYear === item.year) || (selectedMonth === null && item.monthNumber === (new Date().getMonth() + 1) && (selectedYear === null || selectedYear === item.year))
                   ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
@@ -374,9 +375,9 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
   return (
     <section>
       {/* ================= CONTENT SECTION ================= */}
-      <div className="mt-0 md:mt-2 flex">
+      <div className="mt-2 flex items-stretch">
         {/* Timeline sidebar */}
-        <div className="md:block shrink-0">
+        <div className="md:block shrink-0 h-full">
           <TimelineContent
             selectedYear={selectedYear}
             setSelectedYear={setSelectedYear}
@@ -398,7 +399,6 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
           layout
           className="
              flex-1
-             mt-2
     min-w-0
     w-full
     rounded-2xl
