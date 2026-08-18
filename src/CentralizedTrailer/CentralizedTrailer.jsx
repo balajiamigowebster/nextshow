@@ -302,7 +302,7 @@ const CentralizedTrailer = () => {
   }, [yearPopupOpen]);
 
   return (
-    <section className="pt-12 md:pt-16 px-4 md:px-8 bg-[#0f0f0f]">
+    <section className="pt-11 md:pt-15 px-4 md:px-8 bg-[#0f0f0f]">
       <TrailerTabs
         activeTab={activeTab}
         setActiveTab={setActiveTab}
