@@ -214,7 +214,7 @@ const StreamingNow = () => {
         </div>
       </div> */}
       <div className="">
-        <div className="pt-8 pb-14">
+        <div className="pt-8 pb-6">
           <div className="ml-1 mb-4 flex items-center gap-3">
             {/* Left Accent Bar */}
             <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
@@ -258,7 +258,7 @@ const StreamingNow = () => {
             />
           </div>
         </div>
-        <div className="pt-12 md:pt-16">
+        <div className="pt-6 md:pt-8">
           <div className="ml-1 mb-4 flex items-center gap-3">
             {/* Left Accent Bar */}
             <div className="w-1 self-stretch rounded-full bg-gradient-to-b from-orange-500 via-orange-200 to-orange-500" />
