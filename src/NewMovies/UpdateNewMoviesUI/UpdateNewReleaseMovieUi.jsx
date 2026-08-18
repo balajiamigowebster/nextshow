@@ -224,7 +224,7 @@ const TimelineContent = ({
                 }
               }}
               className={`w-full flex-1 flex items-center justify-center border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
-                (selectedMonth !== null && selectedMonth === item.monthNumber) || (selectedMonth === null && item.monthNumber === (new Date().getMonth() + 1))
+                selectedMonth !== null && selectedMonth === item.monthNumber
                   ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
@@ -238,10 +238,13 @@ const TimelineContent = ({
         <div className="h-8 md:h-10 border-t border-zinc-800 flex-shrink-0">
           <button
             onClick={handleReset}
-            className="w-full h-full flex items-center justify-center
-              hover:bg-zinc-800/40 text-zinc-300 hover:text-white 
+            className={`w-full h-full flex items-center justify-center
               text-[8px] md:text-[10px] font-black uppercase tracking-widest 
-              transition-all active:scale-95 cursor-pointer whitespace-nowrap"
+              transition-all active:scale-95 cursor-pointer whitespace-nowrap ${
+                selectedMonth === null
+                  ? "bg-orange-500/10 text-orange-400 font-black"
+                  : "hover:bg-zinc-800/40 text-zinc-300 hover:text-white"
+              }`}
           >
             Now
           </button>
