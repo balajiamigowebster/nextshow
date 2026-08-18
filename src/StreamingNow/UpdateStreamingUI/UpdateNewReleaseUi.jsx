@@ -140,7 +140,7 @@ const TimelineContent = ({
                   text-transparent
                 "
               >
-                {selectedYear || "YEAR"}
+                {selectedYear || new Date().getFullYear()}
               </span>
             </button>
 
@@ -212,7 +212,7 @@ const TimelineContent = ({
                 setSelectedMonth(monthNumber);
               }}
               className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
-                selectedMonth !== null && selectedMonth === item.monthNumber
+                (selectedMonth !== null && selectedMonth === item.monthNumber) || (selectedMonth === null && item.monthNumber === (new Date().getMonth() + 1))
                   ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
               }`}
