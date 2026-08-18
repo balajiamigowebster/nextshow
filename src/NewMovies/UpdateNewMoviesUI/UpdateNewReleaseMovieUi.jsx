@@ -203,7 +203,7 @@ const TimelineContent = ({
 
         {/* MONTHS */}
 
-        <div className="h-[240px] overflow-y-auto custom-scrollbar">
+        <div className="h-[240px] overflow-y-auto custom-scrollbar flex flex-col-reverse">
           {monthsList.map((item) => (
             <button
               key={item.name}
