@@ -43,14 +43,16 @@ const TimelineContent = ({
   const monthsList = useMemo(() => {
     const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
     const currentMonthIdx = CURRENT.getMonth();
-    
+
     if (direction === "forward") {
       const list = [];
       for (let i = 0; i < 12; i++) {
         const idx = (currentMonthIdx + i) % 12;
+        const year = CURRENT_YEAR + Math.floor((currentMonthIdx + i) / 12);
         list.push({
           name: MONTH_NAMES[idx],
           monthNumber: idx + 1,
+          year: year
         });
       }
       return list;
@@ -60,26 +62,39 @@ const TimelineContent = ({
         list.push({
           name: MONTH_NAMES[i],
           monthNumber: i + 1,
+          year: CURRENT_YEAR
         });
       }
       return list;
     }
-  }, [direction]);
+  }, [direction, CURRENT, CURRENT_YEAR]);
 
-  // Days based on Month + Year
   const totalDays = useMemo(() => {
     if (!selectedYear || !selectedMonth) return 0;
+
     return new Date(selectedYear, selectedMonth, 0).getDate();
   }, [selectedYear, selectedMonth]);
 
   const DAYS = Array.from({ length: totalDays }, (_, i) => i + 1);
 
-  const isFiltered =
-    selectedYear !== null || selectedMonth !== null || selectedDate !== null;
+  const sortedDays = useMemo(() => {
+    return [...DAYS].sort((a, b) => {
+      if (selectedDate === a) return -1;
+      if (selectedDate === b) return 1;
+
+      const hasDataA = availableDates?.dates?.find((item) => item.day === a)?.hasData;
+      const hasDataB = availableDates?.dates?.find((item) => item.day === b)?.hasData;
+
+      if (hasDataA && !hasDataB) return -1;
+      if (!hasDataA && hasDataB) return 1;
+
+      return a - b;
+    });
+  }, [DAYS, selectedDate, availableDates]);
 
   const handleReset = () => {
-    setSelectedYear(null);
-    setSelectedMonth(null);
+    setSelectedYear(new Date().getFullYear());
+    setSelectedMonth(new Date().getMonth() + 1);
     setSelectedDate(null);
     setYearPopupOpen(false);
     setDatePopupOpen(false);
@@ -87,30 +102,6 @@ const TimelineContent = ({
 
   return (
     <div className="relative overflow-visible mt-2">
-      {/* Floating Reset Button */}
-      <AnimatePresence>
-        {isFiltered && (
-          <motion.div
-            initial={{ opacity: 0, y: 5, scale: 0.8 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 5, scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="absolute bottom-full left-0 right-0 mb-[3px] z-50"
-          >
-            <button
-              onClick={handleReset}
-              className="w-full py-[2px] rounded bg-gradient-to-b from-zinc-800 to-black 
-                hover:from-zinc-700 hover:to-zinc-900 text-zinc-300 hover:text-white 
-                text-[7px] md:text-[8px] font-black uppercase tracking-widest 
-                shadow-md shadow-black/40 border border-zinc-800 
-                transition-all active:scale-95 cursor-pointer whitespace-nowrap"
-            >
-              Now
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
       <div
         className="
           w-[55px]
@@ -122,18 +113,19 @@ const TimelineContent = ({
           border-zinc-800
           bg-zinc-900
           overflow-visible
+          flex
+          flex-col
         "
       >
-        {/* ================= HEADER ================= */}
+        {/* HEADER */}
 
-        <div className="h-8 md:h-10 flex border-b border-zinc-800">
+        <div className="h-8 md:h-10 flex border-b border-zinc-800 flex-shrink-0">
           {/* YEAR */}
 
-          <div className="relative flex-1 border-r border-zinc-800">
+          <div className="relative w-full h-full">
             <button
               onClick={() => {
-                setDatePopupOpen(false);
-                setYearPopupOpen((prev) => !prev);
+                setYearPopupOpen(!yearPopupOpen);
               }}
               className="w-full h-full flex items-center justify-center px-1"
             >
@@ -172,10 +164,10 @@ const TimelineContent = ({
                     overflow-y-auto
                     no-scrollbar
                     rounded-xl
-                    p-1
                     border
                     border-zinc-700
                     bg-zinc-900
+                    p-1
                     shadow-2xl
                   "
                 >
@@ -197,18 +189,11 @@ const TimelineContent = ({
 
                         setYearPopupOpen(false);
                       }}
-                      className={`
-                        w-full
-                        rounded-lg
-                        py-2
-                        text-xs
-                        font-semibold
-                        ${
-                          selectedYear === year
-                            ? "bg-zinc-800 text-white"
-                            : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
-                        }
-                      `}
+                      className={`w-full rounded-lg py-2 text-xs font-semibold ${
+                        selectedYear === year
+                          ? "bg-zinc-800 text-white"
+                          : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
+                      }`}
                     >
                       {year}
                     </button>
@@ -217,96 +202,11 @@ const TimelineContent = ({
               )}
             </AnimatePresence>
           </div>
-
-          {/* DATE */}
-
-          {/* DATE */}
-
-          <div className="relative w-[38px] md:w-[42px]">
-            <button
-              onClick={() => {
-                if (!selectedYear || !selectedMonth) return;
-                setYearPopupOpen(false);
-                setDatePopupOpen((prev) => !prev);
-              }}
-              className={`w-full h-full flex items-center justify-center px-1 transition-all ${
-                selectedDate ? "bg-orange-500/10 border-l border-white/10" : ""
-              }`}
-            >
-              <span className={`text-[9px] md:text-[11px] font-black tracking-widest ${
-                selectedDate ? "text-orange-400" : "text-white"
-              }`}>
-                {selectedDate || "DATE"}
-              </span>
-            </button>
-
-            <AnimatePresence>
-              {datePopupOpen && (
-                <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -10 }}
-                  className="
-                    absolute
-                    left-full
-                    top-0
-                    ml-2
-                    z-50
-                    w-[80px]
-                    max-h-[260px]
-                    overflow-y-auto
-                    custom-scrollbar
-                    rounded-xl
-                    border
-                    border-zinc-700
-                    bg-zinc-900
-                    p-1
-                    shadow-2xl
-                  "
-                >
-                  {DAYS.map((day) => {
-                    const dateInfo = availableDates?.dates?.find(
-                      (item) => item.day === day,
-                    );
-
-                    const hasData = dateInfo?.hasData;
-
-                    return (
-                      <button
-                        key={day}
-                        onClick={() => {
-                          setSelectedDate(day);
-                          setDatePopupOpen(false);
-                        }}
-                        className={`
-                          w-full
-                          rounded-lg
-                          py-2
-                          text-xs
-                          font-semibold
-                          transition-all
-                          ${
-                            selectedDate === day
-                              ? "bg-zinc-800 text-white font-black"
-                              : hasData
-                                ? "text-orange-400 hover:bg-zinc-800 hover:text-white"
-                                : "text-zinc-500 hover:bg-zinc-800 hover:text-white"
-                          }
-                        `}
-                      >
-                        {day}
-                      </button>
-                    );
-                  })}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
         </div>
 
-        {/* ================= MONTHS ================= */}
+        {/* MONTHS */}
 
-        <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar">
+        <div className="h-[240px] overflow-y-auto custom-scrollbar">
           {monthsList.map((item) => (
             <button
               key={item.name}
@@ -314,9 +214,10 @@ const TimelineContent = ({
                 const monthNumber = item.monthNumber;
 
                 setSelectedMonth(monthNumber);
+                setSelectedYear(item.year);
 
                 const maxDays = new Date(
-                  selectedYear,
+                  item.year,
                   monthNumber,
                   0,
                 ).getDate();
@@ -325,27 +226,28 @@ const TimelineContent = ({
                   setSelectedDate(maxDays);
                 }
               }}
-              className={`
-                w-full
-                h-10
-                border-b
-                border-zinc-800
-                text-center
-                text-[8px]
-                md:text-[11px]
-                tracking-[0.2em]
-                font-bold
-                transition-all
-                ${
-                  selectedMonth !== null && selectedMonth === item.monthNumber
-                    ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
-                    : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
-                }
-              `}
+              className={`w-full h-10 border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
+                selectedMonth !== null && selectedMonth === item.monthNumber && selectedYear === item.year
+                  ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
+                  : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
+              }`}
             >
               {item.name}
             </button>
           ))}
+        </div>
+
+        {/* NOW FOOTER */}
+        <div className="h-8 md:h-10 border-t border-zinc-800 flex-shrink-0">
+          <button
+            onClick={handleReset}
+            className="w-full h-full flex items-center justify-center
+              hover:bg-zinc-800/40 text-zinc-300 hover:text-white 
+              text-[8px] md:text-[10px] font-black uppercase tracking-widest 
+              transition-all active:scale-95 cursor-pointer whitespace-nowrap"
+          >
+            Now
+          </button>
         </div>
       </div>
     </div>
@@ -473,6 +375,24 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
     <section>
       {/* ================= CONTENT SECTION ================= */}
       <div className="mt-0 md:mt-2 flex">
+        {/* Timeline sidebar */}
+        <div className="md:block shrink-0">
+          <TimelineContent
+            selectedYear={selectedYear}
+            setSelectedYear={setSelectedYear}
+            selectedMonth={selectedMonth}
+            setSelectedMonth={setSelectedMonth}
+            selectedDate={selectedDate}
+            setSelectedDate={setSelectedDate}
+            yearPopupOpen={yearPopupOpen}
+            setYearPopupOpen={setYearPopupOpen}
+            datePopupOpen={datePopupOpen}
+            setDatePopupOpen={setDatePopupOpen}
+            availableDates={availableDates}
+            direction="forward"
+          />
+        </div>
+
         {/* ================= CONTENT ================= */}
         <motion.div
           layout
@@ -484,7 +404,7 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
     rounded-2xl
           "
         >
-          <UpdateStreamingUpcomming upcoming={upcoming} />
+          <UpdateStreamingUpcomming upcoming={movies} />
         </motion.div>
       </div>
     </section>
