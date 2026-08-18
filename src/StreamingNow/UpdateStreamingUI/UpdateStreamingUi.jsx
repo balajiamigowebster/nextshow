@@ -46,7 +46,7 @@ const TimelineContent = ({
 
     if (direction === "forward") {
       const list = [];
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 6; i++) {
         const idx = (currentMonthIdx + i) % 12;
         const year = CURRENT_YEAR + Math.floor((currentMonthIdx + i) / 12);
         list.push({
@@ -58,7 +58,7 @@ const TimelineContent = ({
       return list;
     } else {
       const list = [];
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 6; i++) {
         list.push({
           name: MONTH_NAMES[i],
           monthNumber: i + 1,
