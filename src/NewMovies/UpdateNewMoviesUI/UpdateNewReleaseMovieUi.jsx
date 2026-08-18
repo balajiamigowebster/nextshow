@@ -89,12 +89,9 @@ const TimelineContent = ({
     });
   }, [DAYS, selectedDate, availableDates]);
 
-  const isFiltered =
-    selectedYear !== null || selectedMonth !== null || selectedDate !== null;
-
   const handleReset = () => {
-    setSelectedYear(null);
-    setSelectedMonth(null);
+    setSelectedYear(new Date().getFullYear());
+    setSelectedMonth(new Date().getMonth() + 1);
     setSelectedDate(null);
     setYearPopupOpen(false);
     setDatePopupOpen(false);
@@ -102,30 +99,6 @@ const TimelineContent = ({
 
   return (
     <div className="relative overflow-visible mt-2">
-      {/* Floating Reset Button */}
-      <AnimatePresence>
-        {isFiltered && (
-          <motion.div
-            initial={{ opacity: 0, y: 5, scale: 0.8 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 5, scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="absolute bottom-full left-0 right-0 mb-[3px] z-50"
-          >
-            <button
-              onClick={handleReset}
-              className="w-full py-[2px] rounded bg-gradient-to-b from-zinc-800 to-black 
-                hover:from-zinc-700 hover:to-zinc-900 text-zinc-300 hover:text-white 
-                text-[7px] md:text-[8px] font-black uppercase tracking-widest 
-                shadow-md shadow-black/40 border border-zinc-800 
-                transition-all active:scale-95 cursor-pointer whitespace-nowrap"
-            >
-              Now
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
       <div
         className="
           w-[55px]
@@ -137,11 +110,13 @@ const TimelineContent = ({
           border-zinc-800
           bg-zinc-900
           overflow-visible
+          flex
+          flex-col
         "
       >
         {/* HEADER */}
 
-        <div className="h-8 md:h-10 flex border-b border-zinc-800">
+        <div className="h-8 md:h-10 flex border-b border-zinc-800 flex-shrink-0">
           {/* YEAR */}
 
           <div className="relative w-full h-full">
@@ -228,7 +203,7 @@ const TimelineContent = ({
 
         {/* MONTHS */}
 
-        <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar">
+        <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar flex-grow">
           {monthsList.map((item) => (
             <button
               key={item.name}
@@ -256,6 +231,19 @@ const TimelineContent = ({
               {item.name}
             </button>
           ))}
+        </div>
+
+        {/* NOW FOOTER */}
+        <div className="h-8 md:h-10 border-t border-zinc-800 flex-shrink-0">
+          <button
+            onClick={handleReset}
+            className="w-full h-full flex items-center justify-center
+              hover:bg-zinc-800/40 text-zinc-300 hover:text-white 
+              text-[8px] md:text-[10px] font-black uppercase tracking-widest 
+              transition-all active:scale-95 cursor-pointer whitespace-nowrap"
+          >
+            Now
+          </button>
         </div>
       </div>
     </div>
