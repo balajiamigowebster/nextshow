@@ -98,7 +98,7 @@ const TimelineContent = ({
   };
 
   return (
-    <div className="relative overflow-visible h-full">
+    <div className="relative overflow-visible h-[304px] md:h-[350px]">
       <div
         className="
           w-[55px]
@@ -377,9 +377,9 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
 
   return (
     <section>
-      <div className="mt-2 flex items-stretch">
+      <div className="mt-0 md:mt-2 flex">
         {/* Timeline sidebar */}
-        <div className="md:block shrink-0 h-full">
+        <div className="md:block shrink-0">
           <TimelineContent
             selectedYear={selectedYear}
             setSelectedYear={setSelectedYear}
@@ -397,7 +397,7 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
         </div>
 
         {/* Content area */}
-        <motion.div layout className="flex-1 min-w-0 w-full rounded-2xl">
+        <motion.div layout className="flex-1 mt-2 min-w-0 w-full rounded-2xl">
           <UpdateNewRelease newReleaseMovies={movies} />
         </motion.div>
       </div>

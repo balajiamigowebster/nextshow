@@ -98,7 +98,7 @@ const TimelineContent = ({
   };
 
   return (
-    <div className="relative overflow-visible h-full">
+    <div className="relative overflow-visible h-[304px] md:h-[350px]">
       <div
         className="
           w-[55px]
@@ -367,9 +367,9 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
   return (
     <section>
       {/* ================= CONTENT SECTION ================= */}
-      <div className="mt-2 flex items-stretch">
+      <div className="mt-0 md:mt-2 flex">
         {/* ================= TIMELINE ================= */}
-        <div className="md:block shrink-0 h-full">
+        <div className="md:block shrink-0">
           <TimelineContent
             selectedYear={selectedYear}
             setSelectedYear={setSelectedYear}
@@ -391,6 +391,7 @@ const UpdateNewReleaseUi = ({ newReleaseStreaming = [] }) => {
           layout
           className="
              flex-1
+             mt-2
     min-w-0
     w-full
     rounded-2xl
