@@ -93,8 +93,8 @@ const TimelineContent = ({
   }, [DAYS, selectedDate, availableDates]);
 
   const handleReset = () => {
-    setSelectedYear(new Date().getFullYear());
-    setSelectedMonth(new Date().getMonth() + 1);
+    setSelectedYear(null);
+    setSelectedMonth(null);
     setSelectedDate(null);
     setYearPopupOpen(false);
     setDatePopupOpen(false);
@@ -255,8 +255,8 @@ const TimelineContent = ({
 };
 
 const UpdateStreamingUi = ({ upcoming = [] }) => {
-  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
-  const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth() + 1);
+  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedMonth, setSelectedMonth] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
 
   const [yearPopupOpen, setYearPopupOpen] = useState(false);
@@ -368,7 +368,7 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
         return (!selectedYear || yearVal === String(selectedYear)) && monthNumber === selectedMonth;
       });
     }
-    return upcoming;
+    return list.slice(0, 10);
   }, [selectedDate, selectedMonth, selectedYear, selectedMovies, upcoming]);
 
   return (
