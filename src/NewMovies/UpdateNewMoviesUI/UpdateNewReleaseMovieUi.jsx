@@ -98,7 +98,7 @@ const TimelineContent = ({
   };
 
   return (
-    <div className="relative overflow-visible mt-2">
+    <div className="relative overflow-visible h-full">
       <div
         className="
           w-[55px]
@@ -112,6 +112,7 @@ const TimelineContent = ({
           overflow-visible
           flex
           flex-col
+          h-full
         "
       >
         {/* HEADER */}
@@ -203,7 +204,7 @@ const TimelineContent = ({
 
         {/* MONTHS */}
 
-        <div className="h-[240px] md:h-[280px] overflow-y-auto custom-scrollbar flex-grow">
+        <div className="overflow-y-auto custom-scrollbar flex-grow h-0">
           {monthsList.map((item) => (
             <button
               key={item.name}
@@ -376,9 +377,9 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
 
   return (
     <section>
-      <div className="mt-0 md:mt-2 flex">
+      <div className="mt-2 flex items-stretch">
         {/* Timeline sidebar */}
-        <div className="md:block shrink-0">
+        <div className="md:block shrink-0 h-full">
           <TimelineContent
             selectedYear={selectedYear}
             setSelectedYear={setSelectedYear}
@@ -396,7 +397,7 @@ const UpdateNewReleaseMovieUi = ({ newReleaseMovies = [] }) => {
         </div>
 
         {/* Content area */}
-        <motion.div layout className="flex-1 mt-2 min-w-0 w-full rounded-2xl">
+        <motion.div layout className="flex-1 min-w-0 w-full rounded-2xl">
           <UpdateNewRelease newReleaseMovies={movies} />
         </motion.div>
       </div>
