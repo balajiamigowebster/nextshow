@@ -476,6 +476,9 @@ const UpdateNewMoviesUi = ({ upcomingNewMovies = [] }) => {
   return (
     <section>
       <div className="mt-0 md:mt-2 flex">
+        {/* Spacer to match Timeline sidebar width */}
+        <div className="w-[55px] md:w-[90px] shrink-0" />
+
         {/* Content area */}
         <motion.div layout className="flex-1 mt-2 min-w-0 w-full rounded-2xl">
           <UpdateNewMoviesUpcoming upcomingNewMovies={upcomingNewMovies} />
