@@ -309,7 +309,7 @@ export default function VideoDetailScreen({
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-[300px] md:h-[450px] text-white overflow-hidden mt-20 md:pt-[5px] ">
+    <div className="flex flex-col md:flex-row min-h-[300px] md:h-[450px] text-white overflow-hidden mt-14 md:mt-20 md:pt-[5px] ">
       {/* FULL VIDEO PLAYER OVERLAY */}
       {isWatchingFull && (
         <div className="fixed inset-0 z-[100] bg-black flex flex-col">
