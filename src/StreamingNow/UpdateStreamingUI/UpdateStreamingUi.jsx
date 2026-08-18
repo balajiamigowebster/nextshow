@@ -473,9 +473,6 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
     <section>
       {/* ================= CONTENT SECTION ================= */}
       <div className="mt-0 md:mt-2 flex">
-        {/* ================= SPACER TO MATCH TIMELINE WIDTH ================= */}
-        <div className="w-[55px] md:w-[90px] shrink-0" />
-
         {/* ================= CONTENT ================= */}
         <motion.div
           layout
