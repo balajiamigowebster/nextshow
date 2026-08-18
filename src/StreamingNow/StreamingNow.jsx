@@ -169,7 +169,7 @@ const StreamingNow = () => {
   }
 
   return (
-    <div className="pt-28 px-4 md:px-8 bg-[#0f0f0f] min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
+    <div className="pt-20 px-4 md:px-8 bg-[#0f0f0f] min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
       {/* <div className="overflow-hidden rounded-[18px] border border-white/10 shadow-2xl shadow-black/30 md:rounded-[28px]">
         <div className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-zinc-950 px-5 py-6 md:px-8 md:py-8">
           <div className="flex flex-nowrap items-center gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:gap-3">

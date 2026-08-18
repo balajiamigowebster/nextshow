@@ -97,7 +97,7 @@ const NewMovies = () => {
   }
 
   return (
-    <div className="mt-28 px-4 md:px-8 bg-[#0f0f0f] min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
+    <div className="mt-20 px-4 md:px-8 bg-[#0f0f0f] min-h-[calc(100vh-320px)] md:min-h-[calc(100vh-100px)]">
       {/* <div className="rounded-[28px] border border-white/10 shadow-2xl shadow-black/30 overflow-hidden">
         <div className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-zinc-950 px-5 py-6 md:px-8 md:py-8">
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
