@@ -402,7 +402,7 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
           layout
           className="
              flex-1
-             mt-2
+             mt-0
     min-w-0
     w-full
     rounded-2xl

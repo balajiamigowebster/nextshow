@@ -397,7 +397,7 @@ const UpdateNewMoviesUi = ({ upcomingNewMovies = [] }) => {
         </div>
 
         {/* Content area */}
-        <motion.div layout className="flex-1 mt-2 min-w-0 w-full rounded-2xl">
+        <motion.div layout className="flex-1 mt-0 min-w-0 w-full rounded-2xl">
           <UpdateNewMoviesUpcoming upcomingNewMovies={movies} />
         </motion.div>
       </div>
