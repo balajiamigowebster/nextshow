@@ -101,7 +101,7 @@ const TimelineContent = ({
   };
 
   return (
-    <div className="relative overflow-visible h-[304px] md:h-[350px]">
+    <div className="relative overflow-visible h-[292px] md:h-[338px]">
       <div
         className="
           w-[55px]
