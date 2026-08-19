@@ -408,7 +408,7 @@ export default function VideoDetailScreen({
               )}
 
               {/* ✅ MOVIE DETAILS SECTION (Image style implementation) */}
-              <div className="absolute bottom-12 md:bottom-20 lg:bottom-12 right-6 left-auto z-20 max-w-[50%] md:max-w-[70%] md:left-12 md:right-auto space-y-2 md:space-y-4 text-right md:text-left flex flex-col items-end md:items-start">
+              <div className="absolute bottom-[42px] md:bottom-20 lg:bottom-12 right-6 left-auto z-20 max-w-[50%] md:max-w-[70%] md:left-12 md:right-auto space-y-2 md:space-y-4 text-right md:text-left flex flex-col items-end md:items-start">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.div
                     key={currentIndex}
