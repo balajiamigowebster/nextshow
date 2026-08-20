@@ -295,7 +295,7 @@ const UpdateNewReleaseCard = ({ movie = {}, title }) => {
         hover:shadow-[0_4px_30px_rgba(0,0,0,0.5),0_0_25px_rgba(14,165,233,0.35)]"
     >
       {/* ── Poster ── */}
-      <div className="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden">
+      <div className="relative w-full h-44 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden">
         <img
           src={displayImage}
           alt={movie.title}

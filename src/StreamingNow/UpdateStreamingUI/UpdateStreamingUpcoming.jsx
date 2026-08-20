@@ -141,7 +141,7 @@ const EmptyState = () => {
           bg-gradient-to-b from-zinc-900 to-zinc-950"
         >
           <div
-            className="h-36 sm:h-44 md:h-52 bg-zinc-800/40 border-b border-zinc-800
+            className="h-44 sm:h-44 md:h-52 bg-zinc-800/40 border-b border-zinc-800
             flex items-center justify-center"
           >
             <span className="text-zinc-600 text-xs uppercase tracking-widest">
