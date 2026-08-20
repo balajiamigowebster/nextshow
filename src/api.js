@@ -26,7 +26,7 @@ console.log("NextShow API Base URL:", activeBaseURL);
 
 const api = axios.create({
   baseURL: activeBaseURL,
-  baseURL: "https://amigowebster.in/nextshow_backend_v2/api",
+  //baseURL: "https://amigowebster.in/nextshow_backend_v2/api",
 
 });
 
