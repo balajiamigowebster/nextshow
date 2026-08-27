@@ -204,7 +204,7 @@ const TimelineContent = ({
 
         {/* MONTHS */}
 
-        <div className="flex-grow h-0 flex flex-col-reverse">
+        <div className="flex-grow h-0 flex flex-col">
           {monthsList.map((item) => (
             <button
               key={item.name}
