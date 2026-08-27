@@ -35,10 +35,16 @@ const TimelineContent = ({
 }) => {
   const CURRENT = new Date();
   const CURRENT_YEAR = CURRENT.getFullYear();
-  const YEARS = Array.from(
-    { length: CURRENT_YEAR - 2020 + 1 },
-    (_, i) => CURRENT_YEAR - i,
-  );
+  const YEARS = useMemo(() => {
+    if (direction === "backward") {
+      return Array.from({ length: 6 }, (_, i) => CURRENT_YEAR + i);
+    } else {
+      return Array.from(
+        { length: CURRENT_YEAR - 2020 + 1 },
+        (_, i) => CURRENT_YEAR - i,
+      );
+    }
+  }, [direction, CURRENT_YEAR]);
 
   const monthsList = useMemo(() => {
     const MONTH_NAMES = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
