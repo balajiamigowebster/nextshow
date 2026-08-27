@@ -52,7 +52,7 @@ const TimelineContent = ({
     
     if (direction === "forward") {
       const list = [];
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 12; i++) {
         const idx = (currentMonthIdx + i) % 12;
         list.push({
           name: MONTH_NAMES[idx],
@@ -62,7 +62,7 @@ const TimelineContent = ({
       return list;
     } else if (direction === "backward") {
       const list = [];
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 12; i++) {
         const idx = (currentMonthIdx + i) % 12;
         list.push({
           name: MONTH_NAMES[idx],
@@ -72,7 +72,7 @@ const TimelineContent = ({
       return list.reverse();
     } else {
       const list = [];
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 12; i++) {
         list.push({
           name: MONTH_NAMES[i],
           monthNumber: i + 1,
@@ -219,7 +219,7 @@ const TimelineContent = ({
 
         {/* MONTHS */}
 
-        <div className="flex-grow h-0 flex flex-col">
+        <div className="flex-grow h-0 overflow-y-auto custom-scroll flex flex-col">
           {monthsList.map((item) => (
             <button
               key={item.name}
@@ -238,7 +238,7 @@ const TimelineContent = ({
                   setSelectedDate(maxDays);
                 }
               }}
-              className={`w-full flex-1 flex items-center justify-center border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
+              className={`w-full h-[44px] md:h-[60px] shrink-0 flex items-center justify-center border-b border-zinc-800 text-center text-[8px] md:text-[11px] tracking-[0.2em] font-bold transition-all ${
                 selectedMonth !== null && selectedMonth === item.monthNumber
                   ? "bg-orange-500/10 text-orange-400 border-r-2 border-r-orange-500 font-black"
                   : "text-zinc-500 hover:bg-zinc-800/40 hover:text-white"
