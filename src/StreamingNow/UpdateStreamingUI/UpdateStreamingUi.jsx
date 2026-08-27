@@ -56,6 +56,18 @@ const TimelineContent = ({
         });
       }
       return list;
+    } else if (direction === "backward") {
+      const list = [];
+      for (let i = 0; i < 6; i++) {
+        const idx = (currentMonthIdx + i) % 12;
+        const year = CURRENT_YEAR + Math.floor((currentMonthIdx + i) / 12);
+        list.push({
+          name: MONTH_NAMES[idx],
+          monthNumber: idx + 1,
+          year: year
+        });
+      }
+      return list.reverse();
     } else {
       const list = [];
       for (let i = 0; i < 6; i++) {
@@ -393,7 +405,7 @@ const UpdateStreamingUi = ({ upcoming = [] }) => {
             datePopupOpen={datePopupOpen}
             setDatePopupOpen={setDatePopupOpen}
             availableDates={availableDates}
-            direction="forward"
+            direction="backward"
           />
         </div>
 
