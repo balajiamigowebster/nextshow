@@ -49,9 +49,8 @@ const DirectorMarquee = ({ director, isHovered }) => {
           className="
             inline-flex
             items-center
-            bg-[#031824]
-            border border-[#0a3550]/40
-            text-zinc-300
+             bg-slate-950
+              text-zinc-300
             text-[8px]
             font-semibold
             px-1.5
@@ -107,7 +106,8 @@ const CastMarquee = ({ cast = [], isHovered }) => {
         {cast.map((actor) => (
           <span
             key={actor}
-            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
+            className="shrink-0  bg-slate-950
+              text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
           >
             {actor}
           </span>
@@ -160,8 +160,7 @@ const GenreMarquee = ({ genres = [], isHovered }) => {
             key={genre}
             className="
               shrink-0
-              bg-[#031824]
-              border border-[#0a3550]/40
+               bg-slate-950
               text-zinc-300
               text-[8px] sm:text-[9px]
               font-semibold
@@ -266,7 +265,7 @@ const MovieAvailabilityBadge = ({ movie, STREAMING_PLATFORMS }) => {
             whitespace-nowrap
           "
         >
-          <Film size={10} />
+          <Film className="text-slate-950" size={10} />
           <span>Theatre</span>
         </div>
       )}
@@ -367,13 +366,33 @@ const StreamingReviewCard = ({ review, title }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
-      className="relative flex flex-col rounded-xl overflow-hidden
-        border border-[#07304b] bg-gradient-to-b from-[#080d14] to-[#041c2c] cursor-pointer flex-shrink-0 select-none
-        transition-all duration-500 ease-out
-        shadow-[0_4px_25px_rgba(0,0,0,0.4),0_0_15px_rgba(7,48,75,0.2)]
-        hover:border-[#0f5480]
-        hover:ring-2 hover:ring-sky-500/20
-        hover:shadow-[0_4px_30px_rgba(0,0,0,0.5),0_0_25px_rgba(14,165,233,0.35)]"
+      className="
+  relative
+  flex
+  flex-col
+  rounded-xl
+  overflow-hidden
+  isolate
+
+  border
+  border-slate-800/80
+  bg-zinc-950
+
+  cursor-pointer
+  flex-shrink-0
+  select-none
+
+  transition-all
+  duration-500
+  ease-out
+
+  shadow-[0_18px_40px_-18px_rgba(2,6,23,0.70),0_0_10px_rgba(14,116,144,0.38),0_0_70px_rgba(15,23,42,0.10)]
+
+  hover:-translate-y-1
+  hover:border-slate-600
+
+  hover:shadow-[0_22px_48px_-12px_rgba(2,6,23,1),0_0_22px_rgba(14,116,144,0.38),0_0_48px_rgba(15,23,42,0.75)]
+"
     >
       {/* ── Poster ── */}
       {/* Mobile: h-36 (144px) | Tablet: h-44 (176px) | Desktop: h-52 (208px) */}
@@ -387,7 +406,7 @@ const StreamingReviewCard = ({ review, title }) => {
         />
 
         {/* Gradient fade bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080d14] via-[#080d14]/40 to-transparent" />
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" /> */}
 
         {/* <span
           className="absolute top-0 w-full left-0 z-10 
@@ -415,13 +434,13 @@ const StreamingReviewCard = ({ review, title }) => {
     px-3
     py-1.5
 
-    bg-gradient-to-r
-    from-[#052438]
-    via-[#031d2f]
-    to-[#021320]
+   bg-gradient-to-r
+  from-slate-900/95
+  via-slate-800/95
+  to-slate-950/95
 
     border-b
-    border-[#0a3550]/40
+    border-sky-500/30
 
     shadow-[0_2px_10px_rgba(0,0,0,0.35)]
   "
@@ -533,11 +552,11 @@ const StreamingReviewCard = ({ review, title }) => {
       px-3
       py-1.5
       bg-gradient-to-r
-      from-[#052438]
-      via-[#031d2f]
-      to-[#021320]
+      from-slate-900/95
+  via-slate-600/95
+  to-slate-950/95
       border-t
-      border-[#0a3550]/40
+      border-sky-500/30
     "
           >
             {/* LEFT SIDE */}
@@ -594,7 +613,7 @@ const StreamingReviewCard = ({ review, title }) => {
       {/* ── Details ── fixed height so all cards uniform */}
       {/* Mobile: compact | Desktop: slightly more padding */}
       <div
-        className="flex flex-col bg-transparent border-t border-[#0a3550]/30
+        className="flex flex-col bg-gradient-to-b from-sky-950 to-zinc-950 border-t border-sky-900/40
         px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5 s
         flex-shrink-0 min-h-0"
       >
@@ -643,10 +662,10 @@ const StreamingReviewCard = ({ review, title }) => {
         <div className="flex flex-col gap-1 w-full">
           {/* Director */}
           <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
-            <Clapperboard size={13} className="text-zinc-500 shrink-0" />
+            <Clapperboard size={13} className="text-zinc-300 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
-               <DirectorMarquee
+              <DirectorMarquee
                 director={review.director || "TBA"}
                 isHovered={isAnimationActive}
               />
@@ -655,7 +674,7 @@ const StreamingReviewCard = ({ review, title }) => {
 
           {/* Cast */}
           <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
-            <Users size={13} className="text-zinc-500 shrink-0" />
+            <Users size={13} className="text-zinc-300 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
               <CastMarquee

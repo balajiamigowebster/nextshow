@@ -5,7 +5,7 @@ import LiveRelativeDate from "../../Components/LiveRelativeDate";
 import { Clapperboard, Users } from "lucide-react";
 
 // ============================================================
-// MARQUEE SUB-COMPONENTS (same pattern as StreamingReviewCard)
+// MARQUEE SUB-COMPONENTS
 // ============================================================
 
 const DirectorMarquee = ({ director, isHovered }) => {
@@ -17,8 +17,10 @@ const DirectorMarquee = ({ director, isHovered }) => {
   useEffect(() => {
     const checkOverflow = () => {
       if (!containerRef.current || !contentRef.current) return;
+
       const cw = containerRef.current.offsetWidth;
       const sw = contentRef.current.scrollWidth;
+
       if (sw > cw) {
         setShouldAnimate(true);
         setDistance(sw - cw);
@@ -26,8 +28,11 @@ const DirectorMarquee = ({ director, isHovered }) => {
         setShouldAnimate(false);
       }
     };
+
     checkOverflow();
+
     window.addEventListener("resize", checkOverflow);
+
     return () => window.removeEventListener("resize", checkOverflow);
   }, [director]);
 
@@ -43,8 +48,20 @@ const DirectorMarquee = ({ director, isHovered }) => {
         style={{ "--distance": `${distance}px` }}
       >
         <span
-          className="inline-flex items-center bg-[#031824] border border-[#0a3550]/40 text-zinc-300
-          text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap"
+          className="
+            inline-flex
+            items-center
+            bg-[#031824]
+            border
+            border-[#0a3550]/40
+            text-zinc-300
+            text-[8px]
+            font-semibold
+            px-1.5
+            py-0.5
+            rounded-[4px]
+            whitespace-nowrap
+          "
         >
           {director}
         </span>
@@ -62,9 +79,11 @@ const CastMarquee = ({ cast = [], isHovered }) => {
   useEffect(() => {
     const checkOverflow = () => {
       if (!containerRef.current || !contentRef.current) return;
+
       const containerWidth = containerRef.current.offsetWidth;
       const contentWidth = contentRef.current.scrollWidth;
       const dist = contentWidth - containerWidth;
+
       if (dist > 0) {
         setShouldAnimate(true);
         setDistance(dist);
@@ -73,8 +92,11 @@ const CastMarquee = ({ cast = [], isHovered }) => {
         setDistance(0);
       }
     };
+
     checkOverflow();
+
     window.addEventListener("resize", checkOverflow);
+
     return () => window.removeEventListener("resize", checkOverflow);
   }, [cast]);
 
@@ -86,14 +108,27 @@ const CastMarquee = ({ cast = [], isHovered }) => {
           shouldAnimate && isHovered ? "cast-marquee-animate" : "inline-flex"
         }
         style={{
-          "--marquee-distance": `-${distance}px`, // ✅ fixed
-          "--marquee-duration": "16s", // ✅ fixed
+          "--marquee-distance": `-${distance}px`,
+          "--marquee-duration": "16s",
         }}
       >
         {cast.map((actor) => (
           <span
             key={actor}
-            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
+            className="
+              shrink-0
+              bg-[#031824]
+              border
+              border-[#0a3550]/40
+              text-zinc-300
+              text-[8px]
+              font-semibold
+              px-1.5
+              py-0.5
+              rounded-[4px]
+              whitespace-nowrap
+              mr-1
+            "
           >
             {actor}
           </span>
@@ -112,8 +147,10 @@ const GenreMarquee = ({ genres = [], isHovered }) => {
   useEffect(() => {
     const checkOverflow = () => {
       if (!containerRef.current || !contentRef.current) return;
+
       const cw = containerRef.current.offsetWidth;
       const sw = contentRef.current.scrollWidth;
+
       if (sw > cw) {
         setShouldAnimate(true);
         setDistance(sw - cw);
@@ -121,8 +158,11 @@ const GenreMarquee = ({ genres = [], isHovered }) => {
         setShouldAnimate(false);
       }
     };
+
     checkOverflow();
+
     window.addEventListener("resize", checkOverflow);
+
     return () => window.removeEventListener("resize", checkOverflow);
   }, [genres]);
 
@@ -138,8 +178,21 @@ const GenreMarquee = ({ genres = [], isHovered }) => {
         {genres.map((genre) => (
           <span
             key={genre}
-            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] sm:text-[9px]
-              font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
+            className="
+              shrink-0
+              bg-[#031824]
+              border
+              border-[#0a3550]/40
+              text-zinc-300
+              text-[8px]
+              sm:text-[9px]
+              font-semibold
+              px-1.5
+              py-0.5
+              rounded-[4px]
+              whitespace-nowrap
+              mr-1
+            "
           >
             {genre}
           </span>
@@ -158,8 +211,10 @@ const TitleMarquee = ({ title, isHovered }) => {
   useEffect(() => {
     const checkOverflow = () => {
       if (!containerRef.current || !contentRef.current) return;
+
       const cw = containerRef.current.offsetWidth;
       const sw = contentRef.current.scrollWidth;
+
       if (sw > cw) {
         setShouldAnimate(true);
         setDistance(sw - cw);
@@ -167,8 +222,11 @@ const TitleMarquee = ({ title, isHovered }) => {
         setShouldAnimate(false);
       }
     };
+
     checkOverflow();
+
     window.addEventListener("resize", checkOverflow);
+
     return () => window.removeEventListener("resize", checkOverflow);
   }, [title]);
 
@@ -180,8 +238,15 @@ const TitleMarquee = ({ title, isHovered }) => {
         style={{ "--distance": `${distance}px` }}
       >
         <h3
-          className="text-zinc-50 text-[11px] sm:text-[12px] md:text-[13px]
-          font-bold leading-tight whitespace-nowrap"
+          className="
+            text-zinc-50
+            text-[11px]
+            sm:text-[12px]
+            md:text-[13px]
+            font-bold
+            leading-tight
+            whitespace-nowrap
+          "
         >
           {title || "N/A"}
         </h3>
@@ -189,6 +254,10 @@ const TitleMarquee = ({ title, isHovered }) => {
     </div>
   );
 };
+
+// ============================================================
+// MOVIE AVAILABILITY BADGE
+// ============================================================
 
 const MovieAvailabilityBadge = ({ movie }) => {
   const availableOnArray = Array.isArray(movie?.availableOn)
@@ -247,13 +316,19 @@ const MovieAvailabilityBadge = ({ movie }) => {
 };
 
 // ============================================================
-// YOUTUBE EMBED URL HELPER
+// YOUTUBE THUMBNAIL
 // ============================================================
+
 const getYouTubeThumbnail = (url) => {
-  if (!url) return "https://via.placeholder.com/480x360?text=No+Trailer";
+  if (!url) {
+    return "https://via.placeholder.com/480x360?text=No+Trailer";
+  }
+
   const regExp =
     /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\b\?v=|\&v=)([^#\&\?]*).*/;
+
   const match = url.match(regExp);
+
   return match && match[2].length === 11
     ? `https://img.youtube.com/vi/${match[2]}/hqdefault.jpg`
     : "https://via.placeholder.com/480x360?text=Invalid+URL";
@@ -262,8 +337,8 @@ const getYouTubeThumbnail = (url) => {
 // ============================================================
 // MAIN CARD COMPONENT
 // ============================================================
+
 const UpdateUpcommingCard = ({ movie = {}, title }) => {
-  // ── Derived data (same pattern as StreamingReviewCard) ──
   const genreList = Array.isArray(movie.genres)
     ? movie.genres
     : movie.genres?.split(",").map((g) => g.trim()) || [];
@@ -272,20 +347,18 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
     ? movie.cast
     : movie.cast?.split(",").map((c) => c.trim()) || [];
 
-  // Thumbnail from trailerUrl (YouTube) or bannerImage
   const displayImage = movie.trailerUrl
     ? getYouTubeThumbnail(movie.trailerUrl)
     : movie.bannerImage || "https://via.placeholder.com/300x450?text=No+Poster";
 
   const releaseLabel = movie.ottReleaseDate || movie.releaseDate;
 
-  // Badge logic — mirrors StreamingReviewCard
   const isNewRelease =
     movie.streamType === "NEW_RELEASE" && movie.isStreamingReleased;
+
   const isUpcoming =
     movie.streamType === "UPCOMING" && !movie.isStreamingReleased;
 
-  // Rating (show for NEW_RELEASE / NEW)
   const showRating =
     movie.streamType === "NEW_RELEASE" || movie.streamType === "NEW";
 
@@ -329,90 +402,125 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
-      className="relative flex flex-col rounded-xl overflow-hidden
-        border border-[#07304b] bg-gradient-to-b from-[#080d14] to-[#041c2c] cursor-pointer flex-shrink-0 select-none
-        transition-all duration-500 ease-out
+      className="
+        relative
+        flex
+        flex-col
+        rounded-xl
+        overflow-hidden
+
+        border
+        border-[#07304b]
+
+        bg-gradient-to-b
+        from-[#080d14]
+        to-[#041c2c]
+
+        cursor-pointer
+        flex-shrink-0
+        select-none
+
+        transition-all
+        duration-500
+        ease-out
+
         shadow-[0_4px_25px_rgba(0,0,0,0.4),0_0_15px_rgba(7,48,75,0.2)]
+
         hover:border-[#0f5480]
-        hover:ring-2 hover:ring-sky-500/20
-        hover:shadow-[0_4px_30px_rgba(0,0,0,0.5),0_0_25px_rgba(14,165,233,0.35)]"
+        hover:ring-2
+        hover:ring-sky-500/20
+
+        hover:shadow-[0_4px_30px_rgba(0,0,0,0.5),0_0_25px_rgba(14,165,233,0.35)]
+      "
     >
       {/* ── Poster / Thumbnail ── */}
-      <div className="relative w-full h-44 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden">
+
+      {/* 
+        MOBILE ONLY HEIGHT UPDATE:
+        h-36  ->  h-44
+
+        sm and md values remain exactly the same.
+      */}
+      <div
+        className="
+          relative
+          w-full
+          h-44
+          sm:h-44
+          md:h-52
+          flex-shrink-0
+          overflow-hidden
+        "
+      >
         <img
           src={displayImage}
           alt={movie.title}
-          className="w-full h-full object-cover object-top transition-transform duration-500"
+          className="
+            w-full
+            h-full
+            object-cover
+            object-top
+            transition-transform
+            duration-500
+          "
           loading="lazy"
         />
 
         {/* Bottom gradient fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080d14] via-[#080d14]/40 to-transparent" />
-
-        {/* ── Section label (top-left) — same as StreamingReviewCard ── */}
-        {/* <span
-          className="absolute top-0 w-full left-0 z-10
-          bg-gradient-to-r from-zinc-700 to-zinc-900
-          text-zinc-200 text-[10px] font-semibold
-          uppercase tracking-[.06em] px-3 py-1.5
-          rounded-tl-[5px] rounded-tr-[5px]
-          shadow-[0_0_8px_rgba(63,63,70,0.5)]"
-        >
-          {title}
-        </span> */}
 
         <div
           className="
-    absolute
-    top-0
-    left-0
-    right-0
-    
+            absolute
+            inset-0
+            bg-gradient-to-t
+            from-[#080d14]
+            via-[#080d14]/40
+            to-transparent
+          "
+        />
 
-    flex
-    items-center
-    justify-between
+        {/* Section label */}
 
-    px-3
-    py-1.5
-
-    bg-gradient-to-r
-    from-[#052438]
-    via-[#031d2f]
-    to-[#021320]
-
-    border-b
-    border-[#0a3550]/40
-
-    shadow-[0_2px_10px_rgba(0,0,0,0.35)]
-  "
+        <div
+          className="
+            absolute
+            top-0
+            left-0
+            right-0
+            flex
+            items-center
+            justify-between
+            px-3
+            py-1.5
+            bg-gradient-to-r
+            from-[#052438]
+            via-[#031d2f]
+            to-[#021320]
+            border-b
+            border-[#0a3550]/40
+            shadow-[0_2px_10px_rgba(0,0,0,0.35)]
+          "
         >
           {isNewRelease && (
             <span
               className="
-        new-release-badge
-        relative
-        overflow-hidden
-
-        shrink-0
-
-        inline-flex
-        items-center
-        justify-center
-
-        px-2
-        py-[3px]
-
-        rounded-md
-
-        text-[7px]
-        md:text-[8px]
-
-        uppercase
-        tracking-[0.12em]
-            font-semibold
-        text-zinc-100
-      "
+                new-release-badge
+                relative
+                overflow-hidden
+                shrink-0
+                inline-flex
+                items-center
+                justify-center
+                px-2
+                py-[3px]
+                rounded-md
+                text-[7px]
+                md:text-[8px]
+                uppercase
+                tracking-[0.12em]
+                font-semibold
+                text-zinc-100
+              "
             >
               <span className="shine" />
               NEW RELEASE
@@ -422,29 +530,22 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
           {isUpcoming && (
             <span
               className="
-        new-release-badge
-        relative
-        overflow-hidden
-
-        shrink-0
-
-        inline-flex
-        items-center
-        justify-center
-
-        px-2
-        py-[3px]
-
-        rounded-md
-
-        text-[7px]
-        md:text-[8px]
-
-        uppercase
-        tracking-[0.12em]
-
-        text-zinc-100
-      "
+                new-release-badge
+                relative
+                overflow-hidden
+                shrink-0
+                inline-flex
+                items-center
+                justify-center
+                px-2
+                py-[3px]
+                rounded-md
+                text-[7px]
+                md:text-[8px]
+                uppercase
+                tracking-[0.12em]
+                text-zinc-100
+              "
             >
               <span className="shine" />
               UPCOMING
@@ -452,61 +553,79 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
           )}
         </div>
 
-        {/* ── Rating badge (top-right) — same as StreamingReviewCard ── */}
+        {/* Rating badge */}
+
         {showRating && movie.averageRating && (
           <span
-            className="absolute top-0 right-0 z-10
-            flex items-center gap-1
-            bg-gradient-to-l from-zinc-950/80 to-transparent
-            text-zinc-100 text-[10px] font-bold
-            pl-3 pr-3 py-1 rounded-l-full backdrop-blur-[2px]"
+            className="
+              absolute
+              top-0
+              right-0
+              z-10
+              flex
+              items-center
+              gap-1
+              bg-gradient-to-l
+              from-zinc-950/80
+              to-transparent
+              text-zinc-100
+              text-[10px]
+              font-bold
+              pl-3
+              pr-3
+              py-1
+              rounded-l-full
+              backdrop-blur-[2px]
+            "
           >
-            {/* FaStar — import if you want, or use inline svg */}
             <svg
               className="text-yellow-500 w-[11px] h-[11px] fill-yellow-500"
               viewBox="0 0 20 20"
             >
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
+
             <span className="rating-score text-[12px] md:text-[13px] whitespace-nowrap">
               {movie.averageRating}
             </span>
           </span>
         )}
 
-        {/* ── Release date (bottom bar) — same as StreamingReviewCard ── */}
+        {/* Release date */}
+
         {releaseLabel && (
           <div
             className="
-    absolute
-    bottom-0
-    left-0
-    w-full
-    flex
-    items-center
-    justify-between
-    px-3
-    py-1.5
-    bg-gradient-to-r
-    from-[#052438]
-    via-[#031d2f]
-    to-[#021320]
-    border-t
-    border-[#0a3550]/40
-    z-10
-  "
+              absolute
+              bottom-0
+              left-0
+              w-full
+              flex
+              items-center
+              justify-between
+              px-3
+              py-1.5
+              bg-gradient-to-r
+              from-[#052438]
+              via-[#031d2f]
+              to-[#021320]
+              border-t
+              border-[#0a3550]/40
+              z-10
+            "
           >
             {/* LEFT */}
+
             <div className="flex items-center gap-2 min-w-0">
               <span
                 className="
-        text-zinc-200
-        text-[9px]
-        font-bold
-        uppercase
-        tracking-[.08em]
-        whitespace-nowrap
-      "
+                  text-zinc-200
+                  text-[9px]
+                  font-bold
+                  uppercase
+                  tracking-[.08em]
+                  whitespace-nowrap
+                "
               >
                 {releaseLabel}
               </span>
@@ -515,26 +634,27 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
             </div>
 
             {/* RIGHT */}
+
             {shouldShowCountdown && (
               <span
                 className="
-        theatre-badge
-        relative
-        overflow-hidden
-        shrink-0
-        inline-flex
-        items-center
-        justify-center
-        px-2
-        py-[3px]
-        rounded
-        text-[7px]
-        md:text-[9px]
-        tracking-[0.08em]
-        text-zinc-300
-        leading-none
-        whitespace-nowrap
-      "
+                  theatre-badge
+                  relative
+                  overflow-hidden
+                  shrink-0
+                  inline-flex
+                  items-center
+                  justify-center
+                  px-2
+                  py-[3px]
+                  rounded
+                  text-[7px]
+                  md:text-[9px]
+                  tracking-[0.08em]
+                  text-zinc-300
+                  leading-none
+                  whitespace-nowrap
+                "
               >
                 <span className="shine" />
 
@@ -546,58 +666,47 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
       </div>
 
       {/* ── Details section ── */}
+
       <div
-        className="flex flex-col bg-transparent border-t border-[#0a3550]/30
-        px-2.5 pt-2 pb-2.5 sm:px-3 sm:pt-2.5
-        flex-shrink-0 min-h-0"
+        className="
+          flex
+          flex-col
+          bg-transparent
+          border-t
+          border-[#0a3550]/30
+          px-2.5
+          pt-2
+          pb-2.5
+          sm:px-3
+          sm:pt-2.5
+          flex-shrink-0
+          min-h-0
+        "
       >
-        {/* Title row + badges */}
+        {/* Title row */}
+
         <div className="flex items-center justify-between gap-2 mb-1">
           <div className="flex-1 min-w-0">
             <TitleMarquee title={movie.title} isHovered={isAnimationActive} />
           </div>
-
-          {/* NEW RELEASE badge */}
-          {/* {isNewRelease && (
-            <span
-              className="new-release-badge relative overflow-hidden shrink-0 
-    inline-flex items-center gap-1
-    px-2 py-[2px] rounded
-    text-[7px] md:text-[8px]  uppercase tracking-[0.12em]
-    text-blue-300"
-            >
-              <span className="shine" aria-hidden="true" />
-              New
-            </span>
-          )} */}
-
-          {/* UPCOMING badge */}
-          {/* {isUpcoming && (
-            <span
-              className="new-release-badge relative overflow-hidden shrink-0
-    inline-flex items-center gap-1
-    px-2 py-[3px] rounded-md
-    text-[6px] md:text-[8px] uppercase tracking-[0.1em]
-    text-zinc-400"
-            >
-              <span className="shine" aria-hidden="true" />
-              Upcoming
-            </span>
-          )} */}
         </div>
 
         {/* Genre pills */}
+
         <div className="mb-2 overflow-hidden">
           <GenreMarquee genres={genreList} isHovered={isAnimationActive} />
         </div>
 
         {/* Divider */}
+
         <div className="border-t border-zinc-800 mb-1.5" />
 
         {/* Director & Cast */}
+
         <div className="flex flex-col gap-1 w-full">
           <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
             <Clapperboard size={13} className="text-zinc-500 shrink-0" />
+
             <div className="overflow-hidden min-w-0">
               <DirectorMarquee
                 director={movie.director || "TBA"}
@@ -605,31 +714,37 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
               />
             </div>
           </div>
+
           <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
             <Users size={13} className="text-zinc-500 shrink-0" />
+
             <div className="overflow-hidden min-w-0">
               <CastMarquee cast={castList} isHovered={isAnimationActive} />
             </div>
           </div>
         </div>
 
-        {/* ── Styles (identical keyframe names prefixed "upcoming-") ── */}
+        {/* ── Styles ── */}
+
         <style jsx="true">{`
-          /* Marquee animations */
           @keyframes upcomingDirectorMarquee {
             0% {
               transform: translateX(0);
             }
+
             40% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             70% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             100% {
               transform: translateX(0);
             }
           }
+
           .upcoming-director-marquee {
             display: inline-flex;
             width: max-content;
@@ -640,16 +755,20 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
             0% {
               transform: translateX(0);
             }
+
             45% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             75% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             100% {
               transform: translateX(0);
             }
           }
+
           .upcoming-cast-marquee {
             display: inline-flex;
             width: max-content;
@@ -660,16 +779,20 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
             0% {
               transform: translateX(0);
             }
+
             45% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             75% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             100% {
               transform: translateX(0);
             }
           }
+
           .upcoming-genre-marquee {
             display: inline-flex;
             width: max-content;
@@ -680,16 +803,20 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
             0% {
               transform: translateX(0);
             }
+
             45% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             75% {
               transform: translateX(calc(-1 * var(--distance)));
             }
+
             100% {
               transform: translateX(0);
             }
           }
+
           .upcoming-title-marquee {
             display: inline-block;
             width: max-content;
@@ -698,36 +825,49 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
 
           .new-release-badge {
             border: 1px solid rgba(161, 161, 170, 0.35);
+
             font-family: "Science Gothic", sans-serif;
+
             box-shadow:
               0 0 10px rgba(161, 161, 170, 0.12),
               inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+
             font-weight: 200;
+
             letter-spacing: 0.12em;
           }
 
           .new-release-badge::after {
             content: "";
+
             position: absolute;
+
             top: 0;
             left: 0;
             right: 0;
+
             height: 40%;
+
             background: linear-gradient(
               180deg,
               rgba(255, 255, 255, 0.13) 0%,
               transparent 100%
             );
+
             border-radius: 6px 6px 0 0;
+
             pointer-events: none;
           }
 
           .new-release-badge .shine {
             position: absolute;
+
             inset: 0;
+
             width: 45%;
+
             background: linear-gradient(
               105deg,
               transparent 0%,
@@ -736,19 +876,22 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
               rgba(255, 255, 255, 0.06) 80%,
               transparent 100%
             );
+
             animation: goldShine 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
             pointer-events: none;
           }
+
           @keyframes goldShine {
             0% {
               transform: translateX(-160%) skewX(-18deg);
             }
+
             100% {
               transform: translateX(320%) skewX(-18deg);
             }
           }
 
-          /* ── Rating score golden text ── */
           .rating-score {
             background: linear-gradient(
               180deg,
@@ -757,12 +900,16 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
               #facc15 55%,
               #d97706 100%
             );
+
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+
             font-weight: 700;
+
             letter-spacing: 0.03em;
           }
+
           .theatre-badge {
             border: 1px solid rgba(161, 161, 170, 0.25);
 
@@ -781,7 +928,9 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
 
           .theatre-badge .shine {
             position: absolute;
+
             inset: 0;
+
             width: 45%;
 
             background: linear-gradient(
@@ -800,6 +949,7 @@ const UpdateUpcommingCard = ({ movie = {}, title }) => {
             0% {
               transform: translateX(-180%) skewX(-18deg);
             }
+
             100% {
               transform: translateX(320%) skewX(-18deg);
             }

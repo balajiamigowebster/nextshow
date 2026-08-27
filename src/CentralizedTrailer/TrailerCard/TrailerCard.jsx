@@ -46,7 +46,10 @@ const DirectorMarquee = ({ director, isHovered }) => {
         }
         style={{ "--distance": `${distance}px` }}
       >
-        <span className="inline-flex items-center bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap">
+        <span
+          className="inline-flex items-center bg-slate-950
+              text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap"
+        >
           {director}
         </span>
       </div>
@@ -103,7 +106,8 @@ const CastMarquee = ({
         {cast.map((actor) => (
           <span
             key={actor}
-            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
+            className="shrink-0 bg-slate-950
+              text-zinc-300 text-[8px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
           >
             {actor}
           </span>
@@ -144,7 +148,8 @@ const GenreMarquee = ({ genres = [] }) => {
         {genres.map((genre) => (
           <span
             key={genre}
-            className="shrink-0 bg-[#031824] border border-[#0a3550]/40 text-zinc-300 text-[8px] sm:text-[9px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
+            className="shrink-0 bg-slate-950
+              text-zinc-300 text-[8px] sm:text-[9px] font-semibold px-1.5 py-0.5 rounded-[4px] whitespace-nowrap mr-1"
           >
             {genre}
           </span>
@@ -219,9 +224,11 @@ const ScheduledCardBody = ({ trailer, statusLabel, statusClass }) => {
       className=" flex
     flex-col
     flex-1
-    bg-zinc-900
+    bg-gradient-to-b
+    from-sky-950
+    to-zinc-950
     border-t
-    border-zinc-800
+    border-sky-900/40
     px-2.5
     pt-2
     pb-2.5
@@ -245,7 +252,7 @@ const ScheduledCardBody = ({ trailer, statusLabel, statusClass }) => {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-zinc-800" />
+      <div className="border-t border-sky-900/40" />
 
       {/* Row 2: Release Date */}
       {releaseDateMobile && (
@@ -258,7 +265,7 @@ const ScheduledCardBody = ({ trailer, statusLabel, statusClass }) => {
       )}
 
       {/* ✅ FIX 1: Equal height — filler rows to match PublishedCardBody height */}
-      <div className="border-t border-zinc-800" />
+      <div className="border-t border-sky-900/40" />
 
       {/* Dir row placeholder */}
       <div
@@ -281,14 +288,14 @@ const ScheduledCardBody = ({ trailer, statusLabel, statusClass }) => {
 
       <style jsx="true">{`
         .scheduled-coming-soon-badge {
-          border: 1px solid rgba(161, 161, 170, 0.25);
+          border: 1px solid rgba(56, 189, 248, 0.3);
           background: linear-gradient(
             180deg,
-            rgba(39, 39, 42, 0.9) 0%,
-            rgba(24, 24, 27, 0.95) 100%
+            rgba(12, 74, 110, 0.9) 0%,
+            rgba(2, 6, 23, 0.95) 100%
           );
           box-shadow:
-            0 0 10px rgba(161, 161, 170, 0.08),
+            0 0 10px rgba(56, 189, 248, 0.12),
             inset 0 1px 0 rgba(255, 255, 255, 0.05);
           text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
         }
@@ -353,9 +360,11 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
       className=" flex
     flex-col
     flex-1
-    bg-transparent
+    bg-gradient-to-b
+    from-sky-950
+    to-zinc-950
     border-t
-    border-[#0a3550]/30
+    border-sky-900/40
     px-2.5
     pt-2
     pb-2.5
@@ -369,14 +378,14 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
             {formatNumber(trailer.viewCount)}
           </span>
         </div>
-        <div className="w-px h-3 bg-zinc-800" />
+        <div className="w-px h-3 bg-sky-900/40" />
         <div className="flex items-center gap-1">
           <ThumbsUp size={9} className="text-zinc-500" />
           <span className="text-[7px] md:text-[9px] font-semibold text-zinc-300 tabular-nums">
             {formatNumber(trailer.likeCount)}
           </span>
         </div>
-        <div className="w-px h-3 bg-zinc-800" />
+        <div className="w-px h-3 bg-sky-900/40" />
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-1 text-zinc-300">
             <CalendarDays size={9} className="flex-shrink-0 text-zinc-500" />
@@ -399,7 +408,7 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-zinc-800" />
+      <div className="border-t border-sky-900/40" />
 
       <div className="h-[20px] overflow-hidden">
         <TitleMarquee
@@ -409,13 +418,13 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-zinc-800" />
+      <div className="border-t border-sky-900/40" />
 
       {/* Dir & Cast */}
       {hasMovieMeta ? (
         <div className="flex flex-col gap-1 w-full">
           <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
-            <Clapperboard size={13} className="text-zinc-500 shrink-0" />
+            <Clapperboard size={13} className="text-zinc-300 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
               <DirectorMarquee director={director} isHovered={isHovered} />
@@ -423,7 +432,7 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
           </div>
 
           <div className="grid grid-cols-[20px_1fr] gap-1 items-center text-[10px]">
-            <Users size={13} className="text-zinc-500 shrink-0" />
+            <Users size={13} className="text-zinc-300 shrink-0" />
 
             <div className="overflow-hidden min-w-0">
               <CastMarquee isHovered={isHovered} cast={castList} />
@@ -431,7 +440,7 @@ const PublishedCardBody = ({ trailer, director, castList = [], isHovered }) => {
           </div>
         </div>
       ) : (
-        <div className="relative h-[38px] overflow-hidden rounded-md border border-dashed border-zinc-800 bg-gradient-to-br from-zinc-800 via-zinc-850 to-zinc-950 flex items-center justify-center">
+        <div className="relative h-[38px] overflow-hidden rounded-md border border-dashed border-sky-900/50 bg-slate-950 flex items-center justify-center">
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
 
           <div className="relative z-10 flex flex-col items-center">
@@ -516,13 +525,7 @@ const TrailerCard = ({ trailer, title, onClick }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
-      className="relative flex flex-col rounded-xl overflow-hidden
-        border border-[#07304b] bg-gradient-to-b from-[#080d14] to-[#041c2c] flex-shrink-0 select-none
-        transition-all duration-500 ease-out
-        shadow-[0_4px_25px_rgba(0,0,0,0.4),0_0_15px_rgba(7,48,75,0.2)]
-        hover:border-[#0f5480]
-        hover:ring-2 hover:ring-sky-500/20
-        hover:shadow-[0_4px_30px_rgba(0,0,0,0.5),0_0_25px_rgba(14,165,233,0.35)]"
+      className="relative flex flex-col rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 flex-shrink-0 select-none transition-all duration-500 ease-out hover:border-zinc-500 hover:ring-2 hover:ring-zinc-500/20 hover:shadow-[0_0_20px_rgba(161,161,170,0.15)]"
     >
       {/* ── Thumbnail Area ── */}
       <div className="relative w-full h-36 sm:h-44 md:h-52 flex-shrink-0 overflow-hidden bg-black">
