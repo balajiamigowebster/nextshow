@@ -309,7 +309,7 @@ export default function VideoDetailScreen({
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-[300px] md:h-[450px] text-white overflow-hidden mt-16 md:mt-20 md:pt-0 ">
+    <div className="flex flex-col md:flex-row min-h-[420px] md:h-[450px] text-white overflow-hidden mt-0 md:mt-20 md:pt-0 ">
       {/* FULL VIDEO PLAYER OVERLAY */}
       {isWatchingFull && (
         <div className="fixed inset-0 z-[100] bg-black flex flex-col">
@@ -336,7 +336,7 @@ export default function VideoDetailScreen({
         <div
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
-          className="relative h-[300px] md:h-full bg-black group overflow-hidden"
+          className="relative h-[420px] md:h-full bg-black group overflow-hidden"
         >
           {/* ✅ YouTube Background Video */}
           {upcomingTrailers.length > 0 ? (
@@ -366,6 +366,7 @@ export default function VideoDetailScreen({
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#2b2c2e]/40 via-[#0a0d14]/40 to-transparent pointer-events-none"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-[#0a0d14] via-transparent to-transparent pointer-events-none"></div>
+              <div className="absolute inset-x-0 top-0 h-[140px] bg-gradient-to-b from-black/90 via-black/30 to-transparent pointer-events-none z-10"></div>
 
               {/* ✅ VOLUME TOGGLE BUTTON */}
               <button
